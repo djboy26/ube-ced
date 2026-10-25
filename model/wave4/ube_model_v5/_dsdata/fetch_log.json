@@ -1,0 +1,94 @@
+{
+  "extracts": {
+    "ene2ha_2023.csv": {
+      "bytes": 291755,
+      "retrieved_utc": "2026-09-19T05:08:59Z",
+      "sha256": "953fc7288cf730a93adaa012665809e7f6a4940420eaa4edf1ec2c57c2e062c1",
+      "table": "ENE2HA",
+      "url": "https://api.statbank.dk/v1/data/ENE2HA/CSV?lang=en&valuePresentation=Code&ANVEND=*&ENERGI1=*&Tid=2023"
+    },
+    "ene2mu1n_2023.csv": {
+      "bytes": 1319736,
+      "retrieved_utc": "2026-09-19T05:08:59Z",
+      "sha256": "d5ffe0797334c37f08f89db794b88c0d86d229bab9c45da55e17aaa5db6a69c7",
+      "table": "ENE2MU1N",
+      "url": "https://api.statbank.dk/v1/data/ENE2MU1N/CSV?lang=en&valuePresentation=Code&BRANCHE=*&ENERGI1=*&MULT=*&PRISENHED=V&Tid=2023"
+    },
+    "ene2mu2n_2023.csv": {
+      "bytes": 183258,
+      "retrieved_utc": "2026-09-19T05:08:59Z",
+      "sha256": "cecb0b9347afbdbee2faf6101d0acaac84f4609865b6a0b68a6f87d7f9b9d4d0",
+      "table": "ENE2MU2N",
+      "url": "https://api.statbank.dk/v1/data/ENE2MU2N/CSV?lang=en&valuePresentation=Code&ANVEND1=*&ENERGI1=*&MULT=*&PRISENHED=V&Tid=2023"
+    },
+    "ene3h_2023.csv": {
+      "bytes": 285596,
+      "retrieved_utc": "2026-09-19T05:08:59Z",
+      "sha256": "06b3dbceb3cb82227fe451ae8cf3be97e738426a44e205c9a901788840892bac",
+      "table": "ENE3H",
+      "url": "https://api.statbank.dk/v1/data/ENE3H/CSV?lang=en&valuePresentation=Code&BRANCHE=*&ENERGI1=*&Tid=2023"
+    },
+    "fam55n.csv": {
+      "bytes": 331,
+      "retrieved_utc": "2026-09-19",
+      "sha256": "a354ec3076e1cff795655c7d5c6926c5f6f54e3edd7bb04efa2ff7703f0b3138",
+      "table": "FAM55N",
+      "url": "https://api.statbank.dk/v1/data/FAM55N/CSV?lang=en&valuePresentation=Code&OMR%C3%85DE=000&HUSST%C3%98R=*&Tid=2023,2026"
+    },
+    "folk1a_2023K3.csv": {
+      "bytes": 6716,
+      "retrieved_utc": "2026-09-19",
+      "sha256": "b27f99938ea2f17f2c92d4e931f195d40605c673c9ef38143c315b63c639cc73",
+      "table": "FOLK1A",
+      "url": "https://api.statbank.dk/v1/data/FOLK1A/CSV?lang=en&valuePresentation=Code&OMR%C3%85DE=000&K%C3%98N=1,2&ALDER=*&CIVILSTAND=TOT&Tid=2023K3"
+    },
+    "naio1f_P1_BP_2023.csv": {
+      "bytes": 764106,
+      "retrieved_utc": "2026-09-19T05:08:59Z",
+      "sha256": "f827c07bab13a703b8e4fd8098792b28c37492d9e7b06c8c6e9fd22a0935e866",
+      "table": "NAIO1F",
+      "url": "https://api.statbank.dk/v1/data/NAIO1F/CSV?lang=en&valuePresentation=Code&TILGANG1=P1_BP&TILGANG2=*&ANVENDELSE=*&PRISENHED=V&Tid=2023"
+    },
+    "naio1f_P7AD2121_2023.csv": {
+      "bytes": 824299,
+      "retrieved_utc": "2026-09-19T05:08:59Z",
+      "sha256": "5303ae8f4b754ce0187a99621fa0a4107d9a904d6165669de453c27c1a006e16",
+      "table": "NAIO1F",
+      "url": "https://api.statbank.dk/v1/data/NAIO1F/CSV?lang=en&valuePresentation=Code&TILGANG1=P7AD2121&TILGANG2=*&ANVENDELSE=*&PRISENHED=V&Tid=2023"
+    },
+    "pvgis_monthly_2005_2020.csv": {
+      "bytes": 29370,
+      "retrieved_utc": "2026-09-19",
+      "sha256": "e62e02c107706fc3bcd74937a64390f270a20ea9525a80dc145f3d46ff815cfb",
+      "table": "PVGIS v5.2 seriescalc (JRC)",
+      "url": "https://re.jrc.ec.europa.eu/api/v5_2/seriescalc?lat={lat}&lon={lon}&angle=90&aspect={0,-90,90,180}&startyear=2005&endyear=2020&outputformat=json; Copenhagen 55.68/12.57, Odense 55.40/10.39, Aalborg 57.05/9.92; aggregated by climate_fetch_v5.py"
+    }
+  },
+  "tableinfo": {
+    "ENE2HA": {
+      "retrieved_utc": "2026-09-19T05:08:59Z",
+      "table_updated": "2026-06-18T08:00:00",
+      "url": "https://api.statbank.dk/v1/tableinfo/ENE2HA?lang=en&format=JSON"
+    },
+    "ENE2MU1N": {
+      "retrieved_utc": "2026-09-19T05:08:59Z",
+      "table_updated": "2026-06-30T08:00:00",
+      "url": "https://api.statbank.dk/v1/tableinfo/ENE2MU1N?lang=en&format=JSON"
+    },
+    "ENE2MU2N": {
+      "retrieved_utc": "2026-09-19T05:08:59Z",
+      "table_updated": "2026-06-30T08:00:00",
+      "url": "https://api.statbank.dk/v1/tableinfo/ENE2MU2N?lang=en&format=JSON"
+    },
+    "ENE3H": {
+      "retrieved_utc": "2026-09-19T05:08:59Z",
+      "table_updated": "2026-06-18T08:00:00",
+      "url": "https://api.statbank.dk/v1/tableinfo/ENE3H?lang=en&format=JSON"
+    },
+    "NAIO1F": {
+      "retrieved_utc": "2026-09-19T05:08:59Z",
+      "table_updated": "2026-06-30T08:00:00",
+      "url": "https://api.statbank.dk/v1/tableinfo/NAIO1F?lang=en&format=JSON"
+    }
+  }
+}

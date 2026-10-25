@@ -1,0 +1,25 @@
+﻿cff-version: 1.2.0
+message: "If you use this software or its data, please cite it as below."
+type: software
+title: "ube-ced: Cumulative Energy Demand of survival goods by Leontief input-output, with the Danish survival-floor model v5"
+version: 0.1.0
+date-released: 2026-10-26
+authors:
+  - family-names: Jogalekar
+    given-names: Sourabh
+    email: sourabhrj26@gmail.com
+repository-code: https://github.com/djboy26/ube-ced
+license: MIT
+keywords:
+  - cumulative energy demand
+  - Leontief input-output
+  - universal basic energy
+  - thermodynamic cost of survival
+  - decent living energy
+  - Denmark
+abstract: >
+  Reference implementation of Îµ = e_d (I âˆ’ A)â»Â¹ for the primary cumulative energy demand of survival
+  goods, and the Universal Basic Energy project's Danish survival-floor model v5, which sizes a
+  per-person survival basket in primary kWh per year from Statistics Denmark input-output tables,
+  a dwelling heat balance and dietary-guideline food quantities. Results are provisional and
+  regenerate deterministically from source.

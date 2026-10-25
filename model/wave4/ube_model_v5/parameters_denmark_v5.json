@@ -1,0 +1,349 @@
+{
+  "_README": [
+    "Every parameter the UBE v5 model uses, outside the basket line file.",
+    "v5 = Wave 4 cycle 4, the floor re-size (R-52): v4 (double-count correction, R-38/R-39, cleared) plus the",
+    "dwelling standard (R-32 to R-34, R-48 to R-51), the depth factor on the floor's own mix (R-61) and the food",
+    "guidelines (R-64). CHANGED from v4: boundary_depth (floor-mix), decent_living_benchmark (E-OD-1); ADDED: dwelling, v5.",
+    "No hand edits to any output, ever (rule R5)."
+  ],
+  "case": "Denmark, DLS minimum, 2023 (v5: the floor re-size)",
+  "energy_basis": "primary_CED_LHV",
+  "population_DK_2023": 5935000,
+  "pef_reference": 1.6,
+  "pef_reference_note": "Primary-energy factor at which every 'primary_at_ref' intensity in the basket file is quoted. The electric share of such a line is renormalised to the scenario PEF; the rest is held invariant.",
+  "pef_scenarios": {
+    "Fossil_2.5": 2.5,
+    "DK_2023_1.6": 1.6,
+    "Renewable_1.0": 1.0
+  },
+  "pef_source": "decisions.json, LOCKED. Physics Audit sec 5.1 notes 1.6 is real but is the 2025 value and is NOT the factor Danish building calculations use (1.9); sec 5.2 notes 1.0 is not a thermodynamic minimum (physical floor 1.06-1.20). Both carried as flags, neither changed without DJ.",
+  "occupancy_divisor": 2.13,
+  "occupancy_note": "LOCKED. Applied ONCE, to tier T2 lines only, at source in the basket file. Phase 1 applied it twice to two lines (audit B10).",
+  "floor_area_m2_per_person": {
+    "central": 19.4,
+    "variants": {
+      "dls_locked_15": 15.0,
+      "dls_net_22_5": 22.5,
+      "single_occupant_30": 30.0
+    }
+  },
+  "floor_area_note": "CED Framework Spec v3 sec 5, re-derived. The LOCKED 15 m2 arithmetically encodes a four-person household. Superseded pending DJ (ruling R-4: a dwelling schedule, not one number).",
+  "heat_carrier": {
+    "district_heat_share": 0.7,
+    "heat_pump_share": 0.3,
+    "heat_pump_cop": 3.5,
+    "district_heat_factor_variants": {
+      "energistyrelsen_1_08": 1.08,
+      "br18_regulatory_0_85": 0.85,
+      "energistatistik_200pct_0_78": 0.78,
+      "energy_allocation_1_43": 1.43,
+      "exergy_allocation_0_19": 0.19
+    },
+    "district_heat_factor_default": "energistyrelsen_1_08"
+  },
+  "heat_carrier_note": "Primary factor per kWh of delivered heat = DH_share x DH_factor + HP_share x PEF/COP. The district-heat factor spans 0.19 to 1.43 across legitimate CHP allocation conventions - a factor of 7.5 chosen by convention, not measured. Phase 1's 1.13 appears in no source and is REJECTED.",
+  "liquid_fuel_well_to_tank": {
+    "central": 1.18,
+    "low": 1.12,
+    "high": 1.25
+  },
+  "liquid_fuel_note": "ASSUMED, literature-typical for EU refined fuel; the Supply Chain Analyst could not re-source it. It multiplies 90% of the largest term in the floor. NOT a scenario variable and must never be moved by the grid factor - that substitution is Wave 1 audit error B6.",
+  "food_loss_regimes": {
+    "household_only": {
+      "storable": 1.05,
+      "perishable": 1.1,
+      "retail_shelf": 1.0,
+      "inline": 1.0,
+      "none": 1.0
+    },
+    "cascade_central": {
+      "storable": 1.15,
+      "perishable": 1.4,
+      "retail_shelf": 1.25,
+      "inline": 1.0,
+      "none": 1.0
+    },
+    "cascade_high": {
+      "storable": 1.25,
+      "perishable": 1.55,
+      "retail_shelf": 1.35,
+      "inline": 1.0,
+      "none": 1.0
+    }
+  },
+  "food_loss_default": "cascade_central",
+  "food_loss_note": "Supply Chain Traces sec 7.2. Farm gate to recipient the cumulative gross-up for fresh produce is x1.402 (grading 8%, distribution 3%, retail shrink 6%, household 15%). Phase 1 and the v3 spec both used a flat x1.10, which is the household share only. Splitting into perishable and storable is ASSUMED engineering judgement, direction stated: applying a fresh-produce cascade to grain, sugar and salt would overstate. DJ's location-of-recipient ruling puts these losses inside the boundary, which is why cascade_central is the default and household_only is carried as a named variant.",
+  "boundary_depth": {
+    "default": "B2",
+    "factors_relative_to_B2": {
+      "B1": 0.803,
+      "B2": 1.0,
+      "B3_measured": 1.087,
+      "B3_literature_low": 1.25,
+      "B3_literature_high": 1.5
+    },
+    "monte_carlo_range": [
+      0.803,
+      1.5
+    ],
+    "monte_carlo_mode": 1.0
+  },
+  "boundary_depth_note": "v5 (R-61, E-RV-2 (b)): measured on the FLOOR'S OWN MIX. B1 = 0.803, B3_measured = 1.087. The survival bundle is split into goods (10 COICOP classes, nothing at tier 0), services (5) and household energy (2, plus households' own fossil oil and gas, electricity x 1.6 and district heat x 1.08 at tier 0: option 1, fossil only), each measured on construction C, and weighted by the floor's own B2 primary energy at DK-2023 in household-metered, service-provider-delivered and life-cycle lines (the Physics Validator's mapping, Rerun_Verification.md sec 3.5; a judgement). Weights energy 26.4%, services 30.3%, goods 43.3%. Variant with the service lines fully captured: B1 0.862. v4 (like-for-like on actual spending) was 0.908 / 1.039; Wave 2 0.833 / 1.066. The +25-50% B3 literature bracket remains ASSUMED and contradicted.",
+  "modal_split": {
+    "default": "dls_public_transport",
+    "variants": {
+      "dls_public_transport": {
+        "propulsion_electric_kWh": 136.7,
+        "propulsion_liquid_kWh": 1163.8,
+        "vehicle_manufacture_kWh": 127,
+        "vehicle_manufacture_low": 93,
+        "vehicle_manufacture_high": 161,
+        "description": "80% public transport, 15% car, 5% cycle. DJ ruling R-6: the floor guarantees a bus and rail pass."
+      },
+      "danish_actual": {
+        "propulsion_electric_kWh": 60.7,
+        "propulsion_liquid_kWh": 1895.2,
+        "vehicle_manufacture_kWh": 308,
+        "vehicle_manufacture_low": 227,
+        "vehicle_manufacture_high": 390,
+        "description": "81% car, 10% bus, 9% rail. Costs transport as Danes actually take it. Worth +923 kWh/cap/yr. NOT the floor: DJ has ruled."
+      }
+    }
+  },
+  "fleet_electrification": {
+    "default": 0.0,
+    "scenarios": {
+      "actual_2023_fleet": 0.0,
+      "half_electrified": 0.5,
+      "fully_electrified": 1.0
+    },
+    "fully_electrified_propulsion_electric_kWh": 541.0,
+    "fully_electrified_propulsion_liquid_kWh": 0.0
+  },
+  "fleet_electrification_note": "OPEN - DJ has not ruled. Delivered electricity and liquid fuel are interpolated linearly in the electrification fraction between the traced 2023 fleet and the traced fully-electrified case (Supply Chain Traces sec 4.5); both endpoints are the traced values exactly. This is the largest available reduction in the largest term of the floor - 46% at DK-2023, 64% at a renewable grid - and it is INVISIBLE in the mandated grid triple, because the triple only scales what is already electric.",
+  "tomato": {
+    "default": "delivered_to_recipient_11",
+    "variants": {
+      "delivered_to_recipient_11": {
+        "kWh_per_kg": 11.33,
+        "low": 9.0,
+        "high": 14.0,
+        "loss_regime": "inline",
+        "description": "DJ ruling R-5. Consumption-weighted Danish market chain traced to the recipient, including packing, transport, cold chain, retail and a cumulative loss factor of 1.40."
+      },
+      "production_weighted_6_5": {
+        "kWh_per_kg": 6.5,
+        "low": 5.7,
+        "high": 9.0,
+        "loss_regime": "perishable",
+        "description": "Production-weighted Danish market figure (Sourcing Register A-5). Superseded by R-5 but retained as a scenario: it is the correct measurement of a different boundary."
+      },
+      "locked_glasshouse_18": {
+        "kWh_per_kg": 18.0,
+        "low": 15.2,
+        "high": 41.3,
+        "loss_regime": "perishable",
+        "description": "The LOCKED figure, correctly relabelled: heating energy only, at the farm gate, of a Danish heated-and-supplementary-lit winter glasshouse (Halberg et al. 2006 / Jensen et al. 2024). It describes a system supplying under 5% of Danish annual consumption. NOT the basket figure."
+      }
+    }
+  },
+  "healthcare": {
+    "default": "excluded",
+    "variants": {
+      "excluded": null,
+      "estate_only": "HC_01",
+      "eeio_service_footprint": "HC_02"
+    }
+  },
+  "healthcare_note": "v4: HC_02 is construction C (R-39): fuels as burned + delivered electricity x scenario PEF + delivered district heat x DH factor, resolved from io_findings_v4.json (central 782 kWh/cap/yr at DK-2023 and DH 1.08; low 565; high 1684 with residential care; after the Physics Validator's change keeping the gas business's 1.74 PJ of electricity, Rerun_Verification.md sec 2.3). Wave 2's 999 (640-2195), ruled at R-9, counted crude oil and natural gas twice (R-38) and embedded a conversion factor. HC_02 remains a B3 quantity, excluded from the B2 floor by default, exempt from the depth factor. In the Monte Carlo its district heat follows the same sampled CHP convention as household heat. All v4 healthcare figures are PROVISIONAL pending the Physics Validator's check.",
+  "status_uncertainty_widening": {
+    "VERIFIED": 1.0,
+    "DERIVED": 1.0,
+    "ACCEPTABLE": 1.15,
+    "ESTIMATED": 1.25,
+    "PROVISIONAL": 1.5,
+    "ASSUMED": 1.5,
+    "UNSOURCED": 2.0,
+    "ILLUSTRATIVE": 2.0,
+    "UNREPRODUCIBLE": 2.0
+  },
+  "status_widening_note": "Every figure carries a status from the Wave 2 Sourcing Register, which found 41% of the project's figure claims usable and 52% REJECTED, UNSOURCED or UNREPRODUCIBLE-AS-CITED. A figure that cannot be traced to a source must widen the interval, not be treated as known. The multiplier stretches the stated low-high band about the central value.",
+  "monte_carlo": {
+    "draws": 200000,
+    "seed": 20260907,
+    "distribution": "modified PERT (Beta) on (low, central, high), lambda = 4",
+    "reported_interval": "5th to 95th percentile",
+    "engine": "v4: Python standard library random.Random(seed) (Mersenne Twister) with random.betavariate. Wave 2 used numpy default_rng(seed) (PCG64) with Generator.beta. Same seed, same draw count, same distribution and the same sampling structure; the random stream differs, so percentiles differ from Wave 2's by sampling noise only (measured by --construction W2)."
+  },
+  "exergy": {
+    "ambient_T0_K": 281.65,
+    "note": "Carnot factors 1 - T0/T at the Danish annual mean ambient of 8.5 C, reproduced from Physics Audit sec 6.4. Reported as a second column for every thermal line, per CED Framework Spec v3 sec 1.4."
+  },
+  "non_electric_delivered_to_primary_factor": {
+    "central": 1.1,
+    "low": 1.05,
+    "high": 1.2
+  },
+  "non_electric_delivered_note": "Delivered-to-primary factor for the non-electric fuel component of a 'delivered_mixed' line (retail heating, gas and district heat). ASSUMED. Never moved by the grid factor.",
+  "cooking": {
+    "default": "dls_reference",
+    "variants": {
+      "dls_reference": {
+        "kWh_per_cap_yr": 85.0,
+        "low": 75.0,
+        "high": 350.0,
+        "description": "Millward-Hopkins et al. 2020 SI, 0.30-0.31 GJ/cap/yr final energy = 83-86 kWh/cap/yr delivered. ADOPTED as the central value in response to Physics Verification Wave 2 N-5. The high end of the band is the withdrawn project-taxonomy value of 350, retained so that the disagreement is visible rather than removed."
+      },
+      "project_taxonomy_350": {
+        "kWh_per_cap_yr": 350.0,
+        "low": 100.0,
+        "high": 400.0,
+        "description": "The Wave 2 value, from the project's own taxonomy. The Sourcing Register (D-48, F-13) finds it 3.5-4.7x the decent-living reference and traceable to no external source. Retained as a named scenario so the correction is auditable, NOT as the floor."
+      }
+    }
+  },
+  "cooking_note": "A central value is a claim about the best estimate, not an uncertainty. Wave 2 answered the Sourcing Register's finding by stretching the band downward and leaving the central at 350, which the Physics Verification rejected: the midpoint has to be defended or moved. It is moved. Worth -424 kWh/cap/yr primary at DK-2023, the cheapest correction in the model.",
+  "decent_living_benchmark": {
+    "global_mean_GJ_per_cap_final": 15.3,
+    "max_across_countries_GJ_per_cap_final": 18.4,
+    "basis": "FINAL energy, not primary CED",
+    "source": "Millward-Hopkins et al. 2020, decent living standards energy requirements; LOCKED_FACTS sec 5 records the basis",
+    "note": "The model MEASURES the primary-to-final ratio on the lines that carry a delivered-energy value and must use the measured ratio there. The assumed 1.3-1.5 applies only to the embodied and food lines, where no delivered value exists. Applying an assumed whole-basket ratio to lines the model itself measures deflates them: Physics Verification Wave 2 sec 6.2 N-4.",
+    "denmark_GJ_per_cap_final": 15.6,
+    "denmark_components_GJ": {
+      "food": 2.7,
+      "cooking": 0.3,
+      "cold_storage": 0.2,
+      "construction": 0.8,
+      "thermal": 0.7,
+      "illumination": 0.0,
+      "water_supply": 0.1,
+      "water_heating": 1.4,
+      "waste": 0.1,
+      "clothes": 0.3,
+      "washing": 0.3,
+      "healthcare": 1.4,
+      "education": 0.4,
+      "phones": 0.0,
+      "computers": 0.1,
+      "ict": 0.4,
+      "vehicles": 2.3,
+      "transport_infrastructure": 0.8,
+      "other": 3.3
+    },
+    "denmark_source": "Millward-Hopkins, Steinberger, Rao & Oswald (2020), Global Environmental Change 65:102168, supplementary table, Denmark row; read and summed by the Physics Validator (Outside_Desk_Check.md sec 5.1, 10.1: VERIFIED)",
+    "denmark_basis": "FINAL energy; a 2050 scenario with best available technology; includes healthcare, education, transport infrastructure and 3.3 GJ of 'other'. 15.6-15.9 allowing for rounding. The '17-18.4 GJ for cold climates' description is REJECTED (E-OD-1): values of 17 and above are mobility-driven",
+    "primary_to_final_food_low": 1.2,
+    "primary_to_final_other_low": 1.3,
+    "primary_to_final_high": 1.5,
+    "ratio_note": "E-OD-1: 1.2 is the project's own convention for a line with electric share 0.22 (fuels at ~1.1, electricity at 1.6: 1/((1-s)/1.1 + s/1.6) = 1.18), used as the lower ratio on food lines; 1.3 on other unmetered lines; 1.5 the upper ratio for all (supply chains abroad on fossil power)"
+  },
+  "household_footprint_check": {
+    "status": "RETIRED in v4 (step 5 of IO_Double_Count_Check.md sec 7)",
+    "retired_band_GJ_per_cap": [
+      100.0,
+      120.0
+    ],
+    "reason": "The 100-120 GJ/cap band carried no source ('the project's own expected range'). No published figure measures the same quantity (single-region, domestic-technology, household final consumption only, Denmark 2023), so a sourced band cannot validate it either. The composed figure is reported as a description, beside Danmarks Statistik's own household figure (ENE2MU2N, domestic closure), which is defined differently and is not reconciled. Wave 2's note that household petrol and gas 'appear in exactly one' term was wrong: under the double count they appeared in both, and 123.0 GJ/cap is REJECTED."
+  },
+  "io_construction": {
+    "adopted": "C",
+    "ruling": "R-39 (19 September 2026): healthcare's electricity and heat are counted like every other line",
+    "alternatives_reported": [
+      "A",
+      "B"
+    ],
+    "definitions": {
+      "W2": "Wave 2 as published (ETOT - EKONV). Counts crude oil and pass-through gas twice. Kept only to prove the v4 engine reproduces Wave 2",
+      "A": "W2 minus EROOL (refinery crude) and minus ENGI at 35000 (pass-through gas). Electricity and heat at an embedded ~1.06",
+      "B": "Danmarks Statistik ENE3H gross energy consumption. Electricity and heat at DST's embedded ~1.23",
+      "C": "Fuels as burned + cumulative delivered electricity x scenario PEF + cumulative delivered district heat x DH factor. The only genuine triple"
+    },
+    "note": "The IO-derived electric shares, the depth factors B1/B3 and the healthcare line are all taken from the SAME construction unless the model is run with --shares/--depth/--healthcare for attribution. Values are resolved from io_findings_v4.json; the numbers in this file for the adopted construction must match it (the model checks)."
+  },
+  "wave2_reference": {
+    "note": "Used ONLY by --construction W2, which reproduces the Wave 2 results file on the v4 engine. Never a v4 figure.",
+    "healthcare_HC_02_kWh": {
+      "low": 640.0,
+      "central": 999.0,
+      "high": 2195.0
+    },
+    "depth": {
+      "B1": 0.833,
+      "B3_measured": 1.066
+    }
+  },
+  "dwelling": {
+    "_note": "v5 dwelling standard (R-32, R-33, R-34, R-48, R-49, R-50, R-51). Read by dwelling_v5.py and ube_model_v5.py.",
+    "floor_area_net_m2_per_cap_R32": 19.54,
+    "floor_area_net_source": "R-32 schedule 20 m2 + 10 m2 per person, weighted by Statistics Denmark FAM55N households by size, 1 Jan 2023 (2,814,782 households, 5,901,144 persons, 8+ counted as 8): sum((10n+20)H)/P = 19.540. Retrieved 19 Sep 2026. 2026: 19.603",
+    "net_to_gross": {
+      "central": 1.175,
+      "low": 1.1,
+      "high": 1.25,
+      "status": "ASSUMED",
+      "note": "R-32 says 'costed gross' but fixes no ratio. CED Framework Spec v3 sec 5.7 gives 1.10-1.25 for Danish multi-family housing, ASSUMED. The midpoint is carried as central, both ends as scenarios. Escalated (E-RS-2)"
+    },
+    "reference_mix_R49": {
+      "detached": 0.21,
+      "terraced": 0.24,
+      "flats": 0.55
+    },
+    "ventilation_l_s_m2": 0.3,
+    "heat_recovery": 0.8,
+    "infiltration_l_s_m2": 0.1,
+    "living_share": 0.55,
+    "calibration_R48": {
+      "central": 1.5,
+      "low": 1.0,
+      "high": 2.5,
+      "note": "R-48: calculated space heat x 1.5, range 1.0-2.5 published beside it and carried through the Monte Carlo as a PERT on (1.0, 1.5, 2.5), one draw per Monte Carlo draw, shared by H_01 and H_03"
+    },
+    "vulnerable_share_R50": {
+      "central": 0.4,
+      "low": 0.3,
+      "high": 0.5,
+      "status": "ILLUSTRATIVE",
+      "note": "R-50: about 40% of people live in a qualifying dwelling (ILLUSTRATIVE). Not sourceable this cycle: the dwelling-level share needs households by the age of their oldest member (DR-12). Components: 65+ persons 21.x% (FOLK1A 2023K3), families with a child 0-5 17.0% (FAM44BA 2026, Dwelling_Data_Requests sec 4.3), register disease 1-2% ASSUMED"
+    },
+    "fan_SFP_J_m3": {
+      "central": 800.0,
+      "low": 600.0,
+      "high": 1000.0,
+      "status": "ASSUMED",
+      "note": "V-4 caps SFP at 1,000 J/m3 (BR18 sec 438). Decent Dwelling Standard sec 5.2 gives 600-1,000; the midpoint is carried as central"
+    },
+    "envelope_uplift_GJ_m2_50yr": {
+      "central": 0.6,
+      "low": 0.3,
+      "high": 0.9,
+      "life_years": 50,
+      "status": "ASSUMED",
+      "note": "C_03, Decent Dwelling Standard sec 5.2: 0.3-0.9 GJ/m2 over 50 years (no external source; Tamil Nadu used 0.45)"
+    }
+  },
+  "v5": {
+    "wave2_H01_kWh": 553.0,
+    "wave2_floor_area": 19.4,
+    "H01_uncalibrated_relative_band": [
+      0.604,
+      1.562
+    ],
+    "note": "Steps 1-2 carry Wave 2's space heat (553 kWh/cap/yr delivered at 19.4 m2, CED Framework Spec v3 sec 6.2) and its relative band 0.604-1.562. From step 3 the dwelling model replaces it; the same relative band is carried until step 4, when the R-48 calibration range (1.0-2.5, PERT, mode 1.5) replaces it"
+  },
+  "outside_references": {
+    "source": "Outside_Desk_Check.md sec 10.1 (Physics Validator, 19 Sep 2026; VERIFIED there)",
+    "eurostat_2023_household_space_heat_kWh_cap": 4656,
+    "eurostat_2023_household_water_heat_kWh_cap": 1965,
+    "oswald_2011_poorest_fifth_food_GJ": 2.84,
+    "oswald_2011_mean_food_GJ": 5.26,
+    "mh_denmark_food_GJ": 2.7,
+    "stock_floor_area_m2_cap_LABY46": 53.6,
+    "stock_space_heat_kWh_m2_ODYSSEE": [
+      75.0,
+      82.0
+    ],
+    "mobility_kikstra_pkm": 8540,
+    "floor_pkm": 5000
+  }
+}

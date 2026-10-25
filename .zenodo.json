@@ -1,0 +1,10 @@
+﻿{
+  "title": "ube-ced: Cumulative Energy Demand of survival goods by Leontief input-output, with the Danish survival-floor model v5",
+  "upload_type": "software",
+  "creators": [{"name": "Jogalekar, Sourabh", "affiliation": "Universal Basic Energy project"}],
+  "description": "<p>Reference implementation of the Leontief cumulative-energy-demand equation (epsilon = e_d (I - A)^-1) for survival goods in primary kWh, and the Universal Basic Energy project's Danish survival-floor model v5. The model sizes a per-person survival basket in primary kWh per year (DK-2023 grid: 6,761 kWh; fossil: 8,024; renewable: 5,920; all PROVISIONAL) from Statistics Denmark input-output tables, a dwelling heat balance and dietary-guideline food quantities, and regenerates its results deterministically from source. Includes the project's canonical-figures and corrections document.</p>",
+  "keywords": ["cumulative energy demand", "Leontief input-output", "universal basic energy", "thermodynamic cost", "decent living energy", "Denmark", "energy poverty"],
+  "license": "MIT",
+  "access_right": "open",
+  "language": "eng"
+}

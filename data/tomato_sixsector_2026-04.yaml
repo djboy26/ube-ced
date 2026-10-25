@@ -1,0 +1,48 @@
+# Six-sector illustrative tomato system.
+# Transcribed verbatim from the UBE technical note
+# "Computing the Thermodynamic Cost of Survival" (April 2026), sections 2.2 and 4.1.
+# STATUS: ILLUSTRATIVE. These coefficients are order-of-magnitude placeholders, not
+# measured process data. The note says so itself. A validated system needs
+# ecoinvent / AGRIBALYSE / primary measurement. See data/SOURCES.md and docs/ERRATA.md.
+title: Heated-greenhouse tomato, six-sector illustrative system
+date: 2026-04
+status: illustrative
+energy_basis: primary, LHV
+unit_of_ced: kWh
+
+processes:
+  - {name: Tomato,      unit: kg,    e_d: 0.0, note: "no direct primary energy; all enters via inputs"}
+  - {name: Fertiliser,  unit: kg,    e_d: 0.0, note: "Haber-Bosch gas modelled as electricity in this toy system"}
+  - {name: Electricity, unit: kWh,   e_d: 2.5, note: "primary energy factor, fossil-grid scenario ~40% efficiency"}
+  - {name: Diesel,      unit: litre, e_d: 9.7, note: "crude extraction + refining, per litre delivered"}
+  - {name: Steel,       unit: kg,    e_d: 6.0, note: "coking coal + blast furnace"}
+  - {name: Water,       unit: m3,    e_d: 0.3, note: "pumping and treatment"}
+
+# a_ij = units of INPUT consumed per unit of OUTPUT produced. Read by column.
+coefficients:
+  # --- column: Tomato (per kg) ---
+  - {input: Fertiliser,  output: Tomato, value: 0.005}
+  - {input: Electricity, output: Tomato, value: 3.0,   note: "heating, lighting, pumps"}
+  - {input: Diesel,      output: Tomato, value: 0.02}
+  - {input: Steel,       output: Tomato, value: 0.001, note: "amortised structure"}
+  - {input: Water,       output: Tomato, value: 0.05}
+  # --- column: Fertiliser (per kg) ---
+  - {input: Electricity, output: Fertiliser, value: 11.0}
+  - {input: Diesel,      output: Fertiliser, value: 0.1}
+  - {input: Steel,       output: Fertiliser, value: 0.002}
+  - {input: Water,       output: Fertiliser, value: 0.01}
+  # --- column: Electricity (per kWh) ---
+  - {input: Electricity, output: Electricity, value: 0.05, note: "transmission losses, own use"}
+  - {input: Diesel,      output: Electricity, value: 0.01}
+  - {input: Steel,       output: Electricity, value: 0.001}
+  - {input: Water,       output: Electricity, value: 0.02, note: "cooling"}
+  # --- column: Diesel (per litre) ---
+  - {input: Electricity, output: Diesel, value: 0.5}
+  - {input: Steel,       output: Diesel, value: 0.001}
+  # --- column: Steel (per kg) ---
+  - {input: Electricity, output: Steel, value: 5.0}
+  - {input: Diesel,      output: Steel, value: 0.3}
+  - {input: Water,       output: Steel, value: 0.01}
+  # --- column: Water (per m3) ---
+  - {input: Electricity, output: Water, value: 0.8}
+  - {input: Steel,       output: Water, value: 0.001}

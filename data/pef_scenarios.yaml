@@ -1,0 +1,7 @@
+# Primary Energy Factor for grid electricity, kWh primary per kWh delivered.
+# Project convention: report every electricity-dependent figure as this triple.
+scenarios:
+  fossil:      {pef: 2.5, source: "thermal grid ~40% efficiency; UBE technical note April 2026"}
+  dk_2023:     {pef: 1.6, source: "Energistyrelsen, Danish 2023 mix; project locked policy baseline"}
+  renewable:   {pef: 1.0, source: "no conversion losses counted; see docs/OPEN_QUESTIONS.md Q3 on the renewable accounting convention"}
+  eu_2023_1791: {pef: 1.9, source: "Directive (EU) 2023/1791 default; reference only, not a project scenario"}

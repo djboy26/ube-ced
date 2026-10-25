@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ube-ced"
+version = "0.1.0"
+description = "Leontief input-output model for the Cumulative Energy Demand (CED) of survival goods, in primary kWh. Universal Basic Energy project."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Sourabh Jogalekar", email = "sourabhrj26@gmail.com"}]
+keywords = ["cumulative energy demand", "leontief", "input-output", "universal basic energy", "thermodynamic cost", "life cycle energy"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Scientific/Engineering",
+]
+dependencies = ["numpy>=1.24", "pyyaml>=6.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+ube-ced = "ube_ced.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ube_ced*"]

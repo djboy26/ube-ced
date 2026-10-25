@@ -1,0 +1,3037 @@
+{
+  "_README": [
+    "Written by io_model_v4.py. Every figure PROVISIONAL pending the Physics Validator's check of the v4 re-run (R-38). Primary energy, LHV, as the Danish energy account records it; kWh/cap/yr at 1 kWh = 3.6 MJ; Denmark 2023."
+  ],
+  "carrier_composition": {
+    "A": {
+      "by_industry": {
+        "01000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 129.52562517530862,
+          "cumulative_primary_GJ_per_mDKK": 559.7450591061503,
+          "electric_share_of_primary_at_pef_ref": 0.37024176794241703
+        },
+        "02000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 18.42692967922684,
+          "cumulative_primary_GJ_per_mDKK": 253.91404911290408,
+          "electric_share_of_primary_at_pef_ref": 0.1161144394718118
+        },
+        "03000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 105.45569263699855,
+          "cumulative_primary_GJ_per_mDKK": 1281.5391596608538,
+          "electric_share_of_primary_at_pef_ref": 0.13166129723562262
+        },
+        "06090": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 37.977166867564165,
+          "cumulative_primary_GJ_per_mDKK": 867.1410501530034,
+          "electric_share_of_primary_at_pef_ref": 0.0700733369471797
+        },
+        "10120": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 132.04408241382887,
+          "cumulative_primary_GJ_per_mDKK": 546.0447827410796,
+          "electric_share_of_primary_at_pef_ref": 0.38691063176462076
+        },
+        "13150": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 80.99257300635425,
+          "cumulative_primary_GJ_per_mDKK": 240.7813564775416,
+          "electric_share_of_primary_at_pef_ref": 0.5381983003416374
+        },
+        "16000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 88.85236249865393,
+          "cumulative_primary_GJ_per_mDKK": 354.7439514161242,
+          "electric_share_of_primary_at_pef_ref": 0.400750398788574
+        },
+        "17000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 133.12385820595637,
+          "cumulative_primary_GJ_per_mDKK": 457.6831875066486,
+          "electric_share_of_primary_at_pef_ref": 0.46538343322133946
+        },
+        "18000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 87.81834537340777,
+          "cumulative_primary_GJ_per_mDKK": 238.75631392296796,
+          "electric_share_of_primary_at_pef_ref": 0.58850528511169
+        },
+        "19000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 65.99419827217768,
+          "cumulative_primary_GJ_per_mDKK": 1151.5035170979068,
+          "electric_share_of_primary_at_pef_ref": 0.09169812828848393
+        },
+        "20000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 116.96591974777746,
+          "cumulative_primary_GJ_per_mDKK": 345.6631701494987,
+          "electric_share_of_primary_at_pef_ref": 0.5414099266505711
+        },
+        "21000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 18.5832079404682,
+          "cumulative_primary_GJ_per_mDKK": 64.14010249167812,
+          "electric_share_of_primary_at_pef_ref": 0.46356540681560116
+        },
+        "22000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 132.5992306402325,
+          "cumulative_primary_GJ_per_mDKK": 314.19903022589546,
+          "electric_share_of_primary_at_pef_ref": 0.6752368677644837
+        },
+        "23000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 150.77574369380932,
+          "cumulative_primary_GJ_per_mDKK": 1074.3341499967198,
+          "electric_share_of_primary_at_pef_ref": 0.224549494131627
+        },
+        "24000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 170.8993182662859,
+          "cumulative_primary_GJ_per_mDKK": 535.9886497593255,
+          "electric_share_of_primary_at_pef_ref": 0.5101580217208693
+        },
+        "25000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 77.90276703264058,
+          "cumulative_primary_GJ_per_mDKK": 306.2428501394216,
+          "electric_share_of_primary_at_pef_ref": 0.4070117137281041
+        },
+        "26000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 29.145837137968073,
+          "cumulative_primary_GJ_per_mDKK": 104.15183984926013,
+          "electric_share_of_primary_at_pef_ref": 0.44774378914709295
+        },
+        "27000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 59.32030324671066,
+          "cumulative_primary_GJ_per_mDKK": 192.88840097997922,
+          "electric_share_of_primary_at_pef_ref": 0.4920590596040477
+        },
+        "28000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 51.878555161785336,
+          "cumulative_primary_GJ_per_mDKK": 223.73274177164154,
+          "electric_share_of_primary_at_pef_ref": 0.3710037592243802
+        },
+        "29000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 75.78465441504427,
+          "cumulative_primary_GJ_per_mDKK": 237.73131080258347,
+          "electric_share_of_primary_at_pef_ref": 0.5100524901608927
+        },
+        "30000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 66.56270347081033,
+          "cumulative_primary_GJ_per_mDKK": 242.78884467667444,
+          "electric_share_of_primary_at_pef_ref": 0.43865411401057003
+        },
+        "31320": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 49.94683715502584,
+          "cumulative_primary_GJ_per_mDKK": 162.64308185508895,
+          "electric_share_of_primary_at_pef_ref": 0.49135160583862786
+        },
+        "33000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 54.42626891333309,
+          "cumulative_primary_GJ_per_mDKK": 230.11419666251277,
+          "electric_share_of_primary_at_pef_ref": 0.37842962982874156
+        },
+        "35000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 175.7929902491256,
+          "cumulative_primary_GJ_per_mDKK": 3177.025487002347,
+          "electric_share_of_primary_at_pef_ref": 0.08853211456732428
+        },
+        "36000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 150.71929249080657,
+          "cumulative_primary_GJ_per_mDKK": 246.1699895855227,
+          "electric_share_of_primary_at_pef_ref": 0.9796111556543391
+        },
+        "37390": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 48.016856260434906,
+          "cumulative_primary_GJ_per_mDKK": 1061.9444409805217,
+          "electric_share_of_primary_at_pef_ref": 0.0723455644682875
+        },
+        "41430": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 42.89111489640715,
+          "cumulative_primary_GJ_per_mDKK": 276.3309621870051,
+          "electric_share_of_primary_at_pef_ref": 0.24834634270121858
+        },
+        "45000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 43.75061437960415,
+          "cumulative_primary_GJ_per_mDKK": 214.91690606611687,
+          "electric_share_of_primary_at_pef_ref": 0.3257118497035854
+        },
+        "46000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 25.943332742279193,
+          "cumulative_primary_GJ_per_mDKK": 161.5477848583756,
+          "electric_share_of_primary_at_pef_ref": 0.2569477038885849
+        },
+        "47000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 50.18744461548423,
+          "cumulative_primary_GJ_per_mDKK": 147.61344480111177,
+          "electric_share_of_primary_at_pef_ref": 0.5439877884630872
+        },
+        "49000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 45.04823697720159,
+          "cumulative_primary_GJ_per_mDKK": 609.7120124087797,
+          "electric_share_of_primary_at_pef_ref": 0.11821512073998404
+        },
+        "50000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 2.2897828554998734,
+          "cumulative_primary_GJ_per_mDKK": 1468.4450754826016,
+          "electric_share_of_primary_at_pef_ref": 0.002494919714716429
+        },
+        "51000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 29.251543822537666,
+          "cumulative_primary_GJ_per_mDKK": 2260.1321680255023,
+          "electric_share_of_primary_at_pef_ref": 0.02070784654905729
+        },
+        "52000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 30.419813869927037,
+          "cumulative_primary_GJ_per_mDKK": 236.60441269791627,
+          "electric_share_of_primary_at_pef_ref": 0.20570919044533909
+        },
+        "53000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 23.11204962976951,
+          "cumulative_primary_GJ_per_mDKK": 253.95864968944687,
+          "electric_share_of_primary_at_pef_ref": 0.1456114192324274
+        },
+        "55560": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 75.81331163181844,
+          "cumulative_primary_GJ_per_mDKK": 254.98786006236432,
+          "electric_share_of_primary_at_pef_ref": 0.4757140147034526
+        },
+        "58000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 20.314820213420088,
+          "cumulative_primary_GJ_per_mDKK": 99.37755671245694,
+          "electric_share_of_primary_at_pef_ref": 0.3270729671440777
+        },
+        "59600": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 41.26435687973084,
+          "cumulative_primary_GJ_per_mDKK": 139.62616827648324,
+          "electric_share_of_primary_at_pef_ref": 0.47285528080118044
+        },
+        "61000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 32.238179078678264,
+          "cumulative_primary_GJ_per_mDKK": 139.9566146994868,
+          "electric_share_of_primary_at_pef_ref": 0.3685505443000285
+        },
+        "62630": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 20.535061514849907,
+          "cumulative_primary_GJ_per_mDKK": 88.0968235015544,
+          "electric_share_of_primary_at_pef_ref": 0.37295440536718255
+        },
+        "64000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 9.363426310748627,
+          "cumulative_primary_GJ_per_mDKK": 42.26905445050311,
+          "electric_share_of_primary_at_pef_ref": 0.3544314461715972
+        },
+        "65000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 12.214977117564272,
+          "cumulative_primary_GJ_per_mDKK": 53.63543195808239,
+          "electric_share_of_primary_at_pef_ref": 0.36438530789454626
+        },
+        "66000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 13.611414227834793,
+          "cumulative_primary_GJ_per_mDKK": 71.24881510842219,
+          "electric_share_of_primary_at_pef_ref": 0.305664911499157
+        },
+        "68100": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 27.718214818869427,
+          "cumulative_primary_GJ_per_mDKK": 128.11889768066055,
+          "electric_share_of_primary_at_pef_ref": 0.34615614490168656
+        },
+        "68203": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 7.473962763922423,
+          "cumulative_primary_GJ_per_mDKK": 50.021984974300224,
+          "electric_share_of_primary_at_pef_ref": 0.2390616931419197
+        },
+        "68204": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 3.870643597117528,
+          "cumulative_primary_GJ_per_mDKK": 21.134160011116336,
+          "electric_share_of_primary_at_pef_ref": 0.29303410933439417
+        },
+        "68300": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 17.306709998052376,
+          "cumulative_primary_GJ_per_mDKK": 93.95830460119365,
+          "electric_share_of_primary_at_pef_ref": 0.2947130231267713
+        },
+        "69700": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 15.263082300715162,
+          "cumulative_primary_GJ_per_mDKK": 94.30327055562297,
+          "electric_share_of_primary_at_pef_ref": 0.25896166206388405
+        },
+        "71000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 19.480828535514238,
+          "cumulative_primary_GJ_per_mDKK": 107.72829223117893,
+          "electric_share_of_primary_at_pef_ref": 0.2893327742533516
+        },
+        "72001": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 18.992762745766548,
+          "cumulative_primary_GJ_per_mDKK": 89.31093140419785,
+          "electric_share_of_primary_at_pef_ref": 0.3402542098200327
+        },
+        "72002": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 26.50791346210713,
+          "cumulative_primary_GJ_per_mDKK": 84.19964182917381,
+          "electric_share_of_primary_at_pef_ref": 0.5037154626550455
+        },
+        "73000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 20.659958192222554,
+          "cumulative_primary_GJ_per_mDKK": 100.73831553719485,
+          "electric_share_of_primary_at_pef_ref": 0.32813664722586205
+        },
+        "74750": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 17.385528155482582,
+          "cumulative_primary_GJ_per_mDKK": 113.52689730512577,
+          "electric_share_of_primary_at_pef_ref": 0.24502426921797144
+        },
+        "77000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 23.651363259826304,
+          "cumulative_primary_GJ_per_mDKK": 162.44108353286416,
+          "electric_share_of_primary_at_pef_ref": 0.23295942376588538
+        },
+        "78000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 9.48651476212568,
+          "cumulative_primary_GJ_per_mDKK": 71.18612168466626,
+          "electric_share_of_primary_at_pef_ref": 0.2132216682155698
+        },
+        "79000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 18.588846368490717,
+          "cumulative_primary_GJ_per_mDKK": 1098.0119207145642,
+          "electric_share_of_primary_at_pef_ref": 0.027087278041780776
+        },
+        "80820": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 19.438920161572145,
+          "cumulative_primary_GJ_per_mDKK": 163.21560150415098,
+          "electric_share_of_primary_at_pef_ref": 0.19055943164676217
+        },
+        "84101": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 21.91836433711579,
+          "cumulative_primary_GJ_per_mDKK": 69.79350188073026,
+          "electric_share_of_primary_at_pef_ref": 0.5024734680789501
+        },
+        "84202": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 18.197587251585368,
+          "cumulative_primary_GJ_per_mDKK": 117.67703226507139,
+          "electric_share_of_primary_at_pef_ref": 0.24742414931871776
+        },
+        "85101": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 11.457861905371374,
+          "cumulative_primary_GJ_per_mDKK": 74.15613091802037,
+          "electric_share_of_primary_at_pef_ref": 0.2472159593771265
+        },
+        "85202": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 27.262071293064498,
+          "cumulative_primary_GJ_per_mDKK": 91.4501802488251,
+          "electric_share_of_primary_at_pef_ref": 0.4769735166209647
+        },
+        "86000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 25.04544181866094,
+          "cumulative_primary_GJ_per_mDKK": 83.26783264011588,
+          "electric_share_of_primary_at_pef_ref": 0.4812507500111359
+        },
+        "87880": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 26.482760360562892,
+          "cumulative_primary_GJ_per_mDKK": 105.63195066457111,
+          "electric_share_of_primary_at_pef_ref": 0.4011325769364242
+        },
+        "90920": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 45.939764710649825,
+          "cumulative_primary_GJ_per_mDKK": 138.17186734258257,
+          "electric_share_of_primary_at_pef_ref": 0.5319724264476736
+        },
+        "93000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 52.470556130394485,
+          "cumulative_primary_GJ_per_mDKK": 194.36723950437235,
+          "electric_share_of_primary_at_pef_ref": 0.4319292182299201
+        },
+        "94000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 20.673674387984644,
+          "cumulative_primary_GJ_per_mDKK": 90.78724026581477,
+          "electric_share_of_primary_at_pef_ref": 0.364345021656426
+        },
+        "95000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 23.501715257834494,
+          "cumulative_primary_GJ_per_mDKK": 171.93889401455945,
+          "electric_share_of_primary_at_pef_ref": 0.21869830341790536
+        },
+        "96000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 19.635770422576993,
+          "cumulative_primary_GJ_per_mDKK": 113.82367937905343,
+          "electric_share_of_primary_at_pef_ref": 0.2760166675995258
+        }
+      },
+      "definition": "delivered electricity (all industries) x PEF_ref / cumulative primary of this construction (Wave 2's definition)"
+    },
+    "B": {
+      "by_industry": {
+        "01000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 129.52562517530862,
+          "cumulative_primary_GJ_per_mDKK": 610.5349457097914,
+          "electric_share_of_primary_at_pef_ref": 0.33944166789594826
+        },
+        "02000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 18.42692967922684,
+          "cumulative_primary_GJ_per_mDKK": 258.2484681721585,
+          "electric_share_of_primary_at_pef_ref": 0.11416558516470415
+        },
+        "03000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 105.45569263699855,
+          "cumulative_primary_GJ_per_mDKK": 1319.577214597022,
+          "electric_share_of_primary_at_pef_ref": 0.1278660364492008
+        },
+        "06090": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 37.977166867564165,
+          "cumulative_primary_GJ_per_mDKK": 912.6147239765852,
+          "electric_share_of_primary_at_pef_ref": 0.066581729827166
+        },
+        "10120": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 132.04408241382887,
+          "cumulative_primary_GJ_per_mDKK": 565.7405552135318,
+          "electric_share_of_primary_at_pef_ref": 0.37344066978260865
+        },
+        "13150": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 80.99257300635425,
+          "cumulative_primary_GJ_per_mDKK": 257.11783778450683,
+          "electric_share_of_primary_at_pef_ref": 0.5040028258124043
+        },
+        "16000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 88.85236249865393,
+          "cumulative_primary_GJ_per_mDKK": 386.634898578935,
+          "electric_share_of_primary_at_pef_ref": 0.3676951576807086
+        },
+        "17000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 133.12385820595637,
+          "cumulative_primary_GJ_per_mDKK": 449.56722245422975,
+          "electric_share_of_primary_at_pef_ref": 0.47378492579319537
+        },
+        "18000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 87.81834537340777,
+          "cumulative_primary_GJ_per_mDKK": 259.37672736860225,
+          "electric_share_of_primary_at_pef_ref": 0.5417191974890389
+        },
+        "19000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 65.99419827217768,
+          "cumulative_primary_GJ_per_mDKK": 1174.2559904457153,
+          "electric_share_of_primary_at_pef_ref": 0.08992137838309427
+        },
+        "20000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 116.96591974777746,
+          "cumulative_primary_GJ_per_mDKK": 368.27997343213127,
+          "electric_share_of_primary_at_pef_ref": 0.5081608697110764
+        },
+        "21000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 18.5832079404682,
+          "cumulative_primary_GJ_per_mDKK": 72.43581393424546,
+          "electric_share_of_primary_at_pef_ref": 0.4104755795488093
+        },
+        "22000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 132.5992306402325,
+          "cumulative_primary_GJ_per_mDKK": 325.8288236321242,
+          "electric_share_of_primary_at_pef_ref": 0.6511356689054282
+        },
+        "23000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 150.77574369380932,
+          "cumulative_primary_GJ_per_mDKK": 1040.2830535977644,
+          "electric_share_of_primary_at_pef_ref": 0.23189956721468732
+        },
+        "24000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 170.8993182662859,
+          "cumulative_primary_GJ_per_mDKK": 512.4610659876492,
+          "electric_share_of_primary_at_pef_ref": 0.5335798705001475
+        },
+        "25000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 77.90276703264058,
+          "cumulative_primary_GJ_per_mDKK": 269.1342821914355,
+          "electric_share_of_primary_at_pef_ref": 0.46313099259337476
+        },
+        "26000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 29.145837137968073,
+          "cumulative_primary_GJ_per_mDKK": 110.73930617361569,
+          "electric_share_of_primary_at_pef_ref": 0.4211091890682226
+        },
+        "27000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 59.32030324671066,
+          "cumulative_primary_GJ_per_mDKK": 205.06841623480057,
+          "electric_share_of_primary_at_pef_ref": 0.4628332677327724
+        },
+        "28000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 51.878555161785336,
+          "cumulative_primary_GJ_per_mDKK": 231.04308044698695,
+          "electric_share_of_primary_at_pef_ref": 0.35926498252304195
+        },
+        "29000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 75.78465441504427,
+          "cumulative_primary_GJ_per_mDKK": 248.4376756507563,
+          "electric_share_of_primary_at_pef_ref": 0.48807189467722634
+        },
+        "30000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 66.56270347081033,
+          "cumulative_primary_GJ_per_mDKK": 251.11440740721187,
+          "electric_share_of_primary_at_pef_ref": 0.4241107734634819
+        },
+        "31320": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 49.94683715502584,
+          "cumulative_primary_GJ_per_mDKK": 173.62294039594602,
+          "electric_share_of_primary_at_pef_ref": 0.4602786893586518
+        },
+        "33000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 54.42626891333309,
+          "cumulative_primary_GJ_per_mDKK": 236.00158396725132,
+          "electric_share_of_primary_at_pef_ref": 0.36898917709559464
+        },
+        "35000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 175.7929902491256,
+          "cumulative_primary_GJ_per_mDKK": 415.31515422268563,
+          "electric_share_of_primary_at_pef_ref": 0.6772418042992695
+        },
+        "36000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 150.71929249080657,
+          "cumulative_primary_GJ_per_mDKK": 296.0201626942275,
+          "electric_share_of_primary_at_pef_ref": 0.8146433870938246
+        },
+        "37390": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 48.016856260434906,
+          "cumulative_primary_GJ_per_mDKK": 263.79143778308713,
+          "electric_share_of_primary_at_pef_ref": 0.2912413331621091
+        },
+        "41430": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 42.89111489640715,
+          "cumulative_primary_GJ_per_mDKK": 278.5853241101267,
+          "electric_share_of_primary_at_pef_ref": 0.24633667998649925
+        },
+        "45000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 43.75061437960415,
+          "cumulative_primary_GJ_per_mDKK": 234.59101713429504,
+          "electric_share_of_primary_at_pef_ref": 0.2983958374130479
+        },
+        "46000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 25.943332742279193,
+          "cumulative_primary_GJ_per_mDKK": 173.16477790081353,
+          "electric_share_of_primary_at_pef_ref": 0.2397100200793876
+        },
+        "47000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 50.18744461548423,
+          "cumulative_primary_GJ_per_mDKK": 178.46149720305837,
+          "electric_share_of_primary_at_pef_ref": 0.4499565040262289
+        },
+        "49000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 45.04823697720159,
+          "cumulative_primary_GJ_per_mDKK": 625.7519037574332,
+          "electric_share_of_primary_at_pef_ref": 0.11518491391032601
+        },
+        "50000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 2.2897828554998734,
+          "cumulative_primary_GJ_per_mDKK": 1468.9324247198983,
+          "electric_share_of_primary_at_pef_ref": 0.0024940919726095614
+        },
+        "51000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 29.251543822537666,
+          "cumulative_primary_GJ_per_mDKK": 2271.1302273762776,
+          "electric_share_of_primary_at_pef_ref": 0.02060756778801223
+        },
+        "52000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 30.419813869927037,
+          "cumulative_primary_GJ_per_mDKK": 250.52451186998013,
+          "electric_share_of_primary_at_pef_ref": 0.19427920177784208
+        },
+        "53000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 23.11204962976951,
+          "cumulative_primary_GJ_per_mDKK": 262.5210172950219,
+          "electric_share_of_primary_at_pef_ref": 0.14086216710821972
+        },
+        "55560": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 75.81331163181844,
+          "cumulative_primary_GJ_per_mDKK": 297.5067891933371,
+          "electric_share_of_primary_at_pef_ref": 0.40772615287135816
+        },
+        "58000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 20.314820213420088,
+          "cumulative_primary_GJ_per_mDKK": 100.70172124734177,
+          "electric_share_of_primary_at_pef_ref": 0.322772162569467
+        },
+        "59600": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 41.26435687973084,
+          "cumulative_primary_GJ_per_mDKK": 170.37937035391624,
+          "electric_share_of_primary_at_pef_ref": 0.38750566380439605
+        },
+        "61000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 32.238179078678264,
+          "cumulative_primary_GJ_per_mDKK": 149.78991264812365,
+          "electric_share_of_primary_at_pef_ref": 0.34435620940013517
+        },
+        "62630": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 20.535061514849907,
+          "cumulative_primary_GJ_per_mDKK": 95.86842166242853,
+          "electric_share_of_primary_at_pef_ref": 0.3427207609556002
+        },
+        "64000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 9.363426310748627,
+          "cumulative_primary_GJ_per_mDKK": 46.16125886856653,
+          "electric_share_of_primary_at_pef_ref": 0.3245466537178741
+        },
+        "65000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 12.214977117564272,
+          "cumulative_primary_GJ_per_mDKK": 58.92187375036515,
+          "electric_share_of_primary_at_pef_ref": 0.331692835684502
+        },
+        "66000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 13.611414227834793,
+          "cumulative_primary_GJ_per_mDKK": 74.45735392484988,
+          "electric_share_of_primary_at_pef_ref": 0.2924931066784425
+        },
+        "68100": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 27.718214818869427,
+          "cumulative_primary_GJ_per_mDKK": 134.13729736911299,
+          "electric_share_of_primary_at_pef_ref": 0.33062499826691083
+        },
+        "68203": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 7.473962763922423,
+          "cumulative_primary_GJ_per_mDKK": 52.56972013897456,
+          "electric_share_of_primary_at_pef_ref": 0.22747582430841415
+        },
+        "68204": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 3.870643597117528,
+          "cumulative_primary_GJ_per_mDKK": 21.836289884134594,
+          "electric_share_of_primary_at_pef_ref": 0.28361181264073904
+        },
+        "68300": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 17.306709998052376,
+          "cumulative_primary_GJ_per_mDKK": 97.29097480077058,
+          "electric_share_of_primary_at_pef_ref": 0.28461772588452344
+        },
+        "69700": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 15.263082300715162,
+          "cumulative_primary_GJ_per_mDKK": 98.2872182909884,
+          "electric_share_of_primary_at_pef_ref": 0.24846497953420385
+        },
+        "71000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 19.480828535514238,
+          "cumulative_primary_GJ_per_mDKK": 117.5275751577559,
+          "electric_share_of_primary_at_pef_ref": 0.2652086169138141
+        },
+        "72001": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 18.992762745766548,
+          "cumulative_primary_GJ_per_mDKK": 92.7829552492271,
+          "electric_share_of_primary_at_pef_ref": 0.3275215831571567
+        },
+        "72002": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 26.50791346210713,
+          "cumulative_primary_GJ_per_mDKK": 103.55832046302221,
+          "electric_share_of_primary_at_pef_ref": 0.4095533931965978
+        },
+        "73000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 20.659958192222554,
+          "cumulative_primary_GJ_per_mDKK": 112.82644518805388,
+          "electric_share_of_primary_at_pef_ref": 0.2929803651303557
+        },
+        "74750": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 17.385528155482582,
+          "cumulative_primary_GJ_per_mDKK": 120.40464616076649,
+          "electric_share_of_primary_at_pef_ref": 0.2310280037834302
+        },
+        "77000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 23.651363259826304,
+          "cumulative_primary_GJ_per_mDKK": 167.36970590731787,
+          "electric_share_of_primary_at_pef_ref": 0.22609934701490994
+        },
+        "78000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 9.48651476212568,
+          "cumulative_primary_GJ_per_mDKK": 79.2423924946559,
+          "electric_share_of_primary_at_pef_ref": 0.19154423713828073
+        },
+        "79000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 18.588846368490717,
+          "cumulative_primary_GJ_per_mDKK": 1105.568319904589,
+          "electric_share_of_primary_at_pef_ref": 0.026902140423263853
+        },
+        "80820": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 19.438920161572145,
+          "cumulative_primary_GJ_per_mDKK": 176.7061645337508,
+          "electric_share_of_primary_at_pef_ref": 0.17601124635680104
+        },
+        "84101": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 21.91836433711579,
+          "cumulative_primary_GJ_per_mDKK": 80.64690574309098,
+          "electric_share_of_primary_at_pef_ref": 0.434850942094448
+        },
+        "84202": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 18.197587251585368,
+          "cumulative_primary_GJ_per_mDKK": 122.24183069378235,
+          "electric_share_of_primary_at_pef_ref": 0.23818474770287895
+        },
+        "85101": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 11.457861905371374,
+          "cumulative_primary_GJ_per_mDKK": 75.5576564867842,
+          "electric_share_of_primary_at_pef_ref": 0.2426303289568113
+        },
+        "85202": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 27.262071293064498,
+          "cumulative_primary_GJ_per_mDKK": 108.58426329941474,
+          "electric_share_of_primary_at_pef_ref": 0.40170935219798376
+        },
+        "86000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 25.04544181866094,
+          "cumulative_primary_GJ_per_mDKK": 91.94679721107705,
+          "electric_share_of_primary_at_pef_ref": 0.4358249349117062
+        },
+        "87880": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 26.482760360562892,
+          "cumulative_primary_GJ_per_mDKK": 115.32533693384882,
+          "electric_share_of_primary_at_pef_ref": 0.36741636923381077
+        },
+        "90920": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 45.939764710649825,
+          "cumulative_primary_GJ_per_mDKK": 170.988620430944,
+          "electric_share_of_primary_at_pef_ref": 0.42987435860812234
+        },
+        "93000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 52.470556130394485,
+          "cumulative_primary_GJ_per_mDKK": 242.10862336041447,
+          "electric_share_of_primary_at_pef_ref": 0.3467571234902067
+        },
+        "94000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 20.673674387984644,
+          "cumulative_primary_GJ_per_mDKK": 97.94933210948291,
+          "electric_share_of_primary_at_pef_ref": 0.33770397723388884
+        },
+        "95000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 23.501715257834494,
+          "cumulative_primary_GJ_per_mDKK": 178.8389210426252,
+          "electric_share_of_primary_at_pef_ref": 0.21026040748463698
+        },
+        "96000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 19.635770422576993,
+          "cumulative_primary_GJ_per_mDKK": 117.1189483253478,
+          "electric_share_of_primary_at_pef_ref": 0.2682506385631848
+        }
+      },
+      "definition": "delivered electricity (all industries) x PEF_ref / cumulative primary of this construction (Wave 2's definition)"
+    },
+    "C": {
+      "by_industry": {
+        "01000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 27.190807141261295,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 123.62317916121012,
+          "cumulative_fuels_GJ_per_mDKK": 405.4618979864165,
+          "cumulative_primary_GJ_per_mDKK": 632.6250563569149,
+          "electric_share_of_primary_at_pef_ref": 0.31266084811276096
+        },
+        "02000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 2.2111412928389256,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 17.58528307190558,
+          "cumulative_fuels_GJ_per_mDKK": 231.97539213721691,
+          "cumulative_primary_GJ_per_mDKK": 262.4998776485319,
+          "electric_share_of_primary_at_pef_ref": 0.10718653725515856
+        },
+        "03000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 6.983779511894745,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 101.21506299737504,
+          "cumulative_fuels_GJ_per_mDKK": 1176.7419792233927,
+          "cumulative_primary_GJ_per_mDKK": 1346.2285618920391,
+          "electric_share_of_primary_at_pef_ref": 0.12029465529107321
+        },
+        "06090": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 4.7001135682606865,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 35.587334611733105,
+          "cumulative_fuels_GJ_per_mDKK": 807.3246005963401,
+          "cumulative_primary_GJ_per_mDKK": 869.3404586288347,
+          "electric_share_of_primary_at_pef_ref": 0.06549762502550617
+        },
+        "10120": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 18.327536986605324,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 125.27393198697585,
+          "cumulative_fuels_GJ_per_mDKK": 374.5770942266596,
+          "cumulative_primary_GJ_per_mDKK": 594.8091253513547,
+          "electric_share_of_primary_at_pef_ref": 0.33697917976756353
+        },
+        "13150": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 12.422929493250688,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 77.13224583512346,
+          "cumulative_fuels_GJ_per_mDKK": 140.68850645650653,
+          "cumulative_primary_GJ_per_mDKK": 277.51686364541484,
+          "electric_share_of_primary_at_pef_ref": 0.44469943813533924
+        },
+        "16000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 18.052507680706743,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 84.92731719873152,
+          "cumulative_fuels_GJ_per_mDKK": 253.85175292510195,
+          "cumulative_primary_GJ_per_mDKK": 409.23216873823566,
+          "electric_share_of_primary_at_pef_ref": 0.3320455181637691
+        },
+        "17000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 16.43249975856121,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 126.70585133048871,
+          "cumulative_fuels_GJ_per_mDKK": 260.45333438466366,
+          "cumulative_primary_GJ_per_mDKK": 480.92979625269174,
+          "electric_share_of_primary_at_pef_ref": 0.42153629013716426
+        },
+        "18000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 17.534562323617585,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 83.71230208070435,
+          "cumulative_fuels_GJ_per_mDKK": 127.73151492936337,
+          "cumulative_primary_GJ_per_mDKK": 280.60852556799733,
+          "electric_share_of_primary_at_pef_ref": 0.47731865258908734
+        },
+        "19000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 6.122096409920856,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 62.30025213578329,
+          "cumulative_fuels_GJ_per_mDKK": 1060.105765521728,
+          "cumulative_primary_GJ_per_mDKK": 1166.3980330616957,
+          "electric_share_of_primary_at_pef_ref": 0.08546002358697458
+        },
+        "20000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 13.965517479318066,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 111.1312753182944,
+          "cumulative_fuels_GJ_per_mDKK": 205.7323905337313,
+          "cumulative_primary_GJ_per_mDKK": 398.6251899206659,
+          "electric_share_of_primary_at_pef_ref": 0.44605821459667083
+        },
+        "21000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 8.875311837072152,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 17.595690678871545,
+          "cumulative_fuels_GJ_per_mDKK": 37.883078441708314,
+          "cumulative_primary_GJ_per_mDKK": 75.6215203119407,
+          "electric_share_of_primary_at_pef_ref": 0.3722895938889115
+        },
+        "22000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 13.698632022021048,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 126.86608036471733,
+          "cumulative_fuels_GJ_per_mDKK": 143.9316896752224,
+          "cumulative_primary_GJ_per_mDKK": 361.71194084255285,
+          "electric_share_of_primary_at_pef_ref": 0.5611806127017079
+        },
+        "23000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 8.77735870007924,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 140.98640578297636,
+          "cumulative_fuels_GJ_per_mDKK": 840.9503659361404,
+          "cumulative_primary_GJ_per_mDKK": 1076.0081625849882,
+          "electric_share_of_primary_at_pef_ref": 0.20964362269412148
+        },
+        "24000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 13.451313277916388,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 161.51261717356508,
+          "cumulative_fuels_GJ_per_mDKK": 283.98467731847586,
+          "cumulative_primary_GJ_per_mDKK": 556.9322831363296,
+          "electric_share_of_primary_at_pef_ref": 0.4640064785298975
+        },
+        "25000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 14.44766900247264,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 73.95269204163768,
+          "cumulative_fuels_GJ_per_mDKK": 152.93084925439302,
+          "cumulative_primary_GJ_per_mDKK": 286.85863904368375,
+          "electric_share_of_primary_at_pef_ref": 0.4124829834690859
+        },
+        "26000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 8.793025874166968,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 27.678130239232043,
+          "cumulative_fuels_GJ_per_mDKK": 63.14251179722852,
+          "cumulative_primary_GJ_per_mDKK": 116.92398812410012,
+          "electric_share_of_primary_at_pef_ref": 0.3787504095033801
+        },
+        "27000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 13.557017403007363,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 56.38466458730545,
+          "cumulative_fuels_GJ_per_mDKK": 114.29449456002219,
+          "cumulative_primary_GJ_per_mDKK": 219.15153669495885,
+          "electric_share_of_primary_at_pef_ref": 0.41165790895302423
+        },
+        "28000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 14.154345251644711,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 49.2271909772573,
+          "cumulative_fuels_GJ_per_mDKK": 148.25974723441715,
+          "cumulative_primary_GJ_per_mDKK": 242.30994566980513,
+          "electric_share_of_primary_at_pef_ref": 0.32505271438978584
+        },
+        "29000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 12.99861970863331,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 72.05231978274662,
+          "cumulative_fuels_GJ_per_mDKK": 137.72725725472344,
+          "cumulative_primary_GJ_per_mDKK": 267.049478192442,
+          "electric_share_of_primary_at_pef_ref": 0.4316942030095206
+        },
+        "30000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 14.796875887471522,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 63.18462432817422,
+          "cumulative_fuels_GJ_per_mDKK": 149.47351645233854,
+          "cumulative_primary_GJ_per_mDKK": 266.54954133588654,
+          "electric_share_of_primary_at_pef_ref": 0.37927433083700424
+        },
+        "31320": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 9.781921311615108,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 47.53949917713659,
+          "cumulative_fuels_GJ_per_mDKK": 99.23555717821472,
+          "cumulative_primary_GJ_per_mDKK": 185.86323087817757,
+          "electric_share_of_primary_at_pef_ref": 0.40924285198331406
+        },
+        "33000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 14.087190488402227,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 51.601648141375506,
+          "cumulative_fuels_GJ_per_mDKK": 150.2345188964835,
+          "cumulative_primary_GJ_per_mDKK": 248.01132165015875,
+          "electric_share_of_primary_at_pef_ref": 0.33289866154845343
+        },
+        "35000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 5.958413359812048,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 42.654634490428954,
+          "cumulative_fuels_GJ_per_mDKK": 199.17093875301796,
+          "cumulative_primary_GJ_per_mDKK": 273.8534403663013,
+          "electric_share_of_primary_at_pef_ref": 0.24921145811934972
+        },
+        "36000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 8.58858830297016,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 145.07499421241442,
+          "cumulative_fuels_GJ_per_mDKK": 99.74962545231877,
+          "cumulative_primary_GJ_per_mDKK": 341.14529155938965,
+          "electric_share_of_primary_at_pef_ref": 0.6804138778490324
+        },
+        "37390": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 29.087181036698812,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 45.05309480026949,
+          "cumulative_fuels_GJ_per_mDKK": 147.37835952295782,
+          "cumulative_primary_GJ_per_mDKK": 250.87746672302376,
+          "electric_share_of_primary_at_pef_ref": 0.28733131206245455
+        },
+        "41430": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 9.511529951871578,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 40.59550905852709,
+          "cumulative_fuels_GJ_per_mDKK": 212.3338811877058,
+          "cumulative_primary_GJ_per_mDKK": 287.5591480293705,
+          "electric_share_of_primary_at_pef_ref": 0.22587636296310507
+        },
+        "45000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 23.727054645767904,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 41.308344514098636,
+          "cumulative_fuels_GJ_per_mDKK": 150.0866826410961,
+          "cumulative_primary_GJ_per_mDKK": 241.80525288108328,
+          "electric_share_of_primary_at_pef_ref": 0.2733329836100032
+        },
+        "46000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 14.847860295565193,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 24.52417945776548,
+          "cumulative_fuels_GJ_per_mDKK": 121.26887418628628,
+          "cumulative_primary_GJ_per_mDKK": 176.54325043792147,
+          "electric_share_of_primary_at_pef_ref": 0.22226104388070284
+        },
+        "47000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 30.15152440534223,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 47.49516583177081,
+          "cumulative_fuels_GJ_per_mDKK": 76.4975562653742,
+          "cumulative_primary_GJ_per_mDKK": 185.0534679539771,
+          "electric_share_of_primary_at_pef_ref": 0.4106503172895556
+        },
+        "49000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 6.2650802787724285,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 43.11660509241971,
+          "cumulative_fuels_GJ_per_mDKK": 561.2649699399632,
+          "cumulative_primary_GJ_per_mDKK": 637.0178247889089,
+          "electric_share_of_primary_at_pef_ref": 0.10829613468152463
+        },
+        "50000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 0.6021836257931183,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 2.177533271101068,
+          "cumulative_fuels_GJ_per_mDKK": 1465.2245620986623,
+          "cumulative_primary_GJ_per_mDKK": 1469.3589736482804,
+          "electric_share_of_primary_at_pef_ref": 0.0023711382284692024
+        },
+        "51000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 6.2937660061684975,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 27.696106915321856,
+          "cumulative_fuels_GJ_per_mDKK": 2220.0552129389102,
+          "cumulative_primary_GJ_per_mDKK": 2271.1662512900875,
+          "electric_share_of_primary_at_pef_ref": 0.01951146070409574
+        },
+        "52000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 9.601588937186598,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 29.091501222154847,
+          "cumulative_fuels_GJ_per_mDKK": 200.0596954693905,
+          "cumulative_primary_GJ_per_mDKK": 256.9758134769998,
+          "electric_share_of_primary_at_pef_ref": 0.18113145095506747
+        },
+        "53000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 20.952471570209674,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 21.52701123116211,
+          "cumulative_fuels_GJ_per_mDKK": 205.6104374206648,
+          "cumulative_primary_GJ_per_mDKK": 262.6823246863506,
+          "electric_share_of_primary_at_pef_ref": 0.13112118605995077
+        },
+        "55560": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 45.78380666381072,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 71.43421273372167,
+          "cumulative_fuels_GJ_per_mDKK": 142.00813911095062,
+          "cumulative_primary_GJ_per_mDKK": 305.7493906818209,
+          "electric_share_of_primary_at_pef_ref": 0.3738183749739533
+        },
+        "58000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 13.602256099672609,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 19.130045481294662,
+          "cumulative_fuels_GJ_per_mDKK": 57.19232417693328,
+          "cumulative_primary_GJ_per_mDKK": 102.49083353465116,
+          "electric_share_of_primary_at_pef_ref": 0.2986420513374317
+        },
+        "59600": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 36.32075064600924,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 38.74290014834765,
+          "cumulative_fuels_GJ_per_mDKK": 70.89237476244872,
+          "cumulative_primary_GJ_per_mDKK": 172.10742569749493,
+          "electric_share_of_primary_at_pef_ref": 0.3601741179158111
+        },
+        "61000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 10.634900799601732,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 30.779082081450262,
+          "cumulative_fuels_GJ_per_mDKK": 95.72067428955157,
+          "cumulative_primary_GJ_per_mDKK": 156.45289848344188,
+          "electric_share_of_primary_at_pef_ref": 0.31476905706245134
+        },
+        "62630": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 12.20864521568396,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 19.441329711284922,
+          "cumulative_fuels_GJ_per_mDKK": 54.11106808605976,
+          "cumulative_primary_GJ_per_mDKK": 98.4025324570543,
+          "electric_share_of_primary_at_pef_ref": 0.3161110467520893
+        },
+        "64000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 5.6777849057049785,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 8.843042678217783,
+          "cumulative_fuels_GJ_per_mDKK": 26.977270393226398,
+          "cumulative_primary_GJ_per_mDKK": 47.25814637653623,
+          "electric_share_of_primary_at_pef_ref": 0.29939532905957134
+        },
+        "65000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 8.090463247677432,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 11.50420333151453,
+          "cumulative_fuels_GJ_per_mDKK": 32.96611425905276,
+          "cumulative_primary_GJ_per_mDKK": 60.11053989696764,
+          "electric_share_of_primary_at_pef_ref": 0.306214606655892
+        },
+        "66000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 5.061461449984072,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 12.884168047646204,
+          "cumulative_fuels_GJ_per_mDKK": 50.783527840694454,
+          "cumulative_primary_GJ_per_mDKK": 76.86457508291117,
+          "electric_share_of_primary_at_pef_ref": 0.2681946638486922
+        },
+        "68100": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 17.234799701254968,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 26.166367243727926,
+          "cumulative_fuels_GJ_per_mDKK": 76.67932988221945,
+          "cumulative_primary_GJ_per_mDKK": 137.15910114953948,
+          "electric_share_of_primary_at_pef_ref": 0.30523813031057656
+        },
+        "68203": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 4.733857709951474,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 7.000494792750195,
+          "cumulative_fuels_GJ_per_mDKK": 36.92404936345808,
+          "cumulative_primary_GJ_per_mDKK": 53.237407358605985,
+          "electric_share_of_primary_at_pef_ref": 0.21039325962949382
+        },
+        "68204": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 1.1904637084220244,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 3.6698088712716173,
+          "cumulative_fuels_GJ_per_mDKK": 15.434918167191134,
+          "cumulative_primary_GJ_per_mDKK": 22.592313166321507,
+          "electric_share_of_primary_at_pef_ref": 0.25989787547684834
+        },
+        "68300": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 4.719910914103475,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 16.420589726554162,
+          "cumulative_fuels_GJ_per_mDKK": 69.47695014676123,
+          "cumulative_primary_GJ_per_mDKK": 100.84739749647964,
+          "electric_share_of_primary_at_pef_ref": 0.26052178057846054
+        },
+        "69700": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 9.996018646798772,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 14.381830000476024,
+          "cumulative_fuels_GJ_per_mDKK": 65.93329001850708,
+          "cumulative_primary_GJ_per_mDKK": 99.73991815781139,
+          "electric_share_of_primary_at_pef_ref": 0.23070931303906908
+        },
+        "71000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 20.140358114987855,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 18.17298100501438,
+          "cumulative_fuels_GJ_per_mDKK": 66.35300120575346,
+          "cumulative_primary_GJ_per_mDKK": 117.18135757796334,
+          "electric_share_of_primary_at_pef_ref": 0.2481347733889974
+        },
+        "72001": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 9.32313040746765,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 17.967225700966885,
+          "cumulative_fuels_GJ_per_mDKK": 56.70106726123532,
+          "cumulative_primary_GJ_per_mDKK": 95.51760922284741,
+          "electric_share_of_primary_at_pef_ref": 0.30096608735754166
+        },
+        "72002": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 17.903356527053784,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 25.117667412941145,
+          "cumulative_fuels_GJ_per_mDKK": 47.10106224464591,
+          "cumulative_primary_GJ_per_mDKK": 106.62495515456985,
+          "electric_share_of_primary_at_pef_ref": 0.3769124010645214
+        },
+        "73000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 19.35033359215508,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 19.306172273305776,
+          "cumulative_fuels_GJ_per_mDKK": 61.343413909805584,
+          "cumulative_primary_GJ_per_mDKK": 113.13164982662232,
+          "electric_share_of_primary_at_pef_ref": 0.2730436238190543
+        },
+        "74750": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 18.018920257215207,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 16.1739659495321,
+          "cumulative_fuels_GJ_per_mDKK": 74.60706673759316,
+          "cumulative_primary_GJ_per_mDKK": 119.94584613463694,
+          "electric_share_of_primary_at_pef_ref": 0.215750243574116
+        },
+        "77000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 11.684758511038208,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 22.38178043287179,
+          "cumulative_fuels_GJ_per_mDKK": 122.31907918027946,
+          "cumulative_primary_GJ_per_mDKK": 170.7494670647956,
+          "electric_share_of_primary_at_pef_ref": 0.20972744049037326
+        },
+        "78000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 17.442803726219747,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 8.6128846947501,
+          "cumulative_fuels_GJ_per_mDKK": 44.03680328191209,
+          "cumulative_primary_GJ_per_mDKK": 76.65564681782958,
+          "electric_share_of_primary_at_pef_ref": 0.17977299890704052
+        },
+        "79000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 7.816603162149461,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 17.522365518773853,
+          "cumulative_fuels_GJ_per_mDKK": 1069.083015045553,
+          "cumulative_primary_GJ_per_mDKK": 1105.5607312907127,
+          "electric_share_of_primary_at_pef_ref": 0.025358882634432152
+        },
+        "80820": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 22.59034718382928,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 18.014088923918663,
+          "cumulative_fuels_GJ_per_mDKK": 121.8576878121009,
+          "cumulative_primary_GJ_per_mDKK": 175.07780504890638,
+          "electric_share_of_primary_at_pef_ref": 0.16462704835840586
+        },
+        "84101": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 10.492473559350424,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 20.84711228869342,
+          "cumulative_fuels_GJ_per_mDKK": 39.61607854918255,
+          "cumulative_primary_GJ_per_mDKK": 84.30332965519048,
+          "electric_share_of_primary_at_pef_ref": 0.39565910146534544
+        },
+        "84202": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 10.317483536562598,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 17.178555817719936,
+          "cumulative_fuels_GJ_per_mDKK": 85.80288169616374,
+          "cumulative_primary_GJ_per_mDKK": 124.43145322400323,
+          "electric_share_of_primary_at_pef_ref": 0.22089020578158625
+        },
+        "85101": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 8.539785983721607,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 10.762975513548867,
+          "cumulative_fuels_GJ_per_mDKK": 49.80800921535686,
+          "cumulative_primary_GJ_per_mDKK": 76.25173889945438,
+          "electric_share_of_primary_at_pef_ref": 0.22584089320750442
+        },
+        "85202": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 23.487984173354086,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 25.593102631621875,
+          "cumulative_fuels_GJ_per_mDKK": 43.53388065390003,
+          "cumulative_primary_GJ_per_mDKK": 109.84986777171744,
+          "electric_share_of_primary_at_pef_ref": 0.37277208467553524
+        },
+        "86000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 17.52004416781814,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 23.603024826044468,
+          "cumulative_fuels_GJ_per_mDKK": 37.54469841791812,
+          "cumulative_primary_GJ_per_mDKK": 94.23118584083286,
+          "electric_share_of_primary_at_pef_ref": 0.4007679557960805
+        },
+        "87880": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 19.643794672943816,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 24.886153943288956,
+          "cumulative_fuels_GJ_per_mDKK": 56.19088732875915,
+          "cumulative_primary_GJ_per_mDKK": 117.22403188480081,
+          "electric_share_of_primary_at_pef_ref": 0.33967306591529284
+        },
+        "90920": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 38.328580023532325,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 43.181764874210074,
+          "cumulative_fuels_GJ_per_mDKK": 63.102693691304566,
+          "cumulative_primary_GJ_per_mDKK": 173.58838391545558,
+          "electric_share_of_primary_at_pef_ref": 0.39801524871840555
+        },
+        "93000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 61.664092956508455,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 48.79592802400129,
+          "cumulative_fuels_GJ_per_mDKK": 94.88994273438908,
+          "cumulative_primary_GJ_per_mDKK": 239.5606479658203,
+          "electric_share_of_primary_at_pef_ref": 0.3259027953937632
+        },
+        "94000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 12.142605767983943,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 19.494042736248204,
+          "cumulative_fuels_GJ_per_mDKK": 56.09739531576696,
+          "cumulative_primary_GJ_per_mDKK": 100.40187792318675,
+          "electric_share_of_primary_at_pef_ref": 0.3106562249947122
+        },
+        "95000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 17.90615816370349,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 22.015364201371316,
+          "cumulative_fuels_GJ_per_mDKK": 125.63116171810398,
+          "cumulative_primary_GJ_per_mDKK": 180.19439525709785,
+          "electric_share_of_primary_at_pef_ref": 0.1954810118923863
+        },
+        "96000": {
+          "cumulative_delivered_district_heat_GJ_per_mDKK": 12.161230454804267,
+          "cumulative_delivered_electricity_GJ_per_mDKK": 18.46647102771759,
+          "cumulative_fuels_GJ_per_mDKK": 76.42447979168733,
+          "cumulative_primary_GJ_per_mDKK": 119.10496232722409,
+          "electric_share_of_primary_at_pef_ref": 0.24806987943267808
+        }
+      },
+      "definition": "PEF_ref x cumulative delivered electricity / (fuels + PEF_ref x electricity + DH factor x district heat), all on construction C: numerator and denominator count electricity at the same factor"
+    },
+    "W2": {
+      "by_industry": {
+        "01000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 129.52562517530862,
+          "cumulative_primary_GJ_per_mDKK": 923.44677393182,
+          "electric_share_of_primary_at_pef_ref": 0.22442116441439303
+        },
+        "02000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 18.42692967922684,
+          "cumulative_primary_GJ_per_mDKK": 488.9233555301388,
+          "electric_share_of_primary_at_pef_ref": 0.060302064021454826
+        },
+        "03000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 105.45569263699855,
+          "cumulative_primary_GJ_per_mDKK": 2465.3552876190884,
+          "electric_share_of_primary_at_pef_ref": 0.068440078014941
+        },
+        "06090": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 37.977166867564165,
+          "cumulative_primary_GJ_per_mDKK": 989.3229631773,
+          "electric_share_of_primary_at_pef_ref": 0.06141924250191798
+        },
+        "10120": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 132.04408241382887,
+          "cumulative_primary_GJ_per_mDKK": 831.1303646698844,
+          "electric_share_of_primary_at_pef_ref": 0.2541966228679907
+        },
+        "13150": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 80.99257300635425,
+          "cumulative_primary_GJ_per_mDKK": 351.66038894392955,
+          "electric_share_of_primary_at_pef_ref": 0.36850359291057083
+        },
+        "16000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 88.85236249865393,
+          "cumulative_primary_GJ_per_mDKK": 492.77942423736494,
+          "electric_share_of_primary_at_pef_ref": 0.28849374183563314
+        },
+        "17000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 133.12385820595637,
+          "cumulative_primary_GJ_per_mDKK": 636.2852819589032,
+          "electric_share_of_primary_at_pef_ref": 0.33475263245722453
+        },
+        "18000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 87.81834537340777,
+          "cumulative_primary_GJ_per_mDKK": 345.83296236954203,
+          "electric_share_of_primary_at_pef_ref": 0.4062925397125976
+        },
+        "19000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 65.99419827217768,
+          "cumulative_primary_GJ_per_mDKK": 8988.749592748289,
+          "electric_share_of_primary_at_pef_ref": 0.011746986179331334
+        },
+        "20000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 116.96591974777746,
+          "cumulative_primary_GJ_per_mDKK": 490.35821211773754,
+          "electric_share_of_primary_at_pef_ref": 0.3816505301057533
+        },
+        "21000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 18.5832079404682,
+          "cumulative_primary_GJ_per_mDKK": 95.33605630659248,
+          "electric_share_of_primary_at_pef_ref": 0.3118770993539941
+        },
+        "22000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 132.5992306402325,
+          "cumulative_primary_GJ_per_mDKK": 441.578842486768,
+          "electric_share_of_primary_at_pef_ref": 0.48045501417049746
+        },
+        "23000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 150.77574369380932,
+          "cumulative_primary_GJ_per_mDKK": 1500.9421619916222,
+          "electric_share_of_primary_at_pef_ref": 0.16072650633651894
+        },
+        "24000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 170.8993182662859,
+          "cumulative_primary_GJ_per_mDKK": 700.497785787701,
+          "electric_share_of_primary_at_pef_ref": 0.3903494268987286
+        },
+        "25000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 77.90276703264058,
+          "cumulative_primary_GJ_per_mDKK": 424.5730935119248,
+          "electric_share_of_primary_at_pef_ref": 0.29357589813619245
+        },
+        "26000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 29.145837137968073,
+          "cumulative_primary_GJ_per_mDKK": 154.1190303047599,
+          "electric_share_of_primary_at_pef_ref": 0.3025800209651895
+        },
+        "27000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 59.32030324671066,
+          "cumulative_primary_GJ_per_mDKK": 280.6834511921057,
+          "electric_share_of_primary_at_pef_ref": 0.33814777747540575
+        },
+        "28000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 51.878555161785336,
+          "cumulative_primary_GJ_per_mDKK": 326.5580424036671,
+          "electric_share_of_primary_at_pef_ref": 0.25418356763742167
+        },
+        "29000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 75.78465441504427,
+          "cumulative_primary_GJ_per_mDKK": 342.3101975080043,
+          "electric_share_of_primary_at_pef_ref": 0.3542268034864357
+        },
+        "30000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 66.56270347081033,
+          "cumulative_primary_GJ_per_mDKK": 342.52094702280874,
+          "electric_share_of_primary_at_pef_ref": 0.3109308393515699
+        },
+        "31320": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 49.94683715502584,
+          "cumulative_primary_GJ_per_mDKK": 233.90489411942613,
+          "electric_share_of_primary_at_pef_ref": 0.34165569621317426
+        },
+        "33000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 54.42626891333309,
+          "cumulative_primary_GJ_per_mDKK": 351.06298752373664,
+          "electric_share_of_primary_at_pef_ref": 0.24805243889586912
+        },
+        "35000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 175.7929902491256,
+          "cumulative_primary_GJ_per_mDKK": 4528.273057826403,
+          "electric_share_of_primary_at_pef_ref": 0.06211391866320262
+        },
+        "36000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 150.71929249080657,
+          "cumulative_primary_GJ_per_mDKK": 370.3920760412184,
+          "electric_share_of_primary_at_pef_ref": 0.6510691874478829
+        },
+        "37390": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 48.016856260434906,
+          "cumulative_primary_GJ_per_mDKK": 1210.2394568227476,
+          "electric_share_of_primary_at_pef_ref": 0.06348080091388722
+        },
+        "41430": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 42.89111489640715,
+          "cumulative_primary_GJ_per_mDKK": 441.36957438216564,
+          "electric_share_of_primary_at_pef_ref": 0.15548372116567988
+        },
+        "45000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 43.75061437960415,
+          "cumulative_primary_GJ_per_mDKK": 357.25136307228837,
+          "electric_share_of_primary_at_pef_ref": 0.19594322161677022
+        },
+        "46000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 25.943332742279193,
+          "cumulative_primary_GJ_per_mDKK": 252.25233143438425,
+          "electric_share_of_primary_at_pef_ref": 0.16455480174003503
+        },
+        "47000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 50.18744461548423,
+          "cumulative_primary_GJ_per_mDKK": 225.664056256205,
+          "electric_share_of_primary_at_pef_ref": 0.3558382877493225
+        },
+        "49000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 45.04823697720159,
+          "cumulative_primary_GJ_per_mDKK": 1028.139001907229,
+          "electric_share_of_primary_at_pef_ref": 0.07010450827156367
+        },
+        "50000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 2.2897828554998734,
+          "cumulative_primary_GJ_per_mDKK": 1498.0029775977173,
+          "electric_share_of_primary_at_pef_ref": 0.002445691112493674
+        },
+        "51000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 29.251543822537666,
+          "cumulative_primary_GJ_per_mDKK": 4385.895666447439,
+          "electric_share_of_primary_at_pef_ref": 0.010671131662821819
+        },
+        "52000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 30.419813869927037,
+          "cumulative_primary_GJ_per_mDKK": 351.82132941945656,
+          "electric_share_of_primary_at_pef_ref": 0.1383421018623199
+        },
+        "53000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 23.11204962976951,
+          "cumulative_primary_GJ_per_mDKK": 415.34796251036767,
+          "electric_share_of_primary_at_pef_ref": 0.08903204721200038
+        },
+        "55560": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 75.81331163181844,
+          "cumulative_primary_GJ_per_mDKK": 387.5440868875437,
+          "electric_share_of_primary_at_pef_ref": 0.3129999984907738
+        },
+        "58000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 20.314820213420088,
+          "cumulative_primary_GJ_per_mDKK": 146.918876628384,
+          "electric_share_of_primary_at_pef_ref": 0.22123578050277978
+        },
+        "59600": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 41.26435687973084,
+          "cumulative_primary_GJ_per_mDKK": 210.44397720663014,
+          "electric_share_of_primary_at_pef_ref": 0.3137318153930483
+        },
+        "61000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 32.238179078678264,
+          "cumulative_primary_GJ_per_mDKK": 211.44178526395032,
+          "electric_share_of_primary_at_pef_ref": 0.24394935211833704
+        },
+        "62630": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 20.535061514849907,
+          "cumulative_primary_GJ_per_mDKK": 133.9992394423239,
+          "electric_share_of_primary_at_pef_ref": 0.24519615604163045
+        },
+        "64000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 9.363426310748627,
+          "cumulative_primary_GJ_per_mDKK": 66.60210496321338,
+          "electric_share_of_primary_at_pef_ref": 0.22494006916857343
+        },
+        "65000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 12.214977117564272,
+          "cumulative_primary_GJ_per_mDKK": 82.87970917707621,
+          "electric_share_of_primary_at_pef_ref": 0.2358111965179111
+        },
+        "66000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 13.611414227834793,
+          "cumulative_primary_GJ_per_mDKK": 113.01643468685678,
+          "electric_share_of_primary_at_pef_ref": 0.19269996284061122
+        },
+        "68100": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 27.718214818869427,
+          "cumulative_primary_GJ_per_mDKK": 198.29016279238024,
+          "electric_share_of_primary_at_pef_ref": 0.22365781078422364
+        },
+        "68203": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 7.473962763922423,
+          "cumulative_primary_GJ_per_mDKK": 80.64279423215213,
+          "electric_share_of_primary_at_pef_ref": 0.14828777370797142
+        },
+        "68204": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 3.870643597117528,
+          "cumulative_primary_GJ_per_mDKK": 33.91959081370964,
+          "electric_share_of_primary_at_pef_ref": 0.18257973067543443
+        },
+        "68300": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 17.306709998052376,
+          "cumulative_primary_GJ_per_mDKK": 152.28300140320434,
+          "electric_share_of_primary_at_pef_ref": 0.18183734062061332
+        },
+        "69700": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 15.263082300715162,
+          "cumulative_primary_GJ_per_mDKK": 149.37141109227545,
+          "electric_share_of_primary_at_pef_ref": 0.16349133681316047
+        },
+        "71000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 19.480828535514238,
+          "cumulative_primary_GJ_per_mDKK": 167.99106169269953,
+          "electric_share_of_primary_at_pef_ref": 0.1855415719310102
+        },
+        "72001": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 18.992762745766548,
+          "cumulative_primary_GJ_per_mDKK": 135.98459662946698,
+          "electric_share_of_primary_at_pef_ref": 0.2234695777789402
+        },
+        "72002": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 26.50791346210713,
+          "cumulative_primary_GJ_per_mDKK": 123.93325036816434,
+          "electric_share_of_primary_at_pef_ref": 0.34222181225278564
+        },
+        "73000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 20.659958192222554,
+          "cumulative_primary_GJ_per_mDKK": 156.09281800945482,
+          "electric_share_of_primary_at_pef_ref": 0.2117710060532947
+        },
+        "74750": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 17.385528155482582,
+          "cumulative_primary_GJ_per_mDKK": 177.35032418144914,
+          "electric_share_of_primary_at_pef_ref": 0.15684688019127838
+        },
+        "77000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 23.651363259826304,
+          "cumulative_primary_GJ_per_mDKK": 252.22622359384422,
+          "electric_share_of_primary_at_pef_ref": 0.15003269952080292
+        },
+        "78000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 9.48651476212568,
+          "cumulative_primary_GJ_per_mDKK": 109.263245023043,
+          "electric_share_of_primary_at_pef_ref": 0.13891609768866048
+        },
+        "79000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 18.588846368490717,
+          "cumulative_primary_GJ_per_mDKK": 2103.2012703638343,
+          "electric_share_of_primary_at_pef_ref": 0.014141373252613162
+        },
+        "80820": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 19.438920161572145,
+          "cumulative_primary_GJ_per_mDKK": 272.80812625599947,
+          "electric_share_of_primary_at_pef_ref": 0.11400786584095182
+        },
+        "84101": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 21.91836433711579,
+          "cumulative_primary_GJ_per_mDKK": 104.3719665125705,
+          "electric_share_of_primary_at_pef_ref": 0.33600385344048805
+        },
+        "84202": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 18.197587251585368,
+          "cumulative_primary_GJ_per_mDKK": 195.44428731944993,
+          "electric_share_of_primary_at_pef_ref": 0.14897411432111507
+        },
+        "85101": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 11.457861905371374,
+          "cumulative_primary_GJ_per_mDKK": 116.61610406385559,
+          "electric_share_of_primary_at_pef_ref": 0.15720452330113696
+        },
+        "85202": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 27.262071293064498,
+          "cumulative_primary_GJ_per_mDKK": 134.07563638223147,
+          "electric_share_of_primary_at_pef_ref": 0.32533363440133484
+        },
+        "86000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 25.04544181866094,
+          "cumulative_primary_GJ_per_mDKK": 120.3865201928529,
+          "electric_share_of_primary_at_pef_ref": 0.3328670589170875
+        },
+        "87880": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 26.482760360562892,
+          "cumulative_primary_GJ_per_mDKK": 155.43881342885047,
+          "electric_share_of_primary_at_pef_ref": 0.2725986878193451
+        },
+        "90920": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 45.939764710649825,
+          "cumulative_primary_GJ_per_mDKK": 205.7295749236576,
+          "electric_share_of_primary_at_pef_ref": 0.3572827269210834
+        },
+        "93000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 52.470556130394485,
+          "cumulative_primary_GJ_per_mDKK": 293.19257646964195,
+          "electric_share_of_primary_at_pef_ref": 0.2863404347392265
+        },
+        "94000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 20.673674387984644,
+          "cumulative_primary_GJ_per_mDKK": 140.80997750848985,
+          "electric_share_of_primary_at_pef_ref": 0.23491147151686087
+        },
+        "95000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 23.501715257834494,
+          "cumulative_primary_GJ_per_mDKK": 284.56769428609175,
+          "electric_share_of_primary_at_pef_ref": 0.13213989208040974
+        },
+        "96000": {
+          "cumulative_delivered_electricity_GJ_per_mDKK": 19.635770422576993,
+          "cumulative_primary_GJ_per_mDKK": 180.5697371709146,
+          "electric_share_of_primary_at_pef_ref": 0.17398946893512865
+        }
+      },
+      "definition": "delivered electricity (all industries) x PEF_ref / cumulative primary of this construction (Wave 2's definition)"
+    },
+    "closure": "domestic technology assumption (domestic + imported flows)",
+    "dh_factor_reference": 1.08,
+    "pef_reference": 1.6
+  },
+  "extension_totals_PJ": {
+    "A": 1024.923994,
+    "B": 905.589196,
+    "C_delivered_district_heat": 37.500575,
+    "C_delivered_electricity": 76.004592,
+    "C_fuels": 748.798692,
+    "W2": 1446.196888
+  },
+  "healthcare": {
+    "A": {
+      "care_only_domestic_technology": 812.4595955423218,
+      "central_health_domestic_technology": 691.1539820571156,
+      "health_plus_care_domestic_only": 1032.1768139865073,
+      "high_health_plus_care_domestic_technology": 1503.6135775994376,
+      "low_health_domestic_only": 464.7559582844975,
+      "multiplier_86000_dom_GJ_per_mDKK": 55.992184603708445,
+      "multiplier_86000_tot_GJ_per_mDKK": 83.26783264011588
+    },
+    "B": {
+      "care_only_domestic_technology": 887.0154911612627,
+      "central_health_domestic_technology": 763.1926161029663,
+      "health_plus_care_domestic_only": 1213.2755998100015,
+      "high_health_plus_care_domestic_technology": 1650.208107264229,
+      "low_health_domestic_only": 552.0950266406007,
+      "multiplier_86000_dom_GJ_per_mDKK": 66.51449238984613,
+      "multiplier_86000_tot_GJ_per_mDKK": 91.94679721107705
+    },
+    "C": {
+      "components_kWh": {
+        "central": {
+          "E": 195.9138851087897,
+          "F": 311.63496147221787,
+          "H": 145.42288310468507
+        },
+        "high": {
+          "E": 387.323723137559,
+          "F": 743.8226215984241,
+          "H": 296.51153927819314
+        },
+        "low": {
+          "E": 157.34990922403,
+          "F": 168.38472244231036,
+          "H": 133.82873621122806
+        }
+      },
+      "dh_convention_sensitivity_central": {
+        "br18_regulatory_0_85": {
+          "DK_2023_1.6": 748.7066282852636,
+          "Fossil_2.5": 925.0291248831745,
+          "Renewable_1.0": 631.1582972199899
+        },
+        "energistatistik_200pct_0_78": {
+          "DK_2023_1.6": 738.5270264679357,
+          "Fossil_2.5": 914.8495230658465,
+          "Renewable_1.0": 620.978695402662
+        },
+        "energistyrelsen_1_08": {
+          "DK_2023_1.6": 782.1538913993412,
+          "Fossil_2.5": 958.476387997252,
+          "Renewable_1.0": 664.6055603340675
+        },
+        "energy_allocation_1_43": {
+          "DK_2023_1.6": 833.0519004859809,
+          "Fossil_2.5": 1009.3743970838918,
+          "Renewable_1.0": 715.5035694207072
+        },
+        "exergy_allocation_0_19": {
+          "DK_2023_1.6": 652.7275254361715,
+          "Fossil_2.5": 829.0500220340823,
+          "Renewable_1.0": 535.1791943708978
+        }
+      },
+      "refinement_steps_from_validator_C": {
+        "sensitivity_also_zero_37390_electricity_and_heat": {
+          "central": {
+            "DK_2023_1.6": 774.6288924697348,
+            "Fossil_2.5": 948.1638300777444,
+            "Renewable_1.0": 658.938934064395
+          },
+          "high": {
+            "DK_2023_1.6": 1669.282907654407,
+            "Fossil_2.5": 2012.5065365743465,
+            "Renewable_1.0": 1440.4671550411135
+          },
+          "low": {
+            "DK_2023_1.6": 558.0644370266199,
+            "Fossil_2.5": 697.2288312151738,
+            "Renewable_1.0": 465.2881742342505
+          }
+        },
+        "step1_keep_road_fuel": {
+          "central": {
+            "DK_2023_1.6": 813.5791243027976,
+            "Fossil_2.5": 1000.6769586867682,
+            "Renewable_1.0": 688.8472347134838
+          },
+          "high": {
+            "DK_2023_1.6": 1748.5025223326336,
+            "Fossil_2.5": 2118.921363025951,
+            "Renewable_1.0": 1501.5566285370885
+          },
+          "low": {
+            "DK_2023_1.6": 590.266029859193,
+            "Fossil_2.5": 739.8200187381988,
+            "Renewable_1.0": 490.56337060652254
+          }
+        },
+        "step2_first_run_zero_all_35000_own_electricity_SUPERSEDED": {
+          "central": {
+            "DK_2023_1.6": 791.2658243638338,
+            "Fossil_2.5": 965.8124275321372,
+            "Renewable_1.0": 674.9014222516314
+          },
+          "high": {
+            "DK_2023_1.6": 1703.3027023322568,
+            "Fossil_2.5": 2048.2966442753623,
+            "Renewable_1.0": 1473.3067410368533
+          },
+          "low": {
+            "DK_2023_1.6": 573.8260011058644,
+            "Fossil_2.5": 714.1324738111227,
+            "Renewable_1.0": 480.28835263569215
+          }
+        },
+        "step2_plus_zero_35000_own_electricity_except_gas_business": {
+          "central": {
+            "DK_2023_1.6": 794.422968238691,
+            "Fossil_2.5": 970.7454648366019,
+            "Renewable_1.0": 676.8746371734172
+          },
+          "high": {
+            "DK_2023_1.6": 1709.6980958979414,
+            "Fossil_2.5": 2058.2894467217443,
+            "Renewable_1.0": 1477.303862015406
+          },
+          "low": {
+            "DK_2023_1.6": 576.1521266105198,
+            "Fossil_2.5": 717.7670449121467,
+            "Renewable_1.0": 481.7421810761018
+          }
+        },
+        "step3_plus_drop_ambient_heat": {
+          "central": {
+            "DK_2023_1.6": 781.6999337390374,
+            "Fossil_2.5": 958.0224303369482,
+            "Renewable_1.0": 664.1516026737637
+          },
+          "high": {
+            "DK_2023_1.6": 1683.0803347372344,
+            "Fossil_2.5": 2031.6716855610373,
+            "Renewable_1.0": 1450.686100854699
+          },
+          "low": {
+            "DK_2023_1.6": 564.536572445406,
+            "Fossil_2.5": 706.151490747033,
+            "Renewable_1.0": 470.1266269109881
+          }
+        },
+        "step4_plus_gasworks_gas_ADOPTED": {
+          "central": {
+            "DK_2023_1.6": 782.1538913993412,
+            "Fossil_2.5": 958.476387997252,
+            "Renewable_1.0": 664.6055603340675
+          },
+          "high": {
+            "DK_2023_1.6": 1683.7730410389672,
+            "Fossil_2.5": 2032.3643918627702,
+            "Renewable_1.0": 1451.3788071564318
+          },
+          "low": {
+            "DK_2023_1.6": 564.6796123088847,
+            "Fossil_2.5": 706.2945306105116,
+            "Renewable_1.0": 470.2696667744667
+          }
+        },
+        "validator_C": {
+          "central": {
+            "DK_2023_1.6": 807.6555159887672,
+            "Fossil_2.5": 994.7533503727378,
+            "Renewable_1.0": 682.9236263994534
+          },
+          "high": {
+            "DK_2023_1.6": 1737.0445245431927,
+            "Fossil_2.5": 2107.46336523651,
+            "Renewable_1.0": 1490.0986307476476
+          },
+          "low": {
+            "DK_2023_1.6": 585.1318522722836,
+            "Fossil_2.5": 734.6858411512893,
+            "Renewable_1.0": 485.4291930196132
+          }
+        }
+      },
+      "triple": {
+        "central": {
+          "DK_2023_1.6": 782.1538913993412,
+          "Fossil_2.5": 958.476387997252,
+          "Renewable_1.0": 664.6055603340675
+        },
+        "high": {
+          "DK_2023_1.6": 1683.7730410389672,
+          "Fossil_2.5": 2032.3643918627702,
+          "Renewable_1.0": 1451.3788071564318
+        },
+        "low": {
+          "DK_2023_1.6": 564.6796123088847,
+          "Fossil_2.5": 706.2945306105116,
+          "Renewable_1.0": 470.2696667744667
+        }
+      }
+    },
+    "W2": {
+      "care_only_domestic_technology": 1195.545047643801,
+      "central_health_domestic_technology": 999.2528948952579,
+      "health_plus_care_domestic_only": 1434.1994037221712,
+      "high_health_plus_care_domestic_technology": 2194.797942539059,
+      "low_health_domestic_only": 640.2795293423542,
+      "multiplier_86000_dom_GJ_per_mDKK": 77.13865517129508,
+      "multiplier_86000_tot_GJ_per_mDKK": 120.3865201928529
+    },
+    "disclosure1_household_only_health_kWh": {
+      "A": 166.13349977633828,
+      "B": 186.84602024537224,
+      "C": {
+        "DK_2023_1.6": 192.93450221425303,
+        "Fossil_2.5": 234.1806127222299,
+        "Renewable_1.0": 165.43709520893518
+      },
+      "W2": 246.70752201848617
+    },
+    "disclosure2_multiplier_ratio_21000": {
+      "A": 0.6727790615274574,
+      "B": 0.7597945283293256,
+      "C": 0.7932100743578951
+    },
+    "disclosure2_pharmacy_drugs_kWh": {
+      "A": [
+        16.819476538186436,
+        40.36674369164744
+      ],
+      "B": [
+        18.99486320823314,
+        45.58767169975953
+      ],
+      "C": [
+        19.830251858947378,
+        47.59260446147371
+      ]
+    },
+    "population": 5935000.0
+  },
+  "household_direct_PJ": {
+    "ambient_heat_EVMP": 12.918321,
+    "delivered_district_heat_EFJV": 68.927179,
+    "delivered_electricity_EEL": 36.436844,
+    "ene3h_gross": 269.996358,
+    "fuel_ETOT_minus_EKONV": 139.160075,
+    "fuel_excl_ambient_plus_gasworks": 126.517971,
+    "gasworks_gas_EGVG": 0.276217
+  },
+  "household_footprint": {
+    "A": {
+      "household_direct_GJ_per_cap": 23.447358887952824,
+      "purchased_GJ_per_cap": 56.19444949412227,
+      "purchased_domestic_closure_GJ_per_cap": 39.98949796380131,
+      "total_GJ_per_cap": 79.64180838207508,
+      "total_domestic_closure_GJ_per_cap": 63.43685685175413
+    },
+    "B": {
+      "household_direct_GJ_per_cap": 45.49222544229149,
+      "purchased_GJ_per_cap": 38.45815958163554,
+      "purchased_domestic_closure_GJ_per_cap": 22.966225567607413,
+      "total_GJ_per_cap": 83.95038502392703,
+      "total_domestic_closure_GJ_per_cap": 68.4584510098989
+    },
+    "C": {
+      "DK_2023_1.6": {
+        "household_direct_GJ_per_cap": 43.68294435046336,
+        "purchased_GJ_per_cap": 38.60405299736329,
+        "purchased_domestic_closure_GJ_per_cap": 22.814903406602717,
+        "total_GJ_per_cap": 82.28699734782664,
+        "total_domestic_closure_GJ_per_cap": 66.49784775706607
+      },
+      "Fossil_2.5": {
+        "household_direct_GJ_per_cap": 49.20832928727885,
+        "purchased_GJ_per_cap": 44.70792007182769,
+        "purchased_domestic_closure_GJ_per_cap": 27.029232288132643,
+        "total_GJ_per_cap": 93.91624935910653,
+        "total_domestic_closure_GJ_per_cap": 76.23756157541149
+      },
+      "Renewable_1.0": {
+        "household_direct_GJ_per_cap": 39.99935439258635,
+        "purchased_GJ_per_cap": 34.53480828105369,
+        "purchased_domestic_closure_GJ_per_cap": 20.0053508189161,
+        "total_GJ_per_cap": 74.53416267364005,
+        "total_domestic_closure_GJ_per_cap": 60.00470521150245
+      }
+    },
+    "DST_ENE2MU2N_households": {
+      "direct_GJ": 346575144.0,
+      "direct_and_indirect_GJ": 452358615.998,
+      "direct_and_indirect_GJ_per_cap": 76.2188064023589,
+      "note": "domestic closure, DST gross-energy basis. Its 'direct' term is not defined as ENE3H's household total, so it is a comparator, not a check"
+    },
+    "DST_ENE2MU2N_reconstruction_B": {
+      "complete_of_domestic_purchases_GJ": 105159602.45542988,
+      "complete_plus_ene3h_households_GJ": 375155960.4554299,
+      "tier0_of_domestic_purchases_GJ": 57832115.55448104
+    },
+    "W2": {
+      "household_direct_GJ_per_cap": 23.447358887952824,
+      "purchased_GJ_per_cap": 99.56103859005003,
+      "purchased_domestic_closure_GJ_per_cap": 72.10499366513884,
+      "total_GJ_per_cap": 123.00839747800285,
+      "total_domestic_closure_GJ_per_cap": 95.55235255309165
+    }
+  },
+  "inputs_sha256": {
+    "ene2ha_2023.csv": "953fc7288cf730a93adaa012665809e7f6a4940420eaa4edf1ec2c57c2e062c1",
+    "ene2mu1n_2023.csv": "d5ffe0797334c37f08f89db794b88c0d86d229bab9c45da55e17aaa5db6a69c7",
+    "ene2mu2n_2023.csv": "cecb0b9347afbdbee2faf6101d0acaac84f4609865b6a0b68a6f87d7f9b9d4d0",
+    "ene3h_2023.csv": "06b3dbceb3cb82227fe451ae8cf3be97e738426a44e205c9a901788840892bac",
+    "naio1f_P1_BP_2023.csv": "f827c07bab13a703b8e4fd8098792b28c37492d9e7b06c8c6e9fd22a0935e866",
+    "naio1f_P7AD2121_2023.csv": "5303ae8f4b754ce0187a99621fa0a4107d9a904d6165669de453c27c1a006e16"
+  },
+  "orientation_test": {
+    "convention": "A[i,j] = input from sector i per unit of output of sector j",
+    "energy_with_stated_convention": 0.5,
+    "energy_with_transpose": 0.0,
+    "output_with_stated_convention": [
+      1.0,
+      0.5
+    ],
+    "output_with_transpose": [
+      1.0,
+      0.0
+    ],
+    "passes": true,
+    "true_total_energy": 0.5
+  },
+  "population": 5935000.0,
+  "productivity": {
+    "dom": {
+      "max_column_sum": 0.5738141682381103,
+      "mean_column_sum": 0.3298961603327527,
+      "productive": true,
+      "spectral_radius": 0.37719880031387826
+    },
+    "tot": {
+      "max_column_sum": 0.940296758761036,
+      "mean_column_sum": 0.4930044782935092,
+      "productive": true,
+      "spectral_radius": 0.552639675006144
+    }
+  },
+  "regression_tests": {
+    "a_gross_energy_ENE3H": {
+      "A": {
+        "gap_pct": -0.9783618895281565,
+        "industries_GJ": 1024923994.0,
+        "passes": true,
+        "total_GJ": 1164084069.0
+      },
+      "W2": {
+        "gap_pct": 34.85679225982321,
+        "industries_GJ": 1446196888.0,
+        "passes": false,
+        "total_GJ": 1585356963.0
+      },
+      "catches_wave2_error": true,
+      "fuels_outside_conversion_plants": {
+        "A_GJ": 749900095.0,
+        "DST_ENE3H_non_converted_GJ": 750449912.0,
+        "gap_pct": -0.07326498293999117,
+        "passes": true
+      },
+      "household_direct_fuel_GJ": 139160075.0,
+      "passes": true,
+      "reference_ENE3H_households_GJ": 269996358.0,
+      "reference_ENE3H_industries_GJ": 905589192.0,
+      "reference_ENE3H_total_GJ": 1175585550.0,
+      "tolerance": 0.02
+    },
+    "b_DST_multipliers_ENE2MU1N": {
+      "enedir_equals_ene3h_after_remap_max_gap_GJ": 1.0,
+      "gap_by_industry_pct": {
+        "01000": 1.9343607056274026,
+        "02000": -0.18257399898727877,
+        "03000": 0.5545220707317222,
+        "06090": 7.471753092500966,
+        "10120": -0.25336396262943817,
+        "13150": -1.4433674112053096,
+        "16000": 0.7581574970316085,
+        "17000": 0.17659179868871888,
+        "18000": -0.0848344106062271,
+        "19000": -6.399330356384958,
+        "20000": -0.08716306690369491,
+        "21000": 0.938763326871217,
+        "22000": 1.6113870757158866,
+        "23000": -0.25794203730155063,
+        "24000": -0.010043010451254997,
+        "25000": 1.921517103846071,
+        "26000": 0.2612820529751092,
+        "27000": 1.014911715248057,
+        "28000": 0.29628831372505715,
+        "29000": 0.21835850432860848,
+        "30000": 0.23320458731874716,
+        "31320": -1.4565375074560238,
+        "33000": 1.6176677347109258,
+        "35000": -2.8410198544853604,
+        "36000": 2.2254056062360084,
+        "37390": -0.5417844509521208,
+        "41430": -1.4479297417449688,
+        "45000": -0.5091901883235161,
+        "46000": -1.733716536538732,
+        "47000": 0.03486304240094551,
+        "49000": 2.7632563959914203,
+        "50000": -0.0024243479040175764,
+        "51000": -0.08164300409675418,
+        "52000": -0.02994841882142385,
+        "53000": 1.680093933087834,
+        "55560": 0.21364122041471756,
+        "58000": -0.8872363035435926,
+        "59600": 1.1735802090559133,
+        "61000": 2.6345019734322905,
+        "62630": 2.9670077837341102,
+        "64000": 0.6889073251374445,
+        "65000": -4.576642788169627,
+        "66000": -2.4462154833235217,
+        "68100": 2.293180770333403,
+        "68203": -5.699896595743626,
+        "68204": -6.023009403771029,
+        "68300": -5.088961234859635,
+        "69700": 2.6170588056644295,
+        "71000": 1.368203479389174,
+        "72001": 3.093024115529741,
+        "72002": -0.7011203267537569,
+        "73000": -1.6045054419195681,
+        "74750": 1.8192015740615464,
+        "77000": 3.378595623906455,
+        "78000": 2.3554270039720215,
+        "79000": -0.15852201799294585,
+        "80820": -0.03707754164705701,
+        "84101": 0.4253614196398914,
+        "84202": 0.9541680160930266,
+        "85101": 2.97271660457723,
+        "85202": 1.9916944990312269,
+        "86000": 2.4292569390263363,
+        "87880": 5.71524055872441,
+        "90920": 1.257110559286878,
+        "93000": 1.1709438510237202,
+        "94000": 2.004481094941224,
+        "95000": -0.9919182844947305,
+        "96000": -0.8082505239546123
+      },
+      "human_health": {
+        "DST_published": 64.937,
+        "ours": 66.51448657849554
+      },
+      "max_abs_gap_pct": 7.471753092500966,
+      "median_abs_gap_pct": 1.312657019338026,
+      "n_industries_compared": 68,
+      "negative_control_naive_labels": {
+        "fails_as_it_should": true,
+        "human_health_gap_pct": 35.46677058888636,
+        "industries_off_by_more_than_10pct": [
+          "65000",
+          "68203",
+          "68204",
+          "68300",
+          "84101",
+          "84202",
+          "85101",
+          "85202",
+          "86000",
+          "87880"
+        ],
+        "max_abs_gap_pct": 2074.2686860050994,
+        "median_abs_gap_pct": 2.7478802730258045
+      },
+      "negative_control_transposed_A": {
+        "fails_as_it_should": true,
+        "median_abs_gap_pct": 25.658695136154954
+      },
+      "passes": true,
+      "remap_published_label_to_true_industry": {
+        "68203": "68300",
+        "68204": "68203",
+        "68300": "68204",
+        "84101": "84202",
+        "84202": "84101",
+        "85101": "85202",
+        "85202": "85101"
+      },
+      "share_within_3pct": 0.8676470588235294,
+      "tolerance_max": 0.1,
+      "tolerance_median": 0.03
+    },
+    "wave2_reproduction": {
+      "expected_from_wave2_findings": {
+        "central_health_domestic_technology": 999.2528948952576,
+        "high_health_plus_care_domestic_technology": 2194.797942539059,
+        "low_health_domestic_only": 640.2795293423541
+      },
+      "expected_sum_extension_PJ": 1446.2,
+      "max_abs_gap_kWh": 3.410605131648481e-13,
+      "passes": true,
+      "reproduced": {
+        "central_health_domestic_technology": 999.2528948952579,
+        "high_health_plus_care_domestic_technology": 2194.797942539059,
+        "low_health_domestic_only": 640.2795293423542
+      },
+      "sum_extension_PJ": 1446.196888
+    }
+  },
+  "removed_PJ": {
+    "C_35000_gas_business_electricity_kept_GJ": 1.739374,
+    "C_35000_own_electricity_removed_GJ": 10.553754,
+    "C_ambient_heat_removed_GJ": 3.782352,
+    "C_conversion_fuel_removed_35000_GJ": 235.05501,
+    "C_conversion_fuel_removed_37390_GJ": 37.498959,
+    "C_gasworks_gas_added_GJ": 0.211019,
+    "C_road_fuel_kept_35000_37390_GJ": 2.46993,
+    "ENGI_at_06090_kept_GJ": 13.773779,
+    "ENGI_at_35000_GJ": 99.213165,
+    "EROOL_all_industries_GJ": 322.059729
+  },
+  "sectors": {
+    "A9": [
+      [
+        0.3325754588603903,
+        0.0009501861078181863,
+        0.011301497680157827,
+        0.0012853143635081809,
+        0.014264315973538928,
+        0.014388973218989968,
+        0.042945943036321536,
+        0.012702931866659413,
+        0.0052836310294796214
+      ],
+      [
+        0.0012335631343219455,
+        0.03139526979416227,
+        0.0002860149461303944,
+        8.004226681442418e-05,
+        0.0003889157609084327,
+        0.0006813464250439705,
+        0.0009702604865713874,
+        0.0003115459892537891,
+        0.00012509033823772134
+      ],
+      [
+        0.019024344904188643,
+        0.03465932735909275,
+        0.24238404099685856,
+        0.004396955729064952,
+        0.006154139498411899,
+        0.012493169434984666,
+        0.020614996409233494,
+        0.005395289093736894,
+        0.004790423679834718
+      ],
+      [
+        0.003013966230382758,
+        0.0021543741554684195,
+        0.006293493903074474,
+        0.18628722350157892,
+        0.02326968472103036,
+        0.005013597922140174,
+        0.010847750038387538,
+        0.0028328308342732323,
+        0.007896603179195527
+      ],
+      [
+        0.021046388229237312,
+        0.13389185021843836,
+        0.07766946856803253,
+        0.07160477183463439,
+        0.2175087838193732,
+        0.028703136003205763,
+        0.032976718541504066,
+        0.01813238209612476,
+        0.021037512415922926
+      ],
+      [
+        0.0006936342433681726,
+        0.0002249873579321722,
+        0.0003161272665062356,
+        0.0009555317913337037,
+        0.0024984085655851613,
+        0.3338114331990873,
+        0.004877164350823022,
+        0.002279092774056519,
+        0.0007642933686007691
+      ],
+      [
+        0.030142441471955467,
+        0.016157806166013148,
+        0.009714524404458533,
+        0.01178742196283062,
+        0.021047706577694173,
+        0.051792025952293964,
+        0.17754204911746138,
+        0.018648056281175097,
+        0.004804706884432138
+      ],
+      [
+        0.004283958101422966,
+        0.0015904964809457095,
+        0.0016204861380741675,
+        0.0023308532973668316,
+        0.0017498808970347404,
+        0.0023174783411236337,
+        0.00610291648809259,
+        0.051563762322701066,
+        0.0018506767211755512
+      ],
+      [
+        0.038456454871644466,
+        0.03912392542423464,
+        0.028088192744160287,
+        0.013955773295507658,
+        0.013781940871583036,
+        0.0222908253920123,
+        0.0469162037266696,
+        0.0213336211519861,
+        0.19235900693384134
+      ]
+    ],
+    "A9_col_sums": [
+      0.450470210046912,
+      0.2601482230641057,
+      0.377673846647453,
+      0.2926838880426397,
+      0.3006637766851599,
+      0.47149198588888175,
+      0.3437940021950646,
+      0.13319951240996689,
+      0.23891194455072032
+    ],
+    "A9_row_sums": [
+      0.435698252136864,
+      0.035472049141444334,
+      0.3499126871054066,
+      0.2476095244855314,
+      0.6225710117264733,
+      0.34642067291729306,
+      0.3416367388183145,
+      0.07341050878793726,
+      0.41630594441163943
+    ],
+    "A_phase1_col_sums": [
+      0.17,
+      0.13,
+      0.22,
+      0.16,
+      0.18,
+      0.11,
+      0.12,
+      0.11,
+      0.12
+    ],
+    "by_construction": {
+      "A": {
+        "cumulative_GJ": [
+          183830744.9187556,
+          1484761.9836856008,
+          335403047.56067246,
+          9498451.28532755,
+          185059942.47469738,
+          2780829.8751982152,
+          74239087.50161952,
+          49752513.08970984,
+          97386341.60935248
+        ],
+        "direct_GJ": [
+          42264464.0,
+          90454.0,
+          235508580.0,
+          379836.0,
+          47944676.0,
+          271091.0,
+          44657341.0,
+          3943217.0,
+          34690860.0
+        ],
+        "economy_multiplier_correct": 1.653859414717432,
+        "economy_multiplier_transposed": 2.1704181294570493,
+        "orientation_error_pct": 31.233532314950317,
+        "upstream_ratio": [
+          4.349534514829186,
+          16.41455307322618,
+          1.4241648756944332,
+          25.00671680758946,
+          3.8598642834649124,
+          10.25792031162309,
+          1.6624162083814957,
+          12.617239449340435,
+          2.8072622474436346
+        ]
+      },
+      "B": {
+        "cumulative_GJ": [
+          196516972.34939685,
+          1785430.8102820984,
+          43845404.76439576,
+          10098747.015952334,
+          183817275.51171306,
+          2969503.018080286,
+          37321414.02306299,
+          55164391.59327845,
+          101595146.3975779
+        ],
+        "direct_GJ": [
+          72642622.0,
+          1018040.0,
+          14322916.0,
+          1739553.0,
+          61074418.0,
+          803495.0,
+          16452665.0,
+          19939312.0,
+          42941770.0
+        ],
+        "economy_multiplier_correct": 1.5184673730658533,
+        "economy_multiplier_transposed": 1.7245726252465226,
+        "orientation_error_pct": 13.57324206212831,
+        "upstream_ratio": [
+          2.705257147097428,
+          1.7537923954678583,
+          3.06120658421761,
+          5.805368974645977,
+          3.0097261919337988,
+          3.6957330388867216,
+          2.2684114715192334,
+          2.7666145949909633,
+          2.3658816671408256
+        ]
+      },
+      "C": {
+        "cumulative_GJ": [
+          205198747.60304502,
+          2057600.7687758806,
+          28911092.737407584,
+          10724644.493541224,
+          191307223.29236293,
+          3205095.2639618525,
+          38690236.04100509,
+          56757002.14122554,
+          103984932.34019986
+        ],
+        "direct_GJ": [
+          77888663.6,
+          1301060.84,
+          3236568.4000000004,
+          1989083.3599999999,
+          64426703.6,
+          937548.04,
+          17338692.200000003,
+          21085953.84,
+          44726165.76
+        ],
+        "economy_multiplier_correct": 1.5099708114405344,
+        "economy_multiplier_transposed": 1.713167444701457,
+        "orientation_error_pct": 13.456990805475911,
+        "upstream_ratio": [
+          2.63451365216446,
+          1.5814792863767082,
+          8.932637647147386,
+          5.391752155395451,
+          2.9693777983755623,
+          3.4185931037324258,
+          2.23143911863232,
+          2.691697163519236,
+          2.3249239136254514
+        ]
+      },
+      "W2": {
+        "cumulative_GJ": [
+          289383516.924627,
+          2234001.2870388064,
+          478056153.46665263,
+          13943738.572319416,
+          280129425.2773425,
+          4061392.999047731,
+          91052510.35769849,
+          73093300.70436844,
+          157047962.01814952
+        ],
+        "direct_GJ": [
+          42264464.0,
+          90454.0,
+          334721745.0,
+          379836.0,
+          47944676.0,
+          271091.0,
+          44657341.0,
+          3943217.0,
+          34690860.0
+        ],
+        "economy_multiplier_correct": 1.6632996201033283,
+        "economy_multiplier_transposed": 2.241120348852493,
+        "orientation_error_pct": 34.739425282455684,
+        "upstream_ratio": [
+          6.846969996463861,
+          24.69765059631201,
+          1.4282195901752741,
+          36.70989209111147,
+          5.842763965645372,
+          14.981659291705483,
+          2.03891472977978,
+          18.536464187582993,
+          4.527070300884715
+        ]
+      }
+    },
+    "x9": [
+      420629.464,
+      6031.45,
+      105571.406,
+      71149.909,
+      681173.2170000001,
+      11549.191,
+      112868.659,
+      616490.042,
+      362873.749
+    ]
+  },
+  "truncation": {
+    "A": {
+      "B1": 0.8679396754303399,
+      "B3_measured": 1.0525016225327186,
+      "complete_GJ": 328832462.0267127,
+      "household_direct_at_tier0_GJ": 84860157.0,
+      "series_GJ": [
+        210359989.3120411,
+        271169881.596598,
+        298543491.86664903,
+        312429411.0211602,
+        319837025.3265269,
+        323872798.7080003,
+        326091801.0867092,
+        327316830.5692482,
+        327994143.3952692,
+        328368798.55760646,
+        328576046.4978766,
+        328690677.12722397,
+        328754071.0787378
+      ],
+      "share_by_tier": [
+        0.639717830823383,
+        0.8246445011094116,
+        0.9078893550430457,
+        0.9501173001459325,
+        0.9726443166689087,
+        0.9849173549103266,
+        0.9916654793656567,
+        0.9953908703291544,
+        0.9974506208229058,
+        0.9985899705088466,
+        0.9992202244046839,
+        0.9995688232888722,
+        0.9997616082442354
+      ]
+    },
+    "B": {
+      "B1": 0.9081773192626561,
+      "B3_measured": 1.0389954851357999,
+      "complete_GJ": 346694318.2002842,
+      "household_direct_at_tier0_GJ": 215696439.0,
+      "series_GJ": [
+        264368745.69298974,
+        303042622.42831135,
+        322865023.7483541,
+        333682218.2196203,
+        339542094.88999856,
+        342751429.97274,
+        344517453.9984324,
+        345491647.15251786,
+        346029662.37562823,
+        346326952.3899949,
+        346491262.6424199,
+        346582083.03195673,
+        346632283.4872209
+      ],
+      "share_by_tier": [
+        0.7625413276610572,
+        0.8740916897670201,
+        0.9312671330305332,
+        0.9624680899063743,
+        0.979370232118561,
+        0.9886271911001829,
+        0.9937210848647533,
+        0.9965310332917785,
+        0.9980828765002374,
+        0.9989403754517919,
+        0.9994143095308905,
+        0.999676270528718,
+        0.9998210679846578
+      ]
+    },
+    "C": {
+      "B1": 0.9079436983959022,
+      "B3_measured": 1.0394277755656527,
+      "complete_GJ": 346976716.43240315,
+      "household_direct_at_tier0_GJ": 217876677.72000003,
+      "series_GJ": [
+        265084836.26146412,
+        303085342.3206449,
+        322916288.0687389,
+        333815128.46679485,
+        339736410.8854057,
+        342983772.26854914,
+        344771851.19814557,
+        345758488.3817343,
+        346303443.9705049,
+        346604584.63699055,
+        346771026.3337116,
+        346863025.3169777,
+        346913877.1880507
+      ],
+      "share_by_tier": [
+        0.7639845087793004,
+        0.8735034022944044,
+        0.9306569368369948,
+        0.9620678064484123,
+        0.9791331659903815,
+        0.9884921841300787,
+        0.9936454951302558,
+        0.9964890207527624,
+        0.9980596033393225,
+        0.9989275021124218,
+        0.9994071933678824,
+        0.9996723379119082,
+        0.9998188949247127
+      ]
+    },
+    "C_DK_2023_1.6": {
+      "B1": 0.9079436983959022,
+      "B3_measured": 1.0394277755656527,
+      "complete_GJ": 346976716.43240315,
+      "household_direct_at_tier0_GJ": 217876677.72000003,
+      "series_GJ": [
+        265084836.26146412,
+        303085342.3206449,
+        322916288.0687389,
+        333815128.46679485,
+        339736410.8854057,
+        342983772.26854914,
+        344771851.19814557,
+        345758488.3817343,
+        346303443.9705049,
+        346604584.63699055,
+        346771026.3337116,
+        346863025.3169777,
+        346913877.1880507
+      ],
+      "share_by_tier": [
+        0.7639845087793004,
+        0.8735034022944044,
+        0.9306569368369948,
+        0.9620678064484123,
+        0.9791331659903815,
+        0.9884921841300787,
+        0.9936454951302558,
+        0.9964890207527624,
+        0.9980596033393225,
+        0.9989275021124218,
+        0.9994071933678824,
+        0.9996723379119082,
+        0.9998188949247127
+      ]
+    },
+    "C_Fossil_2.5": {
+      "B1": 0.9097338040820298,
+      "B3_measured": 1.038912428673819,
+      "complete_GJ": 399569689.97225374,
+      "household_direct_at_tier0_GJ": 250669837.32,
+      "series_GJ": [
+        307240812.65385044,
+        349887097.335383,
+        372253863.89899683,
+        384603821.2116762,
+        391330194.2567719,
+        395023751.7634336,
+        397058926.702831,
+        398182305.2396546,
+        398802896.4011968,
+        399145860.62201905,
+        399335424.56187105,
+        399440205.0790905,
+        399498121.73954916
+      ],
+      "share_by_tier": [
+        0.7689292265266301,
+        0.8756597562735033,
+        0.9316368914890573,
+        0.9625450349809647,
+        0.9793790772366794,
+        0.9886229152938607,
+        0.9937163320130786,
+        0.9965278028653888,
+        0.9980809516079405,
+        0.9989392855342353,
+        0.9994137057533093,
+        0.999675939150509,
+        0.9998208867326509
+      ]
+    },
+    "C_Renewable_1.0": {
+      "B1": 0.9064135151082962,
+      "B3_measured": 1.039868294361451,
+      "complete_GJ": 311914734.07250273,
+      "household_direct_at_tier0_GJ": 196014571.32,
+      "series_GJ": [
+        236980851.99987316,
+        271884172.3108194,
+        290024570.8485668,
+        299955999.9702071,
+        305340555.30449474,
+        308290452.6052926,
+        309913800.8616884,
+        310809277.1431205,
+        311303809.01671004,
+        311577067.313638,
+        311728094.1816051,
+        311811572.1422356,
+        311857714.1537181
+      ],
+      "share_by_tier": [
+        0.7597616467351246,
+        0.8716618441231492,
+        0.9298200410794069,
+        0.961660246227689,
+        0.9789231541512243,
+        0.9883805377838686,
+        0.9935849993852831,
+        0.9964559002553395,
+        0.9980413716023729,
+        0.9989174388960212,
+        0.9994016316944674,
+        0.9996692624009125,
+        0.9998171938912915
+      ]
+    },
+    "W2": {
+      "B1": 0.833116816444276,
+      "B3_measured": 1.0658742344731116,
+      "complete_GJ": 448719522.45433486,
+      "household_direct_at_tier0_GJ": 0.0,
+      "series_GJ": [
+        258081766.31510353,
+        350731604.09806484,
+        397450102.73330486,
+        420987305.9518586,
+        433542074.8584444,
+        440367469.8776898,
+        444111791.007996,
+        446174539.3425806,
+        447313183.7149293,
+        447942249.6173312,
+        448289906.6156909,
+        448482063.86447966,
+        448588275.82872677
+      ],
+      "share_by_tier": [
+        0.5751516334825123,
+        0.7816276906778844,
+        0.8857428367711646,
+        0.9381969914061439,
+        0.9661760925558236,
+        0.9813869195372594,
+        0.9897313773621076,
+        0.9943283432424912,
+        0.9968658846583865,
+        0.9982677980383999,
+        0.9990425737746061,
+        0.9994708084271521,
+        0.9997075085458947
+      ]
+    },
+    "definition": "share = energy captured by supply-chain tiers 0..k of survival-category household final demand / complete boundary. B1 = share(0..1)/share(0..3); B3_measured = 1/share(0..3). Tier-0 household energy: see truncation() docstring (like-for-like with Wave 2)",
+    "parts_C": {
+      "classes": {
+        "energy": [
+          "ACP0450",
+          "ACP0720"
+        ],
+        "goods": [
+          "ACP0113",
+          "ACP0310",
+          "ACP0320",
+          "ACP0520",
+          "ACP0530",
+          "ACP0540",
+          "ACP0560",
+          "ACP0610",
+          "ACP0810",
+          "ACP1310"
+        ],
+        "services": [
+          "ACP0440",
+          "ACP0620",
+          "ACP0634",
+          "ACP0730",
+          "ACP0830"
+        ]
+      },
+      "energy": {
+        "B1": 0.966685702486598,
+        "B3_measured": 1.0114707477959073,
+        "complete_GJ": 253553981.97205812,
+        "household_direct_at_tier0_GJ": 217876677.72000003,
+        "series_GJ": [
+          228732100.74729216,
+          242327333.45481828,
+          248030599.83457562,
+          250678511.983245,
+          252015657.68125635,
+          252718777.79301012,
+          253096856.82633623,
+          253302690.54006177,
+          253415514.72573474,
+          253477586.03277934,
+          253511803.1558085,
+          253530685.79815862,
+          253541112.26298404
+        ],
+        "share_by_tier": [
+          0.9021041553687713,
+          0.9557228467487565,
+          0.978216149103542,
+          0.9886593380768518,
+          0.9939329515599117,
+          0.9967060104023922,
+          0.9981971289026246,
+          0.9990089233462559,
+          0.9994538944123598,
+          0.9996986995089385,
+          0.9998336495608487,
+          0.999908121443338,
+          0.9999492427254584
+        ]
+      },
+      "energy_option3": {
+        "B1": 0.9714059596926816,
+        "B3_measured": 1.0098454732446123,
+        "complete_GJ": 294935578.9720581,
+        "household_direct_at_tier0_GJ": 259258274.72000003,
+        "series_GJ": [
+          270113697.74729216,
+          283708930.4548183,
+          289412196.83457565,
+          292060108.983245,
+          293397254.6812564,
+          294100374.7930102,
+          294478453.82633626,
+          294684287.5400618,
+          294797111.7257347,
+          294859183.0327793,
+          294893400.15580845,
+          294912282.7981585,
+          294922709.2629839
+        ],
+        "share_by_tier": [
+          0.9158396511154134,
+          0.961935251906982,
+          0.9812725810947152,
+          0.9902505150486252,
+          0.9947842023801834,
+          0.9971681809907137,
+          0.9984500847699858,
+          0.9991479785759583,
+          0.9995305169799927,
+          0.9997409741491851,
+          0.9998569897318029,
+          0.9999210126700183,
+          0.999956364338548
+        ]
+      },
+      "goods": {
+        "B1": 0.7017650236246668,
+        "B3_measured": 1.1433577284363412,
+        "complete_GJ": 68332758.12741357,
+        "household_direct_at_tier0_GJ": 0.0,
+        "series_GJ": [
+          23476113.026066273,
+          41940976.50190759,
+          53022437.94124575,
+          59764985.55781454,
+          63564323.510417424,
+          65686718.53933669,
+          66866645.93596972,
+          67521114.66620784,
+          67883661.44260187,
+          68084348.7013816,
+          68195386.67104894,
+          68256803.45423323,
+          68290766.62692575
+        ],
+        "share_by_tier": [
+          0.3435557654835563,
+          0.61377555437912,
+          0.7759446478419599,
+          0.8746169069654187,
+          0.930217442590201,
+          0.9612771434874169,
+          0.978544519032729,
+          0.9881221908284115,
+          0.9934277980705197,
+          0.9963647095062548,
+          0.9979896690821628,
+          0.998888458840799,
+          0.9993854850639935
+        ]
+      },
+      "services": {
+        "B1": 0.8051227757151931,
+        "B3_measured": 1.0735226999201026,
+        "complete_GJ": 25089976.332931463,
+        "household_direct_at_tier0_GJ": 0.0,
+        "series_GJ": [
+          12876622.488105679,
+          18817032.363919005,
+          21863250.292917438,
+          23371630.925735243,
+          24156429.69373186,
+          24578275.936202243,
+          24808348.435839534,
+          24934683.175464608,
+          25004267.8021682,
+          25042649.902829554,
+          25063836.50685411,
+          25075536.064585783,
+          25081998.298140816
+        ],
+        "share_by_tier": [
+          0.5132178012940039,
+          0.7499820691030704,
+          0.8713938189021392,
+          0.9315126732526713,
+          0.9627920478356813,
+          0.9796053854360318,
+          0.988775282473173,
+          0.9938105498623756,
+          0.9965839533036639,
+          0.9981137315765503,
+          0.9989581566068262,
+          0.9994244606629331,
+          0.9996820230244627
+        ]
+      }
+    },
+    "sensitivity_A_all_household_direct_fuel": {
+      "B1": 0.887493237765607,
+      "B3_measured": 1.0447279497642963,
+      "complete_GJ": 383132380.0267127,
+      "household_direct_at_tier0_GJ": 139160075.0,
+      "series_GJ": [
+        264659907.3120411,
+        325469799.596598,
+        352843409.86664903,
+        366729329.0211602,
+        374136943.3265269,
+        378172716.7080003,
+        380391719.0867092,
+        381616748.5692482,
+        382294061.3952692,
+        382668716.55760646,
+        382875964.4978766,
+        382990595.12722397,
+        383053989.0787378
+      ],
+      "share_by_tier": [
+        0.690779273977283,
+        0.8494969795398282,
+        0.9209438519449807,
+        0.9571869884649038,
+        0.9765213352639142,
+        0.9870549617383771,
+        0.992846699775643,
+        0.996044105023546,
+        0.9978119347903065,
+        0.9987898087103108,
+        0.9993307390807891,
+        0.9996299323500696,
+        0.9997953946153821
+      ]
+    },
+    "sensitivity_A_validator_no_household_fuel": {
+      "B1": 0.8186946228653291,
+      "B3_measured": 1.0720793811804965,
+      "complete_GJ": 243972305.02671272,
+      "household_direct_at_tier0_GJ": 0.0,
+      "series_GJ": [
+        125499832.31204112,
+        186309724.5965981,
+        213683334.8666491,
+        227569254.02116024,
+        234976868.32652697,
+        239012641.70800042,
+        241231644.08670932,
+        242456673.56924835,
+        243133986.39526933,
+        243508641.55760655,
+        243715889.4978767,
+        243830520.12722406,
+        243893914.07873788
+      ],
+      "share_by_tier": [
+        0.5144019617238934,
+        0.763651122516545,
+        0.8758507849620585,
+        0.9327667498827111,
+        0.9631292711719848,
+        0.9796712035894023,
+        0.9887665079866204,
+        0.9937876905442262,
+        0.9965638778903548,
+        0.9980995241691248,
+        0.99894899739211,
+        0.9994188483833313,
+        0.9996786891529912
+      ]
+    },
+    "sensitivity_B_all_household_gross": {
+      "B1": 0.9210283339050603,
+      "B3_measured": 1.0335378841766065,
+      "complete_GJ": 400994237.2002842,
+      "household_direct_at_tier0_GJ": 269996358.0,
+      "series_GJ": [
+        318668664.6929897,
+        357342541.42831135,
+        377164942.7483541,
+        387982137.2196203,
+        393842013.88999856,
+        397051348.97274,
+        398817372.9984324,
+        399791566.15251786,
+        400329581.37562823,
+        400626871.3899949,
+        400791181.6424199,
+        400882002.03195673,
+        400932202.4872209
+      ],
+      "share_by_tier": [
+        0.7946963699975185,
+        0.8911413388961743,
+        0.9405744715477592,
+        0.9675504065307433,
+        0.9821637753195108,
+        0.9901672197209785,
+        0.9945713329521878,
+        0.9970007772277145,
+        0.9983424803575819,
+        0.9990838626189389,
+        0.9994936197605182,
+        0.999720107777331,
+        0.999845297744186
+      ]
+    },
+    "sensitivity_C_all_household_direct_incl_wood": {
+      "B1": 0.9180968700941674,
+      "B3_measured": 1.0350791653344882,
+      "complete_GJ": 388358313.43240315,
+      "household_direct_at_tier0_GJ": 259258274.72000003,
+      "series_GJ": [
+        306466433.2614641,
+        344466939.3206449,
+        364297885.0687389,
+        375196725.46679485,
+        381118007.8854057,
+        384365369.26854914,
+        386153448.19814557,
+        387140085.3817343,
+        387685040.9705049,
+        387986181.63699055,
+        388152623.3337116,
+        388244622.3169777,
+        388295474.1880507
+      ],
+      "share_by_tier": [
+        0.7891331861878812,
+        0.8869822723148738,
+        0.9380458006653379,
+        0.9661096788445622,
+        0.9813566356208372,
+        0.9897184017291573,
+        0.9943226006551258,
+        0.9968631338417817,
+        0.9982663626897859,
+        0.9990417823372348,
+        0.9994703599959698,
+        0.9997072520105965,
+        0.9998381926118767
+      ]
+    },
+    "sensitivity_C_fossil_plus_biomethane_and_biofuel": {
+      "B1": 0.9109749526862663,
+      "B3_measured": 1.0381294873250835,
+      "complete_GJ": 358342939.43240315,
+      "household_direct_at_tier0_GJ": 229242900.72000003,
+      "series_GJ": [
+        276451059.2614641,
+        314451565.3206449,
+        334282511.0687389,
+        345181351.46679485,
+        351102633.8854057,
+        354349995.26854914,
+        356138074.19814557,
+        357124711.3817343,
+        357669666.9705049,
+        357970807.63699055,
+        358137249.3337116,
+        358229248.3169777,
+        358280100.1880507
+      ],
+      "share_by_tier": [
+        0.771470646803725,
+        0.8775157278631471,
+        0.9328564184862279,
+        0.9632709716941665,
+        0.9797950377968498,
+        0.9888571987209275,
+        0.99384705266483,
+        0.9966003849480097,
+        0.9981211504739993,
+        0.9989615205032307,
+        0.9994259965076546,
+        0.9996827309738388,
+        0.9998246393679417
+      ]
+    },
+    "sensitivity_C_nothing_at_tier0": {
+      "B1": 0.7349474143546854,
+      "B3_measured": 1.1135221997605673,
+      "complete_GJ": 129100038.71240312,
+      "household_direct_at_tier0_GJ": 0.0,
+      "series_GJ": [
+        47208158.54146409,
+        85208664.60064486,
+        105039610.34873882,
+        115938450.74679478,
+        121859733.16540566,
+        125107094.54854906,
+        126895173.4781455,
+        127881810.66173421,
+        128426766.25050479,
+        128727906.91699046,
+        128894348.61371155,
+        128986347.5969776,
+        129037199.46805058
+      ],
+      "share_by_tier": [
+        0.3656711416379198,
+        0.6600204419029236,
+        0.8136295805668669,
+        0.8980512469486668,
+        0.943917092363336,
+        0.9690709297713754,
+        0.9829212658938902,
+        0.9905636895014202,
+        0.9947848779240246,
+        0.9971174927666625,
+        0.9984067386753478,
+        0.9991193564575237,
+        0.9995132515452414
+      ]
+    },
+    "sensitivity_C_validator_electricity_and_heat_only": {
+      "B1": 0.8764277784323022,
+      "B3_measured": 1.0529260651712238,
+      "complete_GJ": 261840342.43240315,
+      "household_direct_at_tier0_GJ": 132740303.72000001,
+      "series_GJ": [
+        179948462.26146412,
+        217948968.3206449,
+        237779914.06873885,
+        248678754.4667948,
+        254600036.8854057,
+        257847398.26854908,
+        259635477.1981455,
+        260622114.38173422,
+        261167069.97050482,
+        261468210.6369905,
+        261634652.33371156,
+        261726651.31697762,
+        261777503.1880506
+      ],
+      "share_by_tier": [
+        0.6872449852066617,
+        0.8323735231018143,
+        0.9081103082124339,
+        0.9497343005155664,
+        0.9723483956683772,
+        0.9847504623360899,
+        0.9915793524642719,
+        0.9953474394382774,
+        0.9974286908745846,
+        0.9985787835749232,
+        0.9992144445856556,
+        0.999565799852042,
+        0.9997600093103729
+      ]
+    },
+    "wave2_tier0_via_purchases_GJ": {
+      "19000": 101689628.48352347,
+      "35000": 121118717.0080645
+    }
+  },
+  "year": "2023"
+}

@@ -1,0 +1,7 @@
+case,interval,percentile,Fossil_2.5,DK_2023_1.6,Renewable_1.0,figure_status
+"service lines fully captured (B1 0.862, B3 1.065)",EXCL_HEALTHCARE,p05,7231.8,6054.7,5267.8,PROVISIONAL
+"service lines fully captured (B1 0.862, B3 1.065)",EXCL_HEALTHCARE,median,8625.3,7245.2,6324.5,PROVISIONAL
+"service lines fully captured (B1 0.862, B3 1.065)",EXCL_HEALTHCARE,p95,10627.5,8940.7,7824.6,PROVISIONAL
+"service lines fully captured (B1 0.862, B3 1.065)",WITH_HEALTHCARE_B3,p05,8247.2,6878.5,5965.5,PROVISIONAL
+"service lines fully captured (B1 0.862, B3 1.065)",WITH_HEALTHCARE_B3,median,9716.4,8139.0,7084.1,PROVISIONAL
+"service lines fully captured (B1 0.862, B3 1.065)",WITH_HEALTHCARE_B3,p95,11764.8,9873.3,8622.0,PROVISIONAL

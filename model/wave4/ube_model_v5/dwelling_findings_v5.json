@@ -1,0 +1,274 @@
+{
+  "_README": [
+    "Written by dwelling_v5.py. Space heat per m2 of gross heated floor, DELIVERED heat. Every figure PROVISIONAL until the Physics Validator's check."
+  ],
+  "climate": {
+    "G_vert_mean_kWh_m2_month": [
+      13.953848958333335,
+      24.34815625,
+      51.67653645833333,
+      74.97407291666667,
+      86.48143750000001,
+      87.89067708333332,
+      86.70802604166667,
+      75.69093750000002,
+      59.46874999999999,
+      38.131255208333336,
+      17.958640625,
+      10.935312499999998
+    ],
+    "T_monthly_C": [
+      1.6330208333333334,
+      1.44625,
+      3.3979583333333334,
+      7.661749999999999,
+      11.896145833333334,
+      15.452562499999999,
+      17.696062500000007,
+      17.058770833333334,
+      14.126020833333335,
+      10.048249999999998,
+      6.174145833333333,
+      3.2773749999999993
+    ],
+    "hdd17_from_monthly_means": 2874.1238125,
+    "note": "PVGIS 2005-2020, mean of Copenhagen, Odense, Aalborg. Energistyrelsen normal year 2,989 (daily-based); monthly means understate daily degree days in shoulder months"
+  },
+  "costing": {
+    "flat_20C": {
+      "frame": {
+        "per_type": {
+          "detached": {
+            "mean_T_heating_months": 20.0,
+            "q_kWh_m2": 22.203474372205022
+          },
+          "flats": {
+            "mean_T_heating_months": 20.0,
+            "q_kWh_m2": 16.847455044193847
+          },
+          "terraced": {
+            "mean_T_heating_months": 20.0,
+            "q_kWh_m2": 24.37330316742082
+          }
+        },
+        "reference_mix_kWh_m2": 19.77842265265067
+      },
+      "literal_br18": {
+        "per_type": {
+          "detached": {
+            "mean_T_heating_months": 20.0,
+            "q_kWh_m2": 50.33818758183119
+          },
+          "flats": {
+            "mean_T_heating_months": 20.0,
+            "q_kWh_m2": 19.51750556517036
+          },
+          "terraced": {
+            "mean_T_heating_months": 20.0,
+            "q_kWh_m2": 40.385812734851925
+          }
+        },
+        "reference_mix_kWh_m2": 30.99824250939271
+      }
+    },
+    "standard_R33": {
+      "frame": {
+        "per_type": {
+          "detached": {
+            "mean_T_heating_months": 19.058904647157,
+            "q_kWh_m2": 19.0784585937547
+          },
+          "flats": {
+            "mean_T_heating_months": 19.06751129554547,
+            "q_kWh_m2": 14.446204319544977
+          },
+          "terraced": {
+            "mean_T_heating_months": 19.054501631922932,
+            "q_kWh_m2": 21.017936035090923
+          }
+        },
+        "reference_mix_kWh_m2": 16.996193328860045
+      },
+      "literal_br18": {
+        "per_type": {
+          "detached": {
+            "mean_T_heating_months": 19.017537729306156,
+            "q_kWh_m2": 44.171768268453036
+          },
+          "flats": {
+            "mean_T_heating_months": 19.062472413996517,
+            "q_kWh_m2": 16.847086510691344
+          },
+          "terraced": {
+            "mean_T_heating_months": 19.029403630162676,
+            "q_kWh_m2": 35.29598813455591
+          }
+        },
+        "reference_mix_kWh_m2": 27.013006069548798
+      }
+    },
+    "vulnerable_R50": {
+      "frame": {
+        "per_type": {
+          "detached": {
+            "mean_T_heating_months": 21.04809566152787,
+            "q_kWh_m2": 25.986802394271635
+          },
+          "flats": {
+            "mean_T_heating_months": 21.057224481216018,
+            "q_kWh_m2": 19.74724923980495
+          },
+          "terraced": {
+            "mean_T_heating_months": 21.04240960700048,
+            "q_kWh_m2": 28.38296812240614
+          }
+        },
+        "reference_mix_kWh_m2": 23.13012793406724
+      },
+      "literal_br18": {
+        "per_type": {
+          "detached": {
+            "mean_T_heating_months": 21.00146195851861,
+            "q_kWh_m2": 57.43649570433762
+          },
+          "flats": {
+            "mean_T_heating_months": 21.051574878756547,
+            "q_kWh_m2": 22.722447143909196
+          },
+          "terraced": {
+            "mean_T_heating_months": 21.014092140433863,
+            "q_kWh_m2": 46.26136219530165
+          }
+        },
+        "reference_mix_kWh_m2": 35.66173695393336
+      }
+    }
+  },
+  "frame_compliant_envelope": {
+    "detached": {
+      "implied_U": {
+        "floor": 0.1194509444033919,
+        "roof": 0.1194509444033919,
+        "walls": 0.17917641660508785,
+        "windows": 0.5972547220169595
+      },
+      "implied_U_over_TABULA_2007_example": {
+        "floor": 1.0859176763944718,
+        "roof": 0.9954245366949326,
+        "walls": 1.119852603781799
+      },
+      "q20": 22.203474372205022,
+      "scale": 0.5972547220169595,
+      "sensitivity_pct_per_K_19_to_20": 17.67793616610811,
+      "sensitivity_pct_per_K_20_to_21": 16.064498309576415,
+      "sensitivity_pct_per_K_on_heat_plus_DHW_Kragh_basis": 9.46033972884898,
+      "target": 22.20347437220503,
+      "tau_h": 133.00959644895133
+    },
+    "flats": {
+      "implied_U": {
+        "floor": 0.18470123749619766,
+        "roof": 0.18470123749619766,
+        "walls": 0.27705185624429646,
+        "windows": 0.9235061874809882
+      },
+      "implied_U_over_TABULA_2007_example": {
+        "floor": 0.9721117762957772,
+        "roof": 1.086477867624692,
+        "walls": 1.1543827343512352
+      },
+      "q20": 16.847455044193847,
+      "scale": 0.9235061874809882,
+      "sensitivity_pct_per_K_19_to_20": 18.002777644691935,
+      "sensitivity_pct_per_K_20_to_21": 16.187150779247727,
+      "sensitivity_pct_per_K_on_heat_plus_DHW_Kragh_basis": 8.430718728084717,
+      "target": 16.847455044193843,
+      "tau_h": 139.89801846850327
+    },
+    "terraced": {
+      "implied_U": {
+        "floor": 0.14762748049706328,
+        "roof": 0.14762748049706328,
+        "walls": 0.22144122074559494,
+        "windows": 0.7381374024853165
+      },
+      "implied_U_over_TABULA_2007_example": {
+        "floor": 1.2302290041421942,
+        "roof": 1.0544820035504519,
+        "walls": 0.9226717531066456
+      },
+      "q20": 24.37330316742082,
+      "scale": 0.7381374024853165,
+      "sensitivity_pct_per_K_19_to_20": 17.123585443044618,
+      "sensitivity_pct_per_K_20_to_21": 15.592621012495943,
+      "sensitivity_pct_per_K_on_heat_plus_DHW_Kragh_basis": 9.531281557400066,
+      "target": 24.373303167420822,
+      "tau_h": 118.61047721745877
+    }
+  },
+  "reference": {
+    "envelope_ratio_mix": 1.8695242705208617,
+    "q_calibrated_kWh_m2": 25.494289993290067,
+    "q_literal_br18_standard_kWh_m2": 27.013006069548798,
+    "q_uncalibrated_at_20C_frame_kWh_m2": 19.77842265265067,
+    "q_uncalibrated_standard_kWh_m2": 16.996193328860045,
+    "q_uncalibrated_vulnerable_kWh_m2": 23.13012793406724,
+    "rule3_additive_floor_kWh_m2": 22.996193328860045,
+    "rule3_passes": true,
+    "rule4_band_BR15_at_20C": [
+      26.0,
+      39.0
+    ],
+    "vulnerable_uplift_pct": 36.090049615943066
+  },
+  "test1_method_vs_TABULA_table20": {
+    "detached": {
+      "ours_kWh_m2": 39.605219718858955,
+      "ours_with_0_1_ach_infiltration": 47.91996204357616,
+      "ratio": 0.7334299947936843,
+      "ratio_with_infiltration": 0.8874067045106697,
+      "tabula_table20": 54.0
+    },
+    "flats": {
+      "ours_kWh_m2": 49.99552364699892,
+      "ours_with_0_1_ach_infiltration": 58.05927383564169,
+      "ratio": 0.7041623048873087,
+      "ratio_with_infiltration": 0.817736251206221,
+      "tabula_table20": 71.0
+    },
+    "terraced": {
+      "ours_kWh_m2": 45.743014697154365,
+      "ours_with_0_1_ach_infiltration": 53.910313351662964,
+      "ratio": 0.8470928647621179,
+      "ratio_with_infiltration": 0.9983391361419067,
+      "tabula_table20": 54.0
+    }
+  },
+  "test2_BR18_elements_vs_frame": {
+    "detached": {
+      "frame_implied_kWh_m2": 22.20347437220503,
+      "ours_at_BR18_element_values": 50.33818758183119,
+      "ratio": 2.2671311137164207
+    },
+    "flats": {
+      "frame_implied_kWh_m2": 16.847455044193843,
+      "ours_at_BR18_element_values": 19.51750556517036,
+      "ratio": 1.15848390833942
+    },
+    "terraced": {
+      "frame_implied_kWh_m2": 24.373303167420822,
+      "ours_at_BR18_element_values": 40.385812734851925,
+      "ratio": 1.656969203453499
+    }
+  },
+  "tests": {
+    "frame_envelope_within_0_5_to_1_5x_TABULA_2007_U_values": true,
+    "frame_solve_converged": true,
+    "note": "test2 is expected to FAIL: BR18 sec 257 element values are the laxest a new building may use and do not by themselves meet the energy frame. The frame-compliant envelope is therefore solved for, and tests 1 and 3 check the method",
+    "reproduction_test_passes": true,
+    "test1_method_within_20pct_of_TABULA": true,
+    "test2_BR18_elements_reproduce_frame": false,
+    "test3_houses_temperature_sensitivity_within_Kragh_8_12pct_per_K": true
+  },
+  "ventilation_W_m2K": 0.19199999999999998
+}
