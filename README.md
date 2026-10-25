@@ -3,6 +3,7 @@
 **Cumulative Energy Demand of survival goods, in primary kWh, by Leontief input-output.**
 Reference implementation and the Danish survival-floor model of the Universal Basic Energy (UBE) project.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23651855.svg)](https://doi.org/10.5281/zenodo.23651855)
 [![tests](https://github.com/djboy26/ube-ced/actions/workflows/tests.yml/badge.svg)](https://github.com/djboy26/ube-ced/actions)
 License: code MIT, data and documents CC-BY-4.0.
 
@@ -80,7 +81,7 @@ The three above are compatible with this one. None of them computes the denomina
 
 ## Cite
 
-See `CITATION.cff`. A Zenodo DOI is minted on each tagged release.
+See `CITATION.cff`. Concept DOI (always the latest version): https://doi.org/10.5281/zenodo.23651855. Each tagged release gets its own version DOI.
 
 ## Author
 

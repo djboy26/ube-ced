@@ -2,12 +2,13 @@ cff-version: 1.2.0
 message: "If you use this software or its data, please cite it as below."
 type: software
 title: "ube-ced: Cumulative Energy Demand of survival goods by Leontief input-output, with the Danish survival-floor model v5"
-version: 0.1.2
+version: 0.1.4
 date-released: 2026-10-26
 authors:
   - family-names: Jogalekar
     given-names: Sourabh
     email: sourabhrj26@gmail.com
+doi: 10.5281/zenodo.23651855
 repository-code: https://github.com/djboy26/ube-ced
 license: MIT
 keywords:
