@@ -15,7 +15,7 @@ from .io import load_system, load_scenarios
 from .basket import Basket, basket_ced
 from .montecarlo import monte_carlo
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __all__ = [
     "System", "leontief_inverse", "ced_vector", "ced", "spectral_radius", "hawkins_simon_ok",
     "tier_decomposition", "sector_decomposition", "load_system", "load_scenarios",
