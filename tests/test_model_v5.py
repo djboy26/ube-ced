@@ -1,4 +1,4 @@
-﻿"""Runs the Danish v5 model's own regression battery and self-reconciliation."""
+"""Runs the Danish v5 model's own regression battery and self-reconciliation."""
 import subprocess, sys
 from pathlib import Path
 import pytest

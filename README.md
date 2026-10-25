@@ -1,4 +1,4 @@
-﻿# ube-ced
+# ube-ced
 
 **Cumulative Energy Demand of survival goods, in primary kWh, by Leontief input-output.**
 Reference implementation and the Danish survival-floor model of the Universal Basic Energy (UBE) project.
@@ -15,14 +15,14 @@ not a sum of money, be the unit the floor is guaranteed in.
 The arithmetic is one equation:
 
 ```
-Îµ = e_d Â· (I âˆ’ A)â»Â¹          primary kWh per unit of each process
-CED(f) = Îµ Â· f               primary kWh for a basket f
+ε = e_d · (I − A)⁻¹          primary kWh per unit of each process
+CED(f) = ε · f               primary kWh for a basket f
 ```
 
 `A` is the technical-coefficients matrix (physical units of input i per unit of output j),
 `e_d` the direct primary-energy intensity of each process, `f` the final-demand vector.
 The inverse resolves the infinite upstream regress (fertiliser needs electricity needs steel needs
-electricity ...) in a single matrix operation; the power series `I + A + AÂ² + ...` converges whenever
+electricity ...) in a single matrix operation; the power series `I + A + A² + ...` converges whenever
 the Hawkins-Simon condition holds.
 
 ## What is here
@@ -44,8 +44,8 @@ the Hawkins-Simon condition holds.
 | Danish survival floor, v5 | **6,761 kWh / person / year** | primary, LHV, DK-2023 grid PEF 1.6 | PROVISIONAL |
 | same, fossil grid PEF 2.5 | 8,024 | | PROVISIONAL |
 | same, renewable PEF 1.0 | 5,920 | | PROVISIONAL |
-| Interval the project publishes | 6,500 â€“ 9,400 kWh / person / year | canonical figures doc, Sept 2026 | |
-| Winter tomato delivered in Denmark | about 11 kWh / kg | traced to recipient, Ã—1.4 loss multiplier | canonical |
+| Interval the project publishes | 6,500 – 9,400 kWh / person / year | canonical figures doc, Sept 2026 | |
+| Winter tomato delivered in Denmark | about 11 kWh / kg | traced to recipient, ×1.4 loss multiplier | canonical |
 | Six-sector toy tomato | 9.02 kWh / kg | `data/tomato_sixsector_2026-04.yaml` | illustrative |
 
 **Withdrawn and not to be cited:** tomato 4.77 kWh/kg, tomato 18 kWh/kg, floor 11,953 kWh/yr,

@@ -1,4 +1,4 @@
-﻿# model/
+# model/
 
 Directory layout mirrors the UBE research tree so the v5 model's relative references resolve unchanged.
 Nothing in `wave4/ube_model_v5` has been edited for publication.

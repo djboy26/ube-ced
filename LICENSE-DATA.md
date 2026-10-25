@@ -1,4 +1,4 @@
-﻿# Data and documents: CC BY 4.0
+# Data and documents: CC BY 4.0
 
 Everything under `data/`, `docs/`, and the CSV/JSON inputs and outputs under `model/` is licensed
 under the Creative Commons Attribution 4.0 International License (SPDX: CC-BY-4.0).
