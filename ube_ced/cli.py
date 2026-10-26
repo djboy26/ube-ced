@@ -1,54 +1,42 @@
-"""ube-ced <system.yaml> [--demand NAME=QTY ...] [--tiers] [--sectors] [--mc]"""
+"""ube-ced run <system.yaml> [--basket basket.yaml] [--out DIR] [--draws N] [--seed S] [--could-not-obtain TEXT]
+   ube-ced battery <system.yaml> [--basket basket.yaml]
+   ube-ced conform <model_dir>"""
 from __future__ import annotations
-import argparse, json
-from .io import load_system
-from .core import ced, ced_vector, spectral_radius
-from .decompose import tier_decomposition, sector_decomposition
-from .montecarlo import monte_carlo
+import argparse, json, sys
+from .system import load_system, load_basket
+from .report import build_report, write_report
+from .battery import battery
+from .conform import conform
+from .records import ValidationError
 
 
 def main(argv=None):
-    p = argparse.ArgumentParser(prog="ube-ced", description=__doc__)
-    p.add_argument("system")
-    p.add_argument("--demand", action="append", default=[], help="NAME=QTY, repeatable")
-    p.add_argument("--tiers", action="store_true")
-    p.add_argument("--sectors", action="store_true")
-    p.add_argument("--mc", action="store_true")
-    p.add_argument("--json", action="store_true")
+    p = argparse.ArgumentParser(prog="ube-ced", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    sub = p.add_subparsers(dest="cmd", required=True)
+    r = sub.add_parser("run"); r.add_argument("system"); r.add_argument("--basket"); r.add_argument("--out", default="report_out")
+    r.add_argument("--draws", type=int, default=10_000); r.add_argument("--seed", type=int, default=0); r.add_argument("--could-not-obtain", default="")
+    b = sub.add_parser("battery"); b.add_argument("system"); b.add_argument("--basket")
+    c = sub.add_parser("conform"); c.add_argument("model_dir")
     a = p.parse_args(argv)
-
-    s = load_system(a.system)
-    eps = ced_vector(s)
-    out = {"spectral_radius": spectral_radius(s.A),
-           "epsilon_kwh_per_unit": {n: float(e) for n, e in zip(s.names, eps)}}
-    if a.demand:
-        f = s.unit_demand(s.names[0], 0.0)
-        for d in a.demand:
-            k, v = d.split("=")
-            f[s.index(k)] = float(v)
-        out["ced_kwh"] = ced(s, f)
-        if a.tiers:
-            out["tiers_kwh"] = tier_decomposition(s, f)
-        if a.sectors:
-            out["by_sector_kwh"] = sector_decomposition(s, f)
-        if a.mc:
-            out["monte_carlo"] = monte_carlo(s, f)
-    if a.json:
-        print(json.dumps(out, indent=2))
-    else:
-        print(f"rho(A) = {out['spectral_radius']:.4f}")
-        for n, e in out["epsilon_kwh_per_unit"].items():
-            print(f"  epsilon[{n}] = {e:.4f} kWh per {s.units[s.index(n)]}")
-        if "ced_kwh" in out:
-            print(f"CED(demand) = {out['ced_kwh']:.4f} kWh")
-            if "tiers_kwh" in out:
-                for k, t in enumerate(out["tiers_kwh"]):
-                    print(f"  tier {k}: {t:.4f}")
-            if "by_sector_kwh" in out:
-                for n, v in out["by_sector_kwh"].items():
-                    print(f"  {n}: {v:.4f}")
-            if "monte_carlo" in out:
-                print("  MC:", out["monte_carlo"])
+    try:
+        if a.cmd == "run":
+            s = load_system(a.system)
+            basket = load_basket(a.basket, s) if a.basket else None
+            rep = build_report(s, basket, draws=a.draws, seed=a.seed, could_not_obtain=a.could_not_obtain)
+            paths = write_report(rep, a.out)
+            h = rep["headline"]
+            print(f"{h['interval']['p05']:.4g} to {h['interval']['p95']:.4g} {h['unit']} (central {h['central']:.4g})")
+            print("\n".join(paths.values()))
+        elif a.cmd == "battery":
+            res = battery(a.system, a.basket)
+            for x in res:
+                print(f"{'PASS' if x['pass'] else 'FAIL'}  {x['mutation']:55s} expected {x['expected']:17s} got {x['outcome']}")
+            n = sum(1 for x in res if x["pass"]); print(f"{n}/{len(res)} passed")
+            sys.exit(0 if n == len(res) else 1)
+        elif a.cmd == "conform":
+            res = conform(a.model_dir); print(json.dumps(res, indent=2)); sys.exit(0 if res["pass"] else 1)
+    except ValidationError as ex:
+        print("REFUSED (spec D2/D4):\n" + str(ex)); sys.exit(2)
 
 
 if __name__ == "__main__":

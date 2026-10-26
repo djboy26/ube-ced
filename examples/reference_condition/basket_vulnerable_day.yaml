@@ -1,0 +1,10 @@
+# An alternative basket for the same system: a vulnerable person on the same winter noon.
+# A basket is a final-demand vector; each line is itself a record with provenance.
+name: vulnerable person, same winter noon
+items:
+  - {process: Bread,       quantity: 0.30, low: 0.25, high: 0.35, unit: kg,     status: ASSUMED, note: fictional}
+  - {process: Water,       quantity: 0.10, low: 0.08, high: 0.12, unit: m3,     status: ASSUMED, note: fictional}
+  - {process: SpaceHeat,   quantity: 32.0, low: 26.0, high: 40.0, unit: kWh_th, status: ASSUMED, note: "+2 K set-point for a vulnerable person"}
+  - {process: Electricity, quantity: 3.5,  low: 2.5,  high: 4.5,  unit: kWh,    status: ASSUMED, note: fictional}
+  - {process: ClinicVisit, quantity: 0.05, low: 0.03, high: 0.08, unit: visit,  status: ASSUMED, note: "~18 visits a year"}
+  - {process: Transport,   quantity: 0.5,  low: 0.3,  high: 0.8,  unit: t_km,   status: ASSUMED, note: fictional}

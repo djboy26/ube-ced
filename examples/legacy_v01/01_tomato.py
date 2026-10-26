@@ -1,8 +1,8 @@
 """Reproduce the six-sector tomato CED and its tier decomposition."""
 from pathlib import Path
-from ube_ced import load_system, ced_vector, ced, tier_decomposition, sector_decomposition, spectral_radius
+from ube_ced_v01 import load_system, ced_vector, ced, tier_decomposition, sector_decomposition, spectral_radius
 
-s = load_system(Path(__file__).parent.parent / "data" / "tomato_sixsector_2026-04.yaml")
+s = load_system(Path(__file__).parent.parent.parent / "data" / "tomato_sixsector_2026-04.yaml")
 f = s.unit_demand("Tomato", 1.0)
 
 print(f"rho(A) = {spectral_radius(s.A):.4f}  (converges iff < 1)")

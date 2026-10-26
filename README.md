@@ -1,88 +1,97 @@
 # ube-ced
 
-**Cumulative Energy Demand of survival goods, in primary kWh, by Leontief input-output.**
-Reference implementation and the Danish survival-floor model of the Universal Basic Energy (UBE) project.
+**Energy accounting for survival goods and services, at a fully specified reference condition.**
+The core tool of the Universal Basic Energy (UBE) project. UBE 101.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23651855.svg)](https://doi.org/10.5281/zenodo.23651855)
 [![tests](https://github.com/djboy26/ube-ced/actions/workflows/tests.yml/badge.svg)](https://github.com/djboy26/ube-ced/actions)
-License: code MIT, data and documents CC-BY-4.0.
+Code MIT · data and documents CC-BY-4.0
 
-## The claim this repository exists to make reproducible
+![core block diagram](docs/core_block_diagram.svg)
 
-Universal Basic Energy proposes that the cost of a survival basket be measured in the primary energy
-the supply chain actually spends to deliver it, at the recipient's location, and that this quantity,
-not a sum of money, be the unit the floor is guaranteed in.
-
-The arithmetic is one equation:
+## The one equation
 
 ```
-ε = e_d · (I − A)⁻¹          primary kWh per unit of each process
-CED(f) = ε · f               primary kWh for a basket f
+ε = e · (I − A)⁻¹        kWh of external energy per unit of each process
+CED(f) = ε · f           kWh of external energy per functional unit (a good, a service, a basket)
 ```
 
-`A` is the technical-coefficients matrix (physical units of input i per unit of output j),
-`e_d` the direct primary-energy intensity of each process, `f` the final-demand vector.
-The inverse resolves the infinite upstream regress (fertiliser needs electricity needs steel needs
-electricity ...) in a single matrix operation; the power series `I + A + A² + ...` converges whenever
-the Hawkins-Simon condition holds.
+`A` holds the recipes (units of input *i* per unit of output *j*), `e` the energy that enters the chain
+from outside at each process, `f` what is demanded. The inverse resolves the infinite upstream regress
+(flour needs electricity needs steel needs electricity …) in one operation.
 
-## What is here
+## What the core is, and is not
 
-| Path | What | Status |
-|---|---|---|
-| `ube_ced/` | Reference core: `System`, Leontief inverse, CED, tier and sector decomposition, basket, Monte Carlo. numpy only. | tested |
-| `data/tomato_sixsector_2026-04.yaml` | Six-sector worked example from the April 2026 technical note. | **illustrative** |
-| `model/wave4/ube_model_v5/` | The Danish survival-floor model, v5 (19 Sep 2026). Standard library only. 63 basket lines, Statistics Denmark IO tables, dwelling heat-balance, dietary-guideline food quantities, Monte Carlo. | **PROVISIONAL**, every output row says so |
-| `docs/CANONICAL_FIGURES.md` | The one list of figures the project stands behind, and the figures it has withdrawn. | authoritative |
-| `docs/ERRATA.md` | Arithmetic in the April note that does not reproduce from its own matrix. | |
-| `docs/OPEN_QUESTIONS.md` | What is not settled. | |
-| `docs/METHOD.md` | Axioms, definitions, consequences. | |
+| The core holds | The core does not hold |
+|---|---|
+| The accounting formalism at **one place, one instant, one fully specified chain** | Any country, year, grid, fuel mix, PEF, averaging rule, renewable convention, boundary preference |
+| Records with provenance: every number carries unit, status (MEASURED / DATABASE / DERIVED / ASSUMED), source, low/high | Bare floats |
+| Two implementations of the solve that must agree to 1e-9 | A second solver anywhere else |
+| Uncertainty in as three numbers, out as percentiles (≥ 10,000 draws) | Point values reported alone |
+| Exact decomposition by tier, by sector, and by **any tag** on the external energy | An opinion on what the tags should be |
+| A fixed nine-part report, generated, with the two mandatory depictions | Prose results |
+| A corruption battery and a conformance check for specific models | Heuristics |
 
-## Headline numbers, with their status
+Everything in the right-hand column is declared by a **specific model** and printed verbatim in section 8
+of its report. The specification is `docs/SPEC_v2_core.md`; the one-page version is `docs/CORE.md`.
 
-| Quantity | Value | Basis | Status |
-|---|---|---|---|
-| Danish survival floor, v5 | **6,761 kWh / person / year** | primary, LHV, DK-2023 grid PEF 1.6 | PROVISIONAL |
-| same, fossil grid PEF 2.5 | 8,024 | | PROVISIONAL |
-| same, renewable PEF 1.0 | 5,920 | | PROVISIONAL |
-| Interval the project publishes | 6,500 – 9,400 kWh / person / year | canonical figures doc, Sept 2026 | |
-| Winter tomato delivered in Denmark | about 11 kWh / kg | traced to recipient, ×1.4 loss multiplier | canonical |
-| Six-sector toy tomato | 9.02 kWh / kg | `data/tomato_sixsector_2026-04.yaml` | illustrative |
-
-**Withdrawn and not to be cited:** tomato 4.77 kWh/kg, tomato 18 kWh/kg, floor 11,953 kWh/yr,
-"47 % of the floor is heating". See `docs/CANONICAL_FIGURES.md`.
-
-## Run it
+## Try it in two minutes
 
 ```bash
 pip install -e ".[test]"
-python -m pytest -q                       # reference core
-python examples/01_tomato.py              # 9.021 kWh/kg, tiers, sectors
-python examples/02_scenarios.py           # heat pump, renewable grid, open-field, vertical farm
-cd model/wave4/ube_model_v5
-python regression_tests.py                # 7 tests incl. reproduction of Statistics Denmark multipliers
-python ube_model_v5.py                    # regenerates survival_goods_results_v5.csv
-python verify_results_v5.py               # second implementation re-derives every cell
+cd examples/reference_condition
+ube-ced run system.yaml --out out
+open out/report.html          # or xdg-open / start
 ```
 
-The v5 model regenerates its own results file byte-for-byte from the basket CSV, the parameter JSON
-and the Statistics Denmark extracts (SHA-256 recorded). Delete the output, run it again, get the same file.
+The example is a **fictional** town on one winter noon: bread, water, heat, electricity, transport and a
+clinic visit for one person-day, with the loops (steel ↔ electricity ↔ diesel) that make the inverse
+necessary. Every number in it is ASSUMED and says so. It exists to show the mechanism, not to claim anything.
 
-## How this differs from neighbouring proposals
+What the report shows for it: 35 – 49 kWh external energy per person-day (central 41), of which 9.7 kWh
+tagged `stock` and 31.4 kWh tagged `flow`; plain addition would miss 3.3 kWh (8 %); the largest assumption
+swing is the heating line (79 %). Change a number, re-run, the report regenerates.
 
-| Proposal | Question it answers | Unit of the guarantee |
-|---|---|---|
-| NEF *Universal Basic Energy* (UK, 2022) | who pays the bill | money, via a rising-block tariff |
-| Jun, *Universal Basic Energy Equity* (Korea, 2026) | who owns the generator | money, as dividends from infrastructure equity |
-| Korean basic-energy-guarantee literature | minimum household energy services | delivered kWh of electricity and heat |
-| **this repository** | what survival physically costs to deliver | **primary kWh, cumulative, at the recipient** |
+```bash
+ube-ced run system.yaml --basket basket_vulnerable_day.yaml --out out_v    # your own basket
+ube-ced battery system.yaml                                               # 13 mutations, all must be caught
+ube-ced conform .                                                         # reproduces its pinned results
+```
 
-The three above are compatible with this one. None of them computes the denominator.
+## Writing your own system
+
+One YAML file. Three required blocks plus the declaration. See `examples/reference_condition/system.yaml`
+for every field with comments. The loader refuses with **all** violations listed at once; fix them together.
+
+- `processes`: name and unit.
+- `coefficients`: one record per input→output, `value`/`low`/`high`, `unit` as `input_unit/output_unit`, `status`, `source` unless ASSUMED, optional `tags`.
+- `external`: kWh entering the chain per unit of a process's output, with the same fields; `tags` here drive the tag decomposition.
+- `declaration`: functional unit, place, instant, boundary notes, and a list of named conventions with reasons.
+
+A basket is a second small YAML of lines (process, quantity, low, high, unit, status). Or make the basket a
+process of its own, as the example does with `PersonDay`, and the tree opens from it.
+
+## Specific models
+
+`model/wave4/ube_model_v5/` is the project's Danish survival-floor model, frozen as published in Sept 2026
+(63 lines, Statistics Denmark IO tables, dwelling heat balance). It is the first conformance target: the core
+is complete when `conform()` reproduces its 189 result cells with no edit to v5. That adapter is the next
+stage. Its figures (6,761 kWh/person/yr on the DK-2023 grid, PROVISIONAL) are specific-model outputs,
+not core outputs. See `docs/CANONICAL_FIGURES.md` for the project's figures and withdrawals.
+
+## Repository map
+
+| Path | What |
+|---|---|
+| `ube_ced/` | the core: `records`, `system`, `solve`, `stress`, `propagate`, `scenario`, `report`, `diagrams`, `battery`, `conform`, `cli` |
+| `examples/reference_condition/` | the fictional worked example and its own conformance file |
+| `examples/legacy_v01/` | the v0.1 six-sector toy, kept for `docs/ERRATA.md` |
+| `model/` | the Danish v5 model and the reference files its regression battery reads |
+| `docs/` | `CORE.md`, `SPEC_v2_core.md`, `CANONICAL_FIGURES.md`, `ERRATA.md`, `OPEN_QUESTIONS.md`, `METHOD.md` |
+| `tests/` | core tests; v5 regression wrapper |
 
 ## Cite
 
-See `CITATION.cff`. Concept DOI (always the latest version): https://doi.org/10.5281/zenodo.23651855. Each tagged release gets its own version DOI.
-
-## Author
+`CITATION.cff`. Concept DOI https://doi.org/10.5281/zenodo.23651855 resolves to the latest release.
 
 Sourabh Jogalekar, Universal Basic Energy project. sourabhrj26@gmail.com

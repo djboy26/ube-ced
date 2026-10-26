@@ -1,23 +1,23 @@
-"""ube-ced: Cumulative Energy Demand of survival goods via Leontief input-output.
+"""ube-ced core (UBE 101): energy accounting at a fully specified reference condition.
 
-Core equation (primary kWh per unit of final demand):
+    epsilon = e . (I - A)^-1          external kWh per unit of each process
+    CED(f)  = epsilon . f             external kWh per functional unit
 
-    epsilon = e_d . (I - A)^-1
-    CED(f)  = epsilon . f
-
-A      technical coefficients, a_ij = units of i consumed per unit of j produced
-e_d    direct primary energy intensity per unit output of each process, kWh
-f      final demand vector, physical units
+The core contains no place, year, grid, fuel mix, averaging rule or convention.
+Those are declared by specific models (spec v2, section 6).
 """
-from .core import System, leontief_inverse, ced_vector, ced, spectral_radius, hawkins_simon_ok
-from .decompose import tier_decomposition, sector_decomposition
-from .io import load_system, load_scenarios
-from .basket import Basket, basket_ced
-from .montecarlo import monte_carlo
+from .records import Status, Record, ExternalRecord, BasketItem, ValidationError
+from .system import System, Declaration, load_system, load_basket, freeze_hashes
+from .solve import Solution, solve
+from .stress import stress
+from .propagate import propagate
+from .scenario import scenario
+from .report import build_report, write_report
+from .battery import battery
+from .conform import conform
 
-__version__ = "0.1.4"
-__all__ = [
-    "System", "leontief_inverse", "ced_vector", "ced", "spectral_radius", "hawkins_simon_ok",
-    "tier_decomposition", "sector_decomposition", "load_system", "load_scenarios",
-    "Basket", "basket_ced", "monte_carlo",
-]
+from ._version import __version__
+__all__ = ["Status", "Record", "ExternalRecord", "BasketItem", "ValidationError",
+           "System", "Declaration", "load_system", "load_basket", "freeze_hashes",
+           "Solution", "solve", "stress", "propagate", "scenario",
+           "build_report", "write_report", "battery", "conform", "__version__"]

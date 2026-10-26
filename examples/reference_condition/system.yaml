@@ -1,0 +1,90 @@
+# ----------------------------------------------------------------------------------------------
+# UBE 101 worked example: ONE fictional place, ONE instant, ONE fully specified chain.
+# Every number here is ASSUMED. Nothing in this file is a claim about any real place.
+# It exists so a reader can see the whole mechanism: the backward-opening chain, the loop,
+# the tiers, the tags, the interval, the report. Replace the numbers, keep the structure.
+# ----------------------------------------------------------------------------------------------
+name: Exemplar Town, one winter noon
+
+declaration:
+  functional_unit: {process: PersonDay, quantity: 1, unit: person-day}
+  place: Exemplar Town (fictional)
+  instant: one winter noon, reference year 0
+  boundary_notes: >
+    All processes below are inside the chain. External energy enters at the gas turbine (fuel),
+    the diesel pump (fuel), and the wood boiler (biomass). Sunlight on the wheat field is not
+    counted as external energy in this example (declared below). Capital goods (the turbine, the
+    boiler, the bakery) enter only as the amortised steel they consume. No losses are modelled.
+  conventions:
+    - {name: aggregation_over_time, value: instant, reason: "UBE 101 reference condition: no averaging"}
+    - {name: attribution_frame, value: average, reason: "at an instant with one source per input, average and marginal coincide"}
+    - {name: external_energy_tagging, value: "source_class: stock | flow", reason: "fossil fuels tagged stock (depletable), biomass tagged flow (regrows); tags are opaque to the core"}
+    - {name: electricity_external_energy, value: "per-generator: 2.2 kWh fuel per kWh delivered", reason: "one known gas turbine at 45 % efficiency; not a grid factor"}
+    - {name: fuel_upstream_basis, value: "commodity chain", reason: "fictional; a real model must choose and justify"}
+    - {name: sunlight_on_crops, value: excluded, reason: "flow that would arrive regardless; a real model must declare this"}
+    - {name: losses, value: none, reason: "kept out to keep the example small"}
+    - {name: packaging, value: excluded, reason: "same"}
+    - {name: capital_goods, value: amortised, reason: "as steel per unit output"}
+    - {name: food_energy_content, value: excluded, reason: "same"}
+
+processes:
+  - {name: PersonDay,    unit: person-day}
+  - {name: Bread,        unit: kg}
+  - {name: Flour,        unit: kg}
+  - {name: Wheat,        unit: kg}
+  - {name: Fertiliser,   unit: kg}
+  - {name: Water,        unit: m3}
+  - {name: SpaceHeat,    unit: kWh_th}
+  - {name: Electricity,  unit: kWh}
+  - {name: Diesel,       unit: L}
+  - {name: Steel,        unit: kg}
+  - {name: Transport,    unit: t_km}
+  - {name: ClinicVisit,  unit: visit}
+
+# a_ij: units of INPUT per unit of OUTPUT. Read by column (output). All fictional.
+coefficients:
+  # --- the basket itself is a column: what one person-day consumes at this instant ---
+  - {input: Bread,       output: PersonDay, value: 0.30, low: 0.25, high: 0.35, unit: kg/person-day,      status: ASSUMED, note: fictional}
+  - {input: Water,       output: PersonDay, value: 0.10, low: 0.08, high: 0.12, unit: m3/person-day,      status: ASSUMED, note: fictional}
+  - {input: SpaceHeat,   output: PersonDay, value: 25.0, low: 18.0, high: 32.0, unit: kWh_th/person-day,  status: ASSUMED, note: fictional winter day}
+  - {input: Electricity, output: PersonDay, value: 3.0,  low: 2.0,  high: 4.0,  unit: kWh/person-day,     status: ASSUMED, note: lighting, cooking, devices}
+  - {input: ClinicVisit, output: PersonDay, value: 0.02, low: 0.01, high: 0.03, unit: visit/person-day,   status: ASSUMED, note: "a service line: ~7 visits a year"}
+  - {input: Transport,   output: PersonDay, value: 0.5,  low: 0.3,  high: 0.8,  unit: t_km/person-day,    status: ASSUMED, note: goods delivered to the person}
+  # --- bread chain ---
+  - {input: Flour,       output: Bread, value: 0.75, low: 0.70, high: 0.80, unit: kg/kg,     status: ASSUMED, note: fictional}
+  - {input: Electricity, output: Bread, value: 0.6,  low: 0.4,  high: 0.9,  unit: kWh/kg,    status: ASSUMED, note: electric oven}
+  - {input: Water,       output: Bread, value: 0.001, low: 0.0008, high: 0.0015, unit: m3/kg, status: ASSUMED, note: fictional}
+  - {input: Wheat,       output: Flour, value: 1.3,  low: 1.2,  high: 1.4,  unit: kg/kg,     status: ASSUMED, note: milling yield}
+  - {input: Electricity, output: Flour, value: 0.1,  low: 0.07, high: 0.15, unit: kWh/kg,    status: ASSUMED, note: mill}
+  - {input: Fertiliser,  output: Wheat, value: 0.03, low: 0.02, high: 0.05, unit: kg/kg,     status: ASSUMED, note: nitrogen}
+  - {input: Diesel,      output: Wheat, value: 0.02, low: 0.015, high: 0.03, unit: L/kg,     status: ASSUMED, note: tractor}
+  - {input: Water,       output: Wheat, value: 0.3,  low: 0.2,  high: 0.5,  unit: m3/kg,     status: ASSUMED, note: irrigation}
+  - {input: Electricity, output: Fertiliser, value: 10.0, low: 8.0, high: 13.0, unit: kWh/kg, status: ASSUMED, note: Haber-Bosch, electrified in this fiction}
+  - {input: Steel,       output: Fertiliser, value: 0.002, low: 0.001, high: 0.004, unit: kg/kg, status: ASSUMED, note: amortised plant}
+  # --- shared infrastructure, where the loops live ---
+  - {input: Electricity, output: Water,       value: 0.6,   low: 0.4,   high: 0.9,   unit: kWh/m3,    status: ASSUMED, note: pumping and treatment}
+  - {input: Electricity, output: Electricity, value: 0.05,  low: 0.03,  high: 0.08,  unit: kWh/kWh,   status: ASSUMED, note: own use and line loss}
+  - {input: Steel,       output: Electricity, value: 0.001, low: 0.0005, high: 0.002, unit: kg/kWh,   status: ASSUMED, note: amortised turbine and lines}
+  - {input: Diesel,      output: Electricity, value: 0.002, low: 0.001, high: 0.004, unit: L/kWh,     status: ASSUMED, note: maintenance vehicles}
+  - {input: Electricity, output: Steel,       value: 5.0,   low: 4.0,   high: 6.5,   unit: kWh/kg,    status: ASSUMED, note: electric arc furnace}
+  - {input: Diesel,      output: Steel,       value: 0.3,   low: 0.2,   high: 0.4,   unit: L/kg,      status: ASSUMED, note: ore haulage}
+  - {input: Electricity, output: Diesel,      value: 0.4,   low: 0.3,   high: 0.6,   unit: kWh/L,     status: ASSUMED, note: refinery}
+  - {input: Steel,       output: Diesel,      value: 0.0005, low: 0.0002, high: 0.001, unit: kg/L,    status: ASSUMED, note: amortised refinery}
+  - {input: Diesel,      output: Transport,   value: 0.03,  low: 0.025, high: 0.04,  unit: L/t_km,    status: ASSUMED, note: lorry}
+  - {input: Steel,       output: Transport,   value: 0.0003, low: 0.0002, high: 0.0005, unit: kg/t_km, status: ASSUMED, note: amortised lorry}
+  - {input: Electricity, output: SpaceHeat,   value: 0.02,  low: 0.01,  high: 0.03,  unit: kWh/kWh_th, status: ASSUMED, note: boiler fan and pump}
+  # --- a service: the clinic ---
+  - {input: Electricity, output: ClinicVisit, value: 4.0,  low: 3.0,  high: 6.0,  unit: kWh/visit,    status: ASSUMED, note: lighting, equipment, sterilising}
+  - {input: SpaceHeat,   output: ClinicVisit, value: 8.0,  low: 5.0,  high: 12.0, unit: kWh_th/visit, status: ASSUMED, note: building heat per visit}
+  - {input: Transport,   output: ClinicVisit, value: 0.2,  low: 0.1,  high: 0.4,  unit: t_km/visit,   status: ASSUMED, note: supplies}
+  - {input: Water,       output: ClinicVisit, value: 0.05, low: 0.03, high: 0.08, unit: m3/visit,     status: ASSUMED, note: fictional}
+
+# External energy: kWh entering the chain from outside, per unit of the process's output. Tags are opaque to the core.
+external:
+  - {process: Electricity, value: 2.2,  low: 2.0,  high: 2.5,  unit: kWh/kWh,    status: ASSUMED, tags: {source_class: stock, carrier: gas},     note: one gas turbine, 45 % efficient}
+  - {process: Diesel,      value: 12.5, low: 11.5, high: 13.5, unit: kWh/L,      status: ASSUMED, tags: {source_class: stock, carrier: oil},     note: combustion 10 + upstream 2.5}
+  - {process: SpaceHeat,   value: 1.25, low: 1.1,  high: 1.45, unit: kWh/kWh_th, status: ASSUMED, tags: {source_class: flow,  carrier: biomass}, note: wood boiler, 80 % efficient}
+
+# Optional: records that share one random quantile per draw (same underlying cause).
+correlation_groups:
+  diesel_chain: ["EXTERNAL->Diesel#{'source_class': 'stock', 'carrier': 'oil'}", "Diesel->Wheat", "Diesel->Transport", "Diesel->Steel"]

@@ -1,9 +1,9 @@
 """A basket is a final-demand vector. This one is a toy; the real Danish basket is
 an open question (docs/OPEN_QUESTIONS.md Q2) and is not encoded here yet."""
 from pathlib import Path
-from ube_ced import load_system, Basket, basket_ced, monte_carlo
+from ube_ced_v01 import load_system, Basket, basket_ced, monte_carlo
 
-s = load_system(Path(__file__).parent.parent / "data" / "tomato_sixsector_2026-04.yaml")
+s = load_system(Path(__file__).parent.parent.parent / "data" / "tomato_sixsector_2026-04.yaml")
 b = Basket({"Tomato": 20.0, "Water": 36.5, "Electricity": 1000.0})   # per person-year, toy
 total, items = basket_ced(s, b)
 print(f"Toy basket CED = {total:,.0f} kWh primary / year")

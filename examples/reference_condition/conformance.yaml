@@ -1,0 +1,6 @@
+# The example's own conformance file: the core must reproduce these figures from these files.
+# (Values are filled from the first run and then pinned; a change here is a change in the method.)
+tolerance: 1.0e-6
+cases:
+  - {name: one person-day, system: system.yaml, expected_kwh: 41.14692563316233}
+  - {name: vulnerable day, system: system.yaml, basket: basket_vulnerable_day.yaml, expected_kwh: 52.00702725239888}

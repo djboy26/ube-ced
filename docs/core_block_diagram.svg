@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 560" width="1040" height="560" font-family="ui-sans-serif,system-ui,Segoe UI,Helvetica,Arial" font-size="12">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4a6b8a"/></marker>
+  <style>.box{fill:#fff;stroke:#8a94a6;stroke-width:1.2;rx:8}.in{fill:#fde8dc}.core{fill:#eef2f7}.out{fill:#e6f0e9}.t{fill:#1a1f2b;font-weight:600}.m{fill:#4a6b8a;font-size:11px}.e{stroke:#4a6b8a;stroke-width:1.6;fill:none;marker-end:url(#a)}.lbl{fill:#c8541b;font-size:11px}</style></defs>
+  <text x="20" y="26" class="t" font-size="16">ube-ced core (UBE 101): inputs → accounting → outputs. The core holds no place, year, grid or convention.</text>
+
+  <!-- inputs -->
+  <rect x="20" y="60" width="255" height="150" class="box in"/>
+  <text x="32" y="80" class="t">System file (YAML)</text>
+  <text x="32" y="100" class="m">processes: name, unit</text>
+  <text x="32" y="116" class="m">coefficients: a_ij as records</text>
+  <text x="32" y="132" class="m">  value · low · high · unit · status · source · tags</text>
+  <text x="32" y="148" class="m">external: kWh entering, per process, tagged</text>
+  <text x="32" y="164" class="m">declaration: functional unit, place, instant,</text>
+  <text x="32" y="180" class="m">  boundary notes, declared conventions</text>
+  <text x="32" y="198" class="m">correlation_groups (optional)</text>
+
+  <rect x="20" y="230" width="255" height="70" class="box in"/>
+  <text x="32" y="250" class="t">Basket file (YAML), optional</text>
+  <text x="32" y="270" class="m">items: process, quantity, low, high, unit, status</text>
+  <text x="32" y="286" class="m">(a basket is a final-demand vector f)</text>
+
+  <!-- load -->
+  <rect x="300" y="110" width="185" height="90" class="box core"/>
+  <text x="312" y="130" class="t">load + validate</text>
+  <text x="312" y="148" class="m">every D2/D4 rule checked;</text>
+  <text x="312" y="162" class="m">ALL violations listed at once;</text>
+  <text x="312" y="176" class="m">units cross-checked; SHA-256 of</text>
+  <text x="312" y="190" class="m">inputs recorded; System frozen</text>
+
+  <!-- solve -->
+  <rect x="510" y="60" width="245" height="130" class="box core"/>
+  <text x="522" y="80" class="t">solve</text>
+  <text x="522" y="98" class="m">Hawkins-Simon: refuse if not productive</text>
+  <text x="522" y="114" class="m">① ε = e·(I−A)⁻¹ ;  CED = ε·f</text>
+  <text x="522" y="130" class="m">② tiers: e·Aᵏ·f summed to convergence</text>
+  <text x="522" y="146" class="m">① and ② must agree to 1e-9 or no result</text>
+  <text x="522" y="162" class="m">decomposition: tier · sector · any tag</text>
+  <text x="522" y="178" class="m">(all exact, by linearity)</text>
+
+  <!-- stress / propagate -->
+  <rect x="510" y="215" width="245" height="60" class="box core"/>
+  <text x="522" y="235" class="t">stress</text>
+  <text x="522" y="252" class="m">each ASSUMED record ×0.5 and ×2,</text>
+  <text x="522" y="266" class="m">swing reported, largest first</text>
+
+  <rect x="510" y="295" width="245" height="75" class="box core"/>
+  <text x="522" y="315" class="t">propagate</text>
+  <text x="522" y="332" class="m">triangular draws, low / value / high</text>
+  <text x="522" y="346" class="m">re-solve each draw (≥10,000); groups</text>
+  <text x="522" y="360" class="m">share a quantile; p05 · median · p95</text>
+
+  <!-- report -->
+  <rect x="780" y="60" width="240" height="310" class="box out"/>
+  <text x="792" y="80" class="t">report (fixed structure)</text>
+  <text x="792" y="100" class="m">1 identity + hashes</text>
+  <text x="792" y="116" class="m">2 headline: interval, then central</text>
+  <text x="792" y="132" class="m">   the chain, two ways:</text>
+  <text x="792" y="148" class="m">   · backward-opening tree</text>
+  <text x="792" y="164" class="m">   · the Leontief loop</text>
+  <text x="792" y="180" class="m">3 decomposition by tag / tier / sector / line</text>
+  <text x="792" y="196" class="m">4 assumptions + swings</text>
+  <text x="792" y="212" class="m">5 sources</text>
+  <text x="792" y="228" class="m">6 status summary</text>
+  <text x="792" y="244" class="m">7 convergence + reconciliation</text>
+  <text x="792" y="260" class="m">8 declared conventions, verbatim</text>
+  <text x="792" y="276" class="m">9 what could not be obtained</text>
+  <text x="792" y="300" class="t">report.json · report.html · report.md</text>
+  <text x="792" y="318" class="m">html is self-contained, inline SVG</text>
+  <text x="792" y="334" class="m">a figure not in a report is not a result</text>
+
+  <!-- side checks -->
+  <rect x="300" y="420" width="195" height="60" class="box core"/>
+  <text x="312" y="440" class="t">battery</text>
+  <text x="312" y="457" class="m">13 input mutations; each must be</text>
+  <text x="312" y="471" class="m">refused or change the output hash</text>
+
+  <rect x="510" y="420" width="245" height="60" class="box core"/>
+  <text x="522" y="440" class="t">conform (specific models)</text>
+  <text x="522" y="457" class="m">model reproduces its published results</text>
+  <text x="522" y="471" class="m">through solve() to 1e-6; no second solver</text>
+
+  <rect x="780" y="420" width="240" height="60" class="box in"/>
+  <text x="792" y="440" class="t">specific model directory</text>
+  <text x="792" y="457" class="m">systems · extensions (DERIVED records)</text>
+  <text x="792" y="471" class="m">conformance.yaml · README (conventions)</text>
+
+  <!-- edges -->
+  <path d="M275,135 L300,150" class="e"/>
+  <path d="M275,265 C290,265 290,170 300,165" class="e"/>
+  <path d="M485,150 L510,125" class="e"/>
+  <path d="M485,160 L510,245" class="e"/>
+  <path d="M485,165 C500,165 500,330 510,330" class="e"/>
+  <path d="M755,125 L780,125" class="e"/>
+  <path d="M755,245 L780,200" class="e"/>
+  <path d="M755,330 L780,230" class="e"/>
+  <path d="M780,450 L755,450" class="e"/>
+  <path d="M400,420 C400,390 440,340 485,170" class="e" stroke-dasharray="4 3"/>
+  <text x="395" y="520" class="lbl">battery and conform re-enter through load + solve; nothing bypasses them</text>
+  <text x="20" y="545" class="m">Reference condition: one place, one instant, one fully specified chain. Averaging, grids, fuel mixes and conventions are declared by specific models and printed verbatim in section 8 of every report.</text>
+</svg>

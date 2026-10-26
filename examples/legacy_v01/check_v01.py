@@ -1,10 +1,10 @@
 import numpy as np, pytest
 from pathlib import Path
-from ube_ced import (System, load_system, leontief_inverse, ced, ced_vector,
+from ube_ced_v01 import (System, load_system, leontief_inverse, ced, ced_vector,
                      tier_decomposition, sector_decomposition, spectral_radius, hawkins_simon_ok,
                      Basket, basket_ced, monte_carlo)
 
-DATA = Path(__file__).parent.parent / "data" / "tomato_sixsector_2026-04.yaml"
+DATA = Path(__file__).parent.parent.parent / "data" / "tomato_sixsector_2026-04.yaml"
 
 @pytest.fixture
 def tomato():

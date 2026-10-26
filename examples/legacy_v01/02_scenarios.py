@@ -1,8 +1,8 @@
 """Scenario table from the technical note §6.1, recomputed from the matrix."""
 from pathlib import Path
-from ube_ced import load_system, ced
+from ube_ced_v01 import load_system, ced
 
-s0 = load_system(Path(__file__).parent.parent / "data" / "tomato_sixsector_2026-04.yaml")
+s0 = load_system(Path(__file__).parent.parent.parent / "data" / "tomato_sixsector_2026-04.yaml")
 f = s0.unit_demand("Tomato")
 base = ced(s0, f)
 
