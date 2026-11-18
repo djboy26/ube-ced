@@ -41,7 +41,7 @@ async def walk(b, w, h, n, seed):
     await pg.close(); return bad, errs, hi
 async def main():
     async with async_playwright() as p:
-        b = await p.chromium.launch(channel='chrome', args=['--no-sandbox'])
+        b = await p.chromium.launch(channel='chrome', args=['--no-sandbox'], ignore_default_args=(['--hide-scrollbars'] if os.environ.get('CLASSIC_SCROLLBARS') else None))   # CLASSIC_SCROLLBARS=1: scrollbars that take room, as on Windows
         for w, h, n, seed in ((1440, 900, 1500, 11), (767, 900, 900, 12), (390, 844, 900, 13)):
             bad, errs, hi = await walk(b, w, h, n, seed)
             print(f'{w}px: {n} steps, problems {len(bad)}, console messages {len(errs)}, largest basket seen {hi:,} kWh'); [print('   ', x) for x in bad[:6]]; [print('   console:', e) for e in errs[:4]]
