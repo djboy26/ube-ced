@@ -3,8 +3,8 @@
 import { createHash } from 'node:crypto';
 import { mkdir, writeFile } from 'node:fs/promises';
 
-const COMMIT = '5fd74f529bda671b334a20764ada2c681ea410a2';
-const FILES = { 'index.html': '911227010166126aaa00b26fd5a4520a49049a4a8acbaec7d990d1cc86286867', 'og.png': '1df98fef749cf9d194719055d151eabcf66f1f025f26ea09b2e89b83a0817046' };
+const COMMIT = '92e12b990e5882fe6c966cc728b6baf987023b47';
+const FILES = { 'index.html': '5c1fec1e2e08a8a987915be6bdae67c4716bcf4a865566684c5187a0bc692a9b', 'og.png': '1df98fef749cf9d194719055d151eabcf66f1f025f26ea09b2e89b83a0817046' };
 const base = `https://raw.githubusercontent.com/djboy26/ube-ced/${COMMIT}/`;
 const host = process.env.VERCEL_PROJECT_PRODUCTION_URL || 'ube-calculator.vercel.app';
 const site = 'https://' + host;
