@@ -6,7 +6,7 @@ This branch (`calculator-site`) holds the public calculator page. The model it r
 |---|---|
 | `index.html` | The whole page in one file. Fonts, drawing and data are inside it; it makes no outside requests. |
 | `og.png` | The picture shown when the link is shared (1200 x 630). |
-| `deploy/` | The build step used on Vercel. It fetches the two files above at a pinned commit, checks their SHA-256, and stamps the public address into the share tags. To publish a new version of the page: commit the new `index.html`, then put that commit's hash and the new SHA-256 values in `deploy/build.mjs`, and redeploy. |
+| `deploy/` | The build step used on Vercel. It fetches the two files above at a pinned commit, checks their SHA-256, and stamps the public address into the share tags. Since 24 Nov 2026 it also shortens the title to under 70 characters, adds schema.org JSON-LD, and writes `robots.txt`, `sitemap.xml` and `llms.txt` for search and AI answer engines. To publish a new version of the page: commit the new `index.html`, then put that commit's hash and the new SHA-256 values in `deploy/build.mjs`, and redeploy. |
 | `checks/` | Checks of the page against model v5 and of the page against itself. |
 
 ## What the page computes
